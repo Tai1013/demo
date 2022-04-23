@@ -1,0 +1,45 @@
+@mixin all-font-size($font-size) {
+    font-size: 4px * $font-size;
+}
+// @include all-font-size();
+@mixin all-transition {
+    transition: 0.3s;
+}
+// @include all-transition;
+
+.back-top {
+    position: fixed;
+    right: 5%;
+    bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    color: #fff;
+    background:#13afc4;
+    cursor: pointer;
+    z-index: 5;
+    @include all-font-size(4);
+    @include all-transition;
+    >svg{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .back-top {
+        right: 3%;
+        width: 55px;
+        height: 55px;
+        @include all-font-size(3.5);
+        >p{
+            @include all-font-size(4.5);
+        }
+    }
+}
+
+  

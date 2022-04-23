@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <meta name="keywords" content="Document" />
+    <meta name="description" content="Document" />
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.0/slick.min.css">
+    <link rel="stylesheet" href="assets/css/main.min.css">
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <div class="header-box">
+                <div class="max-width ">
+                    <div class="logo">
+                        <div class="home">
+                            <a class="nav-link" href="./" title="首頁">
+                                <svg class="ico">
+                                    <use xlink:href="#ico-home"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <a href="./"><img src="assets/images/logo.png" alt="LOGO"></a>
+                        <div class="login">
+                            <a class="nav-link" href="./" title="註冊">登入</a>
+                            <a class="nav-link" href="./" title="註冊">註冊</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-nav">
+                    <div class="max-width ">
+                        <div class="navbar-btn" @click="toggleNav">
+                            <span>選單</span>
+                            <svg class="ico nav-open">
+                                <use xlink:href="#ico-nav"></use>
+                            </svg>
+                            <svg class="ico nav-close">
+                                <use xlink:href="#ico-close"></use>
+                            </svg>
+                        </div>
+                        <ul class="navbar-nav">
+                            <li><a id="sport" class="nav-link" href="sport" title="體育賽事">體育賽事</a></li>
+                            <li><a id="live" class="nav-link" href="live" title="真人娛樂">真人娛樂</a></li>
+                            <li><a id="lottery" class="nav-link" href="lottery" title="彩票遊戲">彩票遊戲</a></li>
+                            <li><a id="slot" class="nav-link" href="slot" title="電子遊藝">電子遊藝</a></li>
+                            <li><a id="event" class="nav-link" href="event" title="優惠活動">最新消息</a></li>
+                            <li><a id="promotion" class="nav-link" href="promotion" title="優惠活動">優惠活動</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="marquee-box">
+            <div>
+                <div class="marquee-title"><a href="bulletin">公告</a></div>
+                <marquee>
+                    <a href="bulletin" class="new-item"><span class="ann ann1">最新</span>【重要公告】詐騙集團洗錢嫌疑</a>
+                    <a href="bulletin" class="new-item"><span class="ann ann1">最新</span>【重要公告】嚴禁不正當套利行為</a>
+                    <a href="bulletin" class="new-item"><span class="ann ann2">系統</span>【平台提領規則】</a>
+                </marquee>
+            </div>
+        </div>
+        <div class="common-outbox">
+            <div class="affiliate-box">
+                <p class="common-title"><b>合營計劃</b></p>
+                <div class="common-content">
+                    <div class="common-inbox affiliate-content">
+                        <p>娛樂城是在菲律賓合法註冊的線上博彩公司，我們為您提供了高額佣金的合加盟，高級會員優待方案，富有經驗的客戶管理專員，行業領先的博彩產品，以及各種資源和工具來為您賺取優厚的酬金。在市場上的眾多博彩網站中，自豪的提供給會員最優惠的回饋，給予代理最具優勢的營利回報！
+                            無論您擁有的是網絡資源，或是人脈資源，都歡迎您來加入，無須負擔任何費用，就可以開始無上限的收入!</p>
+                        <p>1) 高達35%的代理佣金。</p>
+                        <p>2)
+                            提供各種不同的遊戲產品，以迎合每個人的娛樂需求與領先行內的平台提供商合作，如SUPER體育、鑫寶體育、歐博真人、DG真人、WM真人、沙龍平台、Betsoft平台、QT老虎機與各大知名平台，並提供各式娛樂的終極遊戲體驗。
+                        </p>
+                        <p>3) 零風險，高回報，每月準時出傭。</p>
+                        <p>4) 優惠多多，滿足各種類型玩家需求。</p>
+                        <p>5) 提款快速 , 金額不封頂，實力雄厚。</p>
+                        <p>6) 擁有體育博彩與線上賭場執照，信譽保證。</p>
+                        <p>7) 多年大力推廣，運營經驗豐富, 品牌熱度十足，代理可坐享廣告品牌效應。</p>
+                        <p>8) 代理後台數據詳細齊全，可查閱下線投註記錄與贈送優惠。</p>
+                        <p>9) 無限層的代理機制。</p>
+                        <p>10) 提供24小時全天的在線客服，以確保您和您的客戶的問題得到即時有效的解決和幫助 。</p>
+                        <table cellpadding="0" cellspacing="0" width="600" class="forTable">
+                            <tbody align="center">
+                                <tr>
+                                    <td bgcolor="#13afc4">代理等級</td>
+                                    <td bgcolor="#13afc4">下線會員淨輸值</td>
+                                    <td bgcolor="#13afc4">有效活躍玩家人數</td>
+                                    <td bgcolor="#13afc4">佣金比例</td>
+                                </tr>
+                                <tr>
+                                    <td>普通代理</td>
+                                    <td>1-10萬</td>
+                                    <td>≥5</td>
+                                    <td>20%</td>
+                                </tr>
+                                <tr>
+                                    <td>中級代理</td>
+                                    <td>11萬-30萬</td>
+                                    <td>≥15</td>
+                                    <td>25%</td>
+                                </tr>
+                                <tr>
+                                    <td>高級代理</td>
+                                    <td>31萬-50萬</td>
+                                    <td>≥25</td>
+                                    <td>30%</td>
+                                </tr>
+                                <tr>
+                                    <td>特級代理</td>
+                                    <td>51萬-70萬</td>
+                                    <td>≥35</td>
+                                    <td>35%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>1、娛樂城代理佣金比例詳解：</p>
+                        <ul>
+                            <li>代理佣金 = 下線會員淨輸值 × 當月佣金比例（同時需滿足當月最低活躍玩家數）。</li>
+                            <li>如果當月代理下的會員淨輸值為負數，那麼當月佣金為零,當月的負盈利由公司承擔。</li>
+                            <li>代理的佣金比例以代理下線會員淨輸值和下線的活躍玩家數量而定。</li>
+                            <li>代理佣金比例升級必須同時滿足下線會員淨輸值和活躍玩家數量兩個條件。如果代理的下線會員淨輸值和活躍玩家數量只完成其中一項，那麼將按照低一級的佣金比例發放佣金。</li>
+                            <li>如果活躍玩家數量不足5人將不能獲得佣金。</li>
+                            <li>活躍會員標準：當月存款金額≥1000，當月總流水≥15000。</li>
+                        </ul>
+                        <p>2、合營代理須知：</p>
+                        <ul>
+                            <li>支付代理佣金不會扣除任何銀行轉賬手續費。</li>
+                            <li>加盟代理的姓名必須與收款人的銀行賬號姓名一致，否則無法支付佣金。</li>
+                            <li>如發現代理的線下會員存在冒充人數的現象、或使用其他辦法惡意套取代理佣金者，將不發放當月佣金，也不會累積到下個月，如二次發現，將立即取消合營資格。</li>
+                            <li>同一IP/同一姓名/同一收款賬號的會員，只能是一個加盟代理的下線玩家; 代理本身不能成為自身及其他代理的下線會員。同一IP/同一姓名/同一收款賬號只能申請一個代理賬號。
+                            </li>
+                            <li>為防止非誠信合作商濫用所提供的代理優惠制度，市場部門將嚴格審核每位代理註冊時提供的個人資料（包括姓名，郵件及電話等）,若發現代理有任何不良營利企圖，或與其他代理及會員進行合謀套利等不誠信行為，將關閉該合作代理之賬戶、扣除賬戶中的本金，並收回該代理的所有佣金與優惠，情節嚴重者將列為黑名單。
+                            </li>
+                            <li>佣金結算時間為：每月1~5號結算對帳，每月5~10號支付；佣金將與總代理核對，總代理有權利與義務派發給下線代理，如發現總代理於對帳時間未支付給下線代理佣金，公司將立即對總代理線停權並取消總代理帳號。
+                            </li>
+                            <li>佣金最低提款5000元，若未達到提款標準將累積到下月；若佣金為負數，亦將累積到下月，連續負盈利三個月可與代理商客服申請歸零；娛樂城有權對違反公司合營條款的代理賬戶進行凍結。同時有權在不通知代理的前提下修改合約書上的條款。
+                            </li>
+                        </ul>
+                        <p>3、扶持鼓勵政策</p>
+                        <p>創業不易, 我們體諒合作夥伴在創業初期的辛勞, 為了在事業上扶持合作夥伴, 規避合作夥伴在創業初期所遇到的風險, 特製定以下扶持政策 :</p>
+                        <p>凡在娛樂城新註冊的代理，前三個月內任意一個月的佣金已達到5000元的提款標準，但是下線活躍玩家人數未達到最低標準的（低於5個），代理可向我們提出申請扶持鼓勵，我們將仍然予以普通代理為退佣金20%基準，支付退佣金基準點兩成的35%的扶持鼓勵金。
+                            三個月期滿後，下線活躍玩家人數仍未達到最低標準的，我們將不再支付扶持鼓勵佣金，並取消合營資格。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="introduction-box">
+                <div class="max-width flex-sb-c">
+                    <div class="left">
+                        <img src="assets/images/logo.png" alt="logo">
+                        <p>在娛樂城開戶，享受所有在線娛樂優惠以及最頂級的遊戲體驗，超乎您的想​​像。娛樂城一直持續為娛樂城的忠實客戶提供與眾不同的存款優惠及其他多種優惠活動。
+                        </p>
+                    </div>
+                    <div class="conter">
+                        <div style="float:left; width: 180px;">
+                            <p>多元遊戲</p>
+                            <ul>
+                                <li><a class="nav-link" href="sport" title="體育賽事"><svg class="ico">
+                                            <use xlink:href="#ico-chevron-right"></use>
+                                        </svg>體育賽事</a></li>
+                                <li><a class="nav-link" href="live" title="真人娛樂"><svg class="ico">
+                                            <use xlink:href="#ico-chevron-right"></use>
+                                        </svg>真人娛樂</a></li>
+                                <li><a class="nav-link" href="lottery" title="彩票遊戲"><svg class="ico">
+                                            <use xlink:href="#ico-chevron-right"></use>
+                                        </svg>彩票遊戲</a></li>
+                                <li><a class="nav-link" href="slot" title="電子遊藝"><svg class="ico">
+                                            <use xlink:href="#ico-chevron-right"></use>
+                                        </svg>電子遊藝</a></li>
+                            </ul>
+                        </div>
+                        <div style="float:left;">
+                            <p>關於我們</p>
+                            <ul>
+                                <li><a class="nav-link" href="event" title="最新消息"><svg class="ico">
+                                            <use xlink:href="#ico-chevron-right"></use>
+                                        </svg>最新消息</a></li>
+                                <li><a class="nav-link" href="promotion" title="優惠活動"><svg class="ico">
+                                            <use xlink:href="#ico-chevron-right"></use>
+                                        </svg>優惠活動</a></li>
+                                <li><a class="nav-link" href="bulletin" title="公告"><svg class="ico">
+                                            <use xlink:href="#ico-chevron-right"></use>
+                                        </svg>公告</a></li>
+                                <li><a class="nav-link" href="about" title="公告"><svg class="ico">
+                                            <use xlink:href="#ico-chevron-right"></use>
+                                        </svg>幫助中心</a></li>
+                                <li><a class="nav-link" href="banking" title="存提款說明"><svg class="ico">
+                                            <use xlink:href="#ico-chevron-right"></use>
+                                        </svg>存提款說明</a></li>
+                                <li><a class="nav-link" href="affiliate" title="合營計劃"><svg class="ico">
+                                            <use xlink:href="#ico-chevron-right"></use>
+                                        </svg>合營計劃 </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h3>加入娛樂城獲得優惠</h3>
+                        <h4>娛樂城新用戶享有首次存款紅利及開戶特製禮品。現有客戶同樣享有現金返水及再次存款紅利。提供多種娛樂城優惠包含體驗金、返水優惠、生日禮、介紹金、連贏連輸回饋等等...
+                        </h4>
+                        <h4>娛樂城首儲最高送你5000！註冊立即送100！</h4>
+                        <a href="./">
+                            <div class="btn">立即試玩</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-box">
+                <div class="max-width">
+                    © {{Year}}
+                    <a href="./">LOGO</a> All Rights Reserved TAI 版權所有
+                </div>
+            </div>
+        </footer>
+        <div class="back-top" style="display: none;">
+            <svg class="ico">
+                <use xlink:href="#ico-arrow-circle-up"></use>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none;" fill="none">
+                <symbol id="ico-arrow-circle-up" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M9 11l3-3m0 0l3 3m-3-3v8m0-13a9 9 0 110 18 9 9 0 010-18z"></path>
+                </symbol>
+            </svg>
+        </div>
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+                <symbol id="ico-nav" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </symbol>
+                <symbol id="ico-close" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>
+                </symbol>
+                <symbol id="ico-home" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6">
+                    </path>
+                </symbol>
+                <symbol id="ico-right" viewBox="0 0 24 24" fill="none">
+                    <path stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </symbol>
+                <symbol id="ico-left" viewBox="0 0 24 24" fill="none">
+                    <path stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </symbol>
+                <symbol id="ico-clock" viewBox="0 0 24 24" fill="none">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </symbol>
+                <symbol id="ico-chevron-right" viewBox="0 0 24 24" fill="none">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </symbol>
+            </svg>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.0/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.min.js"></script>
+    <script src="assets/js/components.js"></script>
+</body>
+
+</html>

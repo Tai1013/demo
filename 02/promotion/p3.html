@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <meta name="keywords" content="Document" />
+    <meta name="description" content="Document" />
+    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.0/slick.min.css">
+    <link rel="stylesheet" href="../assets/css/main.min.css">
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <div class="header-box">
+                <div class="max-width ">
+                    <div class="logo">
+                        <div class="home">
+                            <a class="nav-link" href="../" title="首頁">
+                                <svg class="ico">
+                                    <use xlink:href="#ico-home"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <a href="../"><img src="../assets/images/logo.png" alt="LOGO"></a>
+                        <div class="login">
+                            <a class="nav-link" href="../" title="註冊">登入</a>
+                            <a class="nav-link" href="../" title="註冊">註冊</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-nav">
+                    <div class="max-width ">
+                        <div class="navbar-btn" @click="toggleNav">
+                            <span>選單</span>
+                            <svg class="ico nav-open">
+                                <use xlink:href="#ico-nav"></use>
+                            </svg>
+                            <svg class="ico nav-close">
+                                <use xlink:href="#ico-close"></use>
+                            </svg>
+                        </div>
+                        <ul class="navbar-nav">
+                            <li><a id="sport" class="nav-link" href="../sport" title="體育賽事">體育賽事</a></li>
+                            <li><a id="live" class="nav-link" href="../live" title="真人娛樂">真人娛樂</a></li>
+                            <li><a id="lottery" class="nav-link" href="../lottery" title="彩票遊戲">彩票遊戲</a></li>
+                            <li><a id="slot" class="nav-link" href="../slot" title="電子遊藝">電子遊藝</a></li>
+                            <li><a id="event" class="nav-link" href="../event" title="優惠活動">最新消息</a></li>
+                            <li><a id="promotion" class="nav-link" href="../promotion" title="優惠活動">優惠活動</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="marquee-box">
+            <div>
+                <div class="marquee-title"><a href="../bulletin">公告</a></div>
+                <marquee>
+                    <a href="../bulletin" class="new-item"><span class="ann ann1">最新</span>【重要公告】詐騙集團洗錢嫌疑</a>
+                    <a href="../bulletin" class="new-item"><span class="ann ann1">最新</span>【重要公告】嚴禁不正當套利行為</a>
+                    <a href="../bulletin" class="new-item"><span class="ann ann2">系統</span>【平台提領規則】</a>
+                </marquee>
+            </div>
+        </div>
+        <div class="content-text">
+            <div class="max-width">
+                <div class="back-btn">
+                    <a href="../">首頁</a><span>/</span>
+                    <a href="../promotion">優惠活動</a><span>/</span>
+                    <p>會員再次存款1000送20%</p>
+                </div>
+                <div class="content">
+                    <div class="title">會員再次存款1000送20%!!</div>
+                    <div class="pic center">
+                        <img src="../assets/images/banner/banner3.jpg" alt="會員再次存款1000送20%!!">
+                    </div>
+                    <h2 style="color: #9394c9;">活動說明</h2>
+                    <p>活動對象：<strong>娛樂城全站會員</strong></p>
+                    <p>活動時間：即日起</p>
+                    <p>申請資格：本活動一人限制申請一次；獲得優惠點數前，請勿進行館內的遊戲轉點及遊戲。</p>
+                    <p>活動辦法：</p>
+                    <table border="1" cellpadding="2" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td><strong>方案</strong></td>
+                                <td><strong>存</strong><strong>款金額</strong></td>
+                                <td><strong>優惠</strong></td>
+                                <td><strong>優惠上</strong><strong>限</strong></td>
+                                <td><strong>流水倍數</strong></td>
+                            </tr>
+                            <tr>
+                                <td>再存</td>
+                                <td>1000~50000元</td>
+                                <td>200~10000元</td>
+                                <td>10000元</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>流水計算</p>
+                                </td>
+                                <td colspan="4">(存款金額+優惠)X流水倍數=流水要求，例:再存(1000+200)x10=12000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h3>活動辦法</h3>
+                    <ul>
+                        <li>獲得優惠點數前，請勿進行館內的遊戲轉點及遊戲。</li>
+                        <li>本活動一人限制申請一次。</li>
+                        <li>以下館別禁止使用本優惠：六合彩球館、LG幸運棋牌、包你發棋牌、老虎機(內的桌面遊戲、撲克類遊戲)
+                            禁止使用本優惠，若在非規定的遊戲類別進行遊戲，一律不能"提領"且"優惠點數與本金將直接扣回"。</li>
+                        <li>向客服人員提出申請後，將由審核人員完成審核後，系統自動補入帳戶內。(請於儲值24小時未下注前提出申請，逾期無效)</li>
+                        <li>領取優惠後，累積有效押碼需達10倍即可申請提款。例如：再次存款為1000點數，再存送200點數，若要申請需有效押碼為(1000+200)x10=12000點。</li>
+                        <li>所有和局、無效、被取消、對賭單與輪盤同時投注黑、紅，單、雙，大、小、第一柱+第二柱+第三注有效投注時、輪盤投注超過24個號碼以上時，將不計算有效押碼內。</li>
+                        <li>北京賽車、幸運飛艇：最多只能下六車，超過六車一律視為洗流水套利。</li>
+                        <li>北京賽車、幸運飛艇：同時下注大小、單雙、龍虎、莊閒算違規一律視為洗流水套利。</li>
+                        <li>北京賽車、幸運飛艇：“猜數字”(冠亞和值猜數字)項目，同時下注超過11個，算違規一律視為洗流水套利。</li>
+                        <li>賓果賓果：同時下注單雙算違規一律視為洗流水套利。</li>
+                        <li>急速骰寶：最多只能下3個號碼，超過3個號碼一律視為洗流水套利。</li>
+                        <li>此優惠申請後，以申請日起計算，限定兩個月(60天)內娛樂完畢，如無娛樂完畢，將優惠點數、盈利點數與本金一律扣回。</li>
+                        <li>同一帳戶/電話號碼/IP位置/共享電腦(網咖)/網路環境，僅限申請與娛樂一次。如重複申請與娛樂之會員，將優惠點數、盈利點數與本金一律扣回。</li>
+                        <li>為秉持會員公平公正之原則本娛樂平台有權對會員行為進行嚴格監控，若發生任何違背、欺騙或利用規則與條款進行非法獲利者，我們將保留無限期審核扣回點數及所產生優惠之權利。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="introduction-box">
+                <div class="max-width flex-sb-c">
+                    <div class="left">
+                        <img src="../assets/images/logo.png" alt="logo">
+                        <p>在娛樂城開戶，享受所有在線娛樂優惠以及最頂級的遊戲體驗，超乎您的想​​像。娛樂城一直持續為娛樂城的忠實客戶提供與眾不同的存款優惠及其他多種優惠活動。
+                        </p>
+                    </div>
+                    <div class="conter">
+                        <div style="float:left; width: 180px;">
+                            <p>多元遊戲</p>
+                            <ul>
+                                <li><a class="nav-link" href="../sport" title="體育賽事"><svg class="ico">
+                                            <use xlink:href="#ico-chevron-right"></use>
+                                        </svg>體育賽事</a></li>
+                                <li><a class="nav-link" href="../live" title="真人娛樂"><svg class="ico">
+                                            <use xlink:href="#ico-chevron-right"></use>
+                                        </svg>真人娛樂</a></li>
+                                <li><a class="nav-link" href="../lottery" title="彩票遊戲"><svg class="ico">
+                                            <use xlink:href="#ico-chevron-right"></use>
+                                        </svg>彩票遊戲</a></li>
+                                <li><a class="nav-link" href="../slot" title="電子遊藝"><svg class="ico">
+                                            <use xlink:href="#ico-chevron-right"></use>
+                                        </svg>電子遊藝</a></li>
+                            </ul>
+                        </div>
+                        <div style="float:left;">
+                            <p>關於我們</p>
+                            <ul>
+                                <li><a class="nav-link" href="../event" title="最新消息"><svg class="ico">
+                                            <use xlink:href="#ico-chevron-right"></use>
+                                        </svg>最新消息</a></li>
+                                <li><a class="nav-link" href="../promotion" title="優惠活動"><svg class="ico">
+                                            <use xlink:href="#ico-chevron-right"></use>
+                                        </svg>優惠活動</a></li>
+                                <li><a class="nav-link" href="../bulletin" title="公告"><svg class="ico">
+                                            <use xlink:href="#ico-chevron-right"></use>
+                                        </svg>公告</a></li>
+                                <li><a class="nav-link" href="../about" title="幫助中心"><svg class="ico">
+                                            <use xlink:href="#ico-chevron-right"></use>
+                                        </svg>幫助中心</a></li>
+                                <li><a class="nav-link" href="../banking" title="存提款說明"><svg class="ico">
+                                            <use xlink:href="#ico-chevron-right"></use>
+                                        </svg>存提款說明</a></li>
+                                <li><a class="nav-link" href="../affiliate" title="合營計劃"><svg class="ico">
+                                            <use xlink:href="#ico-chevron-right"></use>
+                                        </svg>合營計劃 </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h3>加入娛樂城獲得優惠</h3>
+                        <h4>娛樂城新用戶享有首次存款紅利及開戶特製禮品。現有客戶同樣享有現金返水及再次存款紅利。提供多種娛樂城優惠包含體驗金、返水優惠、生日禮、介紹金、連贏連輸回饋等等...
+                        </h4>
+                        <h4>娛樂城首儲最高送你5000！註冊立即送100！</h4>
+                        <a href="../">
+                            <div class="btn">立即試玩</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-box">
+                <div class="max-width">
+                    © {{Year}}
+                    <a href="../">LOGO</a> All Rights Reserved TAI 版權所有
+                </div>
+            </div>
+        </footer>
+        <div class="back-top" style="display: none;">
+            <svg class="ico">
+                <use xlink:href="#ico-arrow-circle-up"></use>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none;" fill="none">
+                <symbol id="ico-arrow-circle-up" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M9 11l3-3m0 0l3 3m-3-3v8m0-13a9 9 0 110 18 9 9 0 010-18z"></path>
+                </symbol>
+            </svg>
+        </div>
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+                <symbol id="ico-nav" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </symbol>
+                <symbol id="ico-close" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>
+                </symbol>
+                <symbol id="ico-home" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6">
+                    </path>
+                </symbol>
+                <symbol id="ico-right" viewBox="0 0 24 24" fill="none">
+                    <path stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </symbol>
+                <symbol id="ico-left" viewBox="0 0 24 24" fill="none">
+                    <path stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </symbol>
+                <symbol id="ico-clock" viewBox="0 0 24 24" fill="none">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </symbol>
+                <symbol id="ico-chevron-right" viewBox="0 0 24 24" fill="none">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </symbol>
+            </svg>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.0/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.min.js"></script>
+    <script src="../assets/js/components.js"></script>
+</body>
+
+</html>

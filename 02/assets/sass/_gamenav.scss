@@ -1,0 +1,136 @@
+.gameNav-box {
+    // border-top: 20px solid #13afc4;
+    a{
+        color: #fff;       
+    }
+    .card-nav {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        width: 1020px;
+    }
+    .card {
+        position: relative;
+        padding-bottom: 40px;
+        top: -1px;
+        flex: 1;
+        text-align: center;
+        box-sizing: border-box;
+        overflow: hidden;
+        h1 {
+            position: absolute;
+            z-index: 1;
+            right: 35px;
+            bottom: 225px;
+            transform: rotate(-28deg);
+            margin: 0;
+            transition: 0.3s;
+        }
+        .icons {
+            position: absolute;
+            z-index: 1;
+            left: 50%;
+            bottom: 95px;
+            transform: translateX(-50%);
+            transition: 0.3s;
+            p{
+                margin: 5px 0; 
+                text-transform:uppercase;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        }
+        .gameCard {
+            width: 200px;
+            filter: drop-shadow(3px 3px 3px #666);
+            transform: translateY(-20px);
+            transition: 0.3s;
+        }
+        @media screen and (min-width: 1025px){
+            &:hover {
+                h1 {
+                    bottom: 205px;
+                }
+                .icons {
+                    bottom: 75px;
+                }
+                .gameCard {
+                    transform: translateY(0);
+                }
+            }
+        }
+
+    }
+}
+@media screen and (max-width: 1024px){
+    .gameNav-box {
+        .card-nav {
+            width: 750px;
+        }
+        .card {
+            padding-bottom: 20px;
+            h1 {
+                right: 20px;
+                bottom: 170px;
+                font-size: 1.5rem;
+                transition: 0s;
+            }
+            .icons {
+                bottom: 50px;
+                transition: 0s;
+            }
+            .gameCard {
+                width: 175px;
+                transform: translateY(0px);
+            }   
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .gameNav-box {
+        .card-nav {
+            width: 450px;
+        }
+        .card {
+            padding-bottom: 20px;
+            flex: initial;
+            width: 33.3%;
+            h1 {
+                right: 20px;
+                bottom: 130px;
+                font-size: 1.1rem;
+            }
+            .icons {
+                bottom: 45px;
+                img {
+                    width: 30px;
+                }
+                p {
+                    font-size: 0.8rem;
+                }
+            }
+            .gameCard {
+                width: 90%;
+            }   
+        }
+    }
+}
+@media screen and (max-width: 480px){
+    .gameNav-box {
+        .card-nav {
+            width: 320px;
+        }
+        .card {
+            width: 50%;
+            h1 {
+                right: 15px;
+                bottom: 145px;
+                font-size: 1.2rem;
+            }
+            .icons {
+                img {
+                    width: 35px;
+                }
+            }
+        }
+    }
+}

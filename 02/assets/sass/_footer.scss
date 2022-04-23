@@ -1,0 +1,17 @@
+.footer-box {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: left;
+    color: #fff;
+    background: #13afc4;
+    font-size: 0.9rem;
+    .max-width {
+        margin: 0 auto;
+        max-width: 1600px;
+        width: 95%;
+    }
+    a {
+        color: #fff;
+    }
+}

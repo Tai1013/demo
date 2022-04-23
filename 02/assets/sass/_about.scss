@@ -1,0 +1,264 @@
+.banking-box {
+    margin: 0 auto;
+    padding: 40px;
+    max-width: 1280px;
+    width: 95%;
+    box-sizing: border-box;
+    .banking-content {
+        color: #182430;
+        line-height: 1.5rem;
+        ul, ol, li {
+            margin: revert;
+            padding: revert;
+            list-style: revert;
+        }
+        table {
+            max-width: 100%;
+        }
+        img {
+            max-width: 100%;
+        }
+    }
+    .forTable {
+        td {
+            border-collapse: collapse;
+            border: 1px solid #182430;
+            line-height: 40px;
+            padding-left: 5px;
+        }
+    }
+}
+
+.affiliate-box {
+    margin: 0 auto;
+    padding: 40px;
+    max-width: 1280px;
+    width: 95%;
+    box-sizing: border-box;
+    .affiliate-content {
+        color: #182430;
+        line-height: 1.5rem;
+        ul, ol, li {
+            margin: revert;
+            padding: revert;
+            list-style: revert;
+        }
+        table {
+            max-width: 100%;
+        }
+        img {
+            max-width: 100%;
+        }
+    }
+    .forTable {
+        td {
+            border-collapse: collapse;
+            border: 1px solid #182430;
+            line-height: 40px;
+            padding-left: 5px;
+        }
+    }
+}
+
+.about-box {
+    margin: 0 auto;
+    padding: 40px;
+    max-width: 1280px;
+    width: 95%;
+    box-sizing: border-box;
+    .about-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about-nav {
+        width: 100%;
+    }
+    .about-text {
+        width: 100%;
+        line-height: 1.5em;
+        a {
+            color: #fff;
+        }
+        ul, ol, li {
+            margin: revert;
+            padding: revert;
+            list-style: revert;
+        }
+        table {
+            margin: 0 auto;
+            max-width: 100%;
+        }
+        img {
+            max-width: 100%;
+        }
+        h2 {
+            display: inline-block;
+            padding: 0 10px 5px;
+            border-bottom: 3px solid #b5995a;
+        }
+        h3 {
+            margin-left: 0.5em;
+            color: #13afc4;
+        }
+        p {
+            margin-left: 1.8em;
+        }
+        .text-3 {
+            margin-left: 3.6em;
+        }
+        .table1 {
+            margin-top: 5px;
+            .tr1 {
+                background: #13afc4;
+            }
+            td {
+                border-collapse: collapse;
+                border: 1px solid #000;
+                line-height: 40px;
+                padding-left: 5px;
+                color: #000;
+            }
+        }
+    }
+    #aboutNav {
+        margin-bottom: 20px;
+        > .nav-title {
+            display: none;
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-align: center;
+            color: #fff;
+            background: #13afc4;
+        }
+        > ul {
+            display: flex;
+            flex-wrap: wrap;
+            background: #fff;
+            border-bottom: 3px solid #b5995a;
+            .nav-item {
+                width: 20%;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                background: #fff;
+                a {
+                    display: block;
+                    width: 100%;
+                    color: #182430;
+                    font-size: 1rem;
+                    &:hover {
+                        background: #ddd;
+                    }
+                }
+            }
+        } 
+        > .nav-toggle {
+            display: none;
+            width: 100%;
+            height: 40px;
+            
+            color: #fff;
+            background: #13afc4;
+            text-align: center;
+            svg {
+                margin: 0 auto;
+                width: 20px;
+                height: 100%;
+                &.nav-open {
+                    display: none;
+                }
+                &.nav-close {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+#aboutNav.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    > .nav-title {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .banking-box {
+        padding: 20px;
+    }
+    
+    .affiliate-box {
+        padding: 20px;
+    }
+
+    .about-box {
+        padding: 20px;
+        #aboutNav {
+            > ul {
+                .nav-item {
+                    width: 25%;
+                }
+            } 
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banking-box {
+        padding: 10px 0;
+    }
+    
+    .affiliate-box {
+        padding: 10px 0;
+    }
+
+    .about-box {
+        padding: 10px 0;
+        #aboutNav {
+            > ul {
+                .nav-item {
+                    width: 33.3%;
+                }
+            } 
+        }
+    }
+
+    #aboutNav.fixed {
+        > ul {
+            display: none;
+            &.show {
+                display: flex;
+            }
+        } 
+        > .nav-toggle {
+            display: block;
+            svg {
+                &.nav-open {
+                    display: block;
+                }
+                &.nav-close {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-box {
+        #aboutNav {
+            > ul {
+                .nav-item {
+                    a {
+                        font-size: 0.9rem;
+                    }
+                }
+            } 
+        }
+    }
+}
