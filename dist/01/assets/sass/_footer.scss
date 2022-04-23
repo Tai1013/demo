@@ -1,0 +1,123 @@
+.footer-box {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #fff;
+    background: #182430;
+    font-size: 0.9rem;
+    a {
+        color: #fff;
+    }
+}
+
+.about-box {
+    .max-width {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 900px;
+        width: 95%;
+    }
+    .about {
+        margin: 30px 0;
+        display: inline-block;
+        width: 33.3%;
+        border-right: 3px solid #354658;
+        text-align: center;
+        &:last-child {
+            border-right: none;
+        }
+        > div {
+            display: inline-block;
+            text-align: left;
+        }
+        p {
+            font-size: 22px;
+            font-weight: 600;
+            color: #13afc4;
+        }
+        ul {
+            margin-left: 25px;
+        }
+    }
+    .about-item {
+        margin: 15px 0;
+        >a {
+            position: relative;
+            font-size: 16px;
+            color: #fff;
+            transition: 0.3s;
+            &::after {
+                content: '';
+                position: absolute;
+                left: -15px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 6px;
+                height: 6px;
+                background: #fff;
+            }
+            &:hover {
+                color: #13afc4;
+                &::after {
+                    background: #13afc4;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .about-box {
+        .about {
+            p {
+                font-size: 20px;
+            }
+            ul {
+                margin-left: 20px;
+            }
+        }
+        .about-item {
+            >a {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px){
+    .about-box {
+        .max-width {
+            flex-direction: column;
+        }
+        .about {
+            margin: 0 auto;
+            padding: 25px 0;
+            width: 95%;
+            border-right: none;
+            border-bottom: 3px solid #354658;
+            text-align: left;
+            &:last-child {
+                border-bottom: none;
+            }
+            > div {
+                display: block;
+                width: 100%;
+            }
+            p {
+                margin: 0;
+                margin-bottom: 10px;
+                font-size: 20px;
+            }
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+        .about-item {
+            margin: 10px 0;
+            width: 100px;
+        }
+    }
+}

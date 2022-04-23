@@ -1,0 +1,139 @@
+@import "../sass/header";
+@import "../sass/banner";
+@import "../sass/marquee";
+@import "../sass/gamenav";
+@import "../sass/eventnav";
+@import "../sass/introduction";
+@import "../sass/footer";
+
+//消息頁
+@import "../sass/eventweb";
+//優惠頁
+@import "../sass/promotionweb";
+//遊戲頁
+@import "../sass/gamebanner";
+@import "../sass/game";
+//關於我們
+@import "../sass/about";
+//公告
+@import "../sass/bulletin";
+//返回至頂
+@import "../sass/backtop";
+
+body {
+    min-width: 360px;
+    background: #182430;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.content-text {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 1280px;
+    width: 95%;
+    color: #fff;
+    background: rgba(#fff, 0.2);
+    box-sizing: border-box;
+    .back-btn {
+        margin-bottom: 20px;
+        position: relative;
+        left: 0;
+        width: 125px;
+        transition: 0.3s;
+        a {
+            color: #fff;
+        }
+        img {
+            width: 100%;
+        }
+        p {
+            position: absolute;
+            top: 50%;
+            right: 16px;
+            transform: translateY(-50%);
+            margin: 0;
+            font-size: 1.2rem;
+
+            text-shadow: 3px 3px 3px#182430;
+        }
+        @media screen and (min-width: 1025px) {
+            &:hover {
+                left: -10px;
+            }
+        }
+    }
+    .title {
+        font-size: 2.5rem;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #13afc4;
+    }
+    .pic {
+        margin: 10px 0;
+        img {
+            width: 100%;
+        }
+    }
+    .desktop {
+        display: block;
+    }
+    .mobile {
+        display: none;
+    }
+    ol {
+        li {
+            margin: initial;
+            padding: initial;
+            list-style: initial;
+        }
+    }
+}
+.game-backimg {
+    width: 100%;
+    background: url(../images/back1920x850.jpg) center center fixed no-repeat;
+    background-size: cover;
+}
+.common-outbox {
+    background: url(../images/back1920x1080.jpg) center center fixed no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 1024px) {
+    .content-text {
+        .title {
+            font-size: 2rem;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .content-text {
+        .back-btn {
+            width: 80px;
+            p {
+                right: 10px;
+                margin: 0;
+                font-size: 0.8rem;
+            }
+        }
+        .title {
+            font-size: 1.6rem;
+        }
+        .desktop {
+            display: none;
+        }
+        .mobile {
+            display: block;
+        }
+    }
+}

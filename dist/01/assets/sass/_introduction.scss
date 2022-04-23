@@ -1,0 +1,126 @@
+.introduction-box {
+    position: relative;
+    width: 100%;
+    background: #354658;
+    svg{
+        stroke:#13afc4;
+    }
+    .max-width {
+        margin: 0 auto;
+        max-width: 1600px;
+        width: 95%;
+        height: 100%;
+    }
+    .flex-sb-c {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+        min-height: 600px;
+        img{
+            position: relative;
+            max-width: 450px;
+            width: 100%;
+            animation: girlUpDown 3s ease-in-out infinite;
+        }
+    }
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 75%;
+        min-height: 600px;
+        box-sizing: border-box;
+        .content-list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            svg {
+                width: 80px;
+                height: 80px;
+            }
+            .text {
+                margin-left: 10px;
+                width: calc(100% - 160px);
+                h2 {
+                    color: #13afc4;
+                }
+                p {
+                    color: #ddd;
+                    line-height: 1.5em;
+                }
+            }
+        }
+    }
+}
+@keyframes girlUpDown {
+    0% {
+        transform: translateY(-1%);
+    }
+    50% {
+        transform: translateY(1%);
+    }
+    100% {
+        transform: translateY(-1%);
+    }
+}
+@media screen and (max-width: 1280px){
+    .introduction-box {
+        .container {
+            width: 250px;
+        }
+        .content {
+            width: calc(100% - 250px);
+            .content-list {
+                .text {
+                    h2 {
+                        font-size: 1.3rem;
+                    }
+                    p {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1024px){
+    .introduction-box {
+        .flex-sb-c {
+            flex-direction: column-reverse
+        }
+        .container {
+            min-height: 350px;
+        }
+        .content {
+            width: 100%;
+            .content-list {
+                margin: 20px 0;
+                width: 350px;
+                svg {
+                    width: 60px;
+                    height: 60px;
+                }
+                .text {
+                    margin-left: 10px;
+                    width: calc(100% - 90px);
+                    h2 {
+                        color: #13afc4;
+                    }
+                    p {
+                        color: #ddd;
+                        line-height: 1.5em;
+                    }
+                }
+            }
+        }
+    }
+}

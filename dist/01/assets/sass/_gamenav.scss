@@ -1,0 +1,98 @@
+.gameNav-box {
+    a{
+        margin: 40px 15px;
+        display: block;
+        color: #ffffff;       
+    }
+    .card-nav {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        width: 1020px;
+    }
+    .card {
+        position: relative;
+        padding: 20px;
+        width: 225px;
+        height: 385px;
+        box-sizing: border-box;
+        transition: 0.3s;
+        h1 {
+            margin: 0;
+            text-shadow: 3px 3px 3px #182430;
+        }
+        p {
+            margin: 0.5rem 0;
+            font-weight: 600;
+            text-shadow: 3px 3px 3px #182430;
+        }
+        img {
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            border-top-right-radius: 1.5rem;
+            border-bottom-left-radius: 1.5rem;
+            box-shadow: 3px 3px 3px #222;
+        }
+        @media screen and (min-width: 1025px){
+            &:hover {
+                transform: translate(-5px, -5px);
+            }
+        }
+    }
+}
+@media screen and (max-width: 1024px){
+    .gameNav-box {
+        a{
+            margin: 40px 15px 0 15px;   
+        }
+        .card-nav {
+            margin-bottom: 40px;
+            width: 690px;
+        }
+        .card {
+            position: relative;
+            padding: 10px;
+            width: 200px;
+            height: 342px;
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .gameNav-box {
+        a{
+            margin: 40px 10px 0 10px;  
+        }
+        .card-nav {
+            width: 440px;
+        }
+    }
+}
+@media screen and (max-width: 480px){
+    .gameNav-box {
+        a{
+            margin: 20px 10px 0 10px;  
+        }
+        .card-nav {
+            margin-bottom: 20px;
+            width: 350px;
+        }
+        .card {
+            padding: 10px 5px;
+            width: 155px;
+            height: 265px;
+            h1 {
+                font-size: 1.4rem;
+            }
+            p {
+                font-size: 0.8rem;
+            }
+            img {
+                border-top-right-radius: 1rem;
+                border-bottom-left-radius: 1rem;
+            }
+        }
+    }
+}

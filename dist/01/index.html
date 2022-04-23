@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>導流站01 - 首頁</title>
+    <meta name="keywords" content="Document" />
+    <meta name="description" content="Document" />
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.0/slick.min.css">
+    <link rel="stylesheet" href="assets/css/main.min.css">
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <div class="header-box">
+                <div class="max-width flex-sb-c">
+                    <a class="header-logo" href="index.html">
+                        <img class="logo" src="assets/images/logo.png" alt="導流站01" />
+                    </a>
+                    <div>
+                        <div class="mobile-nav">
+                            <span class="nav-open" @click="openNav()">
+                                <svg class="ico">
+                                    <use xlink:href="#ico-nav"></use>
+                                </svg>
+                            </span>
+                            <span class="nav-close" @click="closeNav()">
+                                <svg class="ico">
+                                    <use xlink:href="#ico-close"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <ul class="navbar-nav">
+                            <li><a id="index" class="nav-link" href="index.html" title="首頁">首頁</a></li>
+                            <li><a id="sport" class="nav-link" href="sport.html" title="體育賽事">體育賽事</a></li>
+                            <li><a id="live" class="nav-link" href="live.html" title="真人娛樂">真人娛樂</a></li>
+                            <li><a id="lottery" class="nav-link" href="lottery.html" title="彩票遊戲">彩票遊戲</a></li>
+                            <li><a id="slot" class="nav-link" href="slot.html" title="電子遊藝">電子遊藝</a></li>
+                            <li><a id="event" class="nav-link" href="event.html" title="優惠活動">最新消息</a></li>
+                            <li><a id="promotion" class="nav-link" href="promotion.html" title="優惠活動">優惠活動</a></li>
+                            <li><a class="nav-link" href="index.html" title="註冊">註冊</a></li>
+                            <li><a class="nav-link" href="index.html" title="登入">登入</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div>
+            <div class="banner-box">
+                <div>
+                    <div class="banner">
+                        <a href="promotion.html">
+                            <div class="banner_img">
+                                <img class="desktop" src="assets/images/banner/banner1.jpg" alt="首儲5000送5000" />
+                                <img class="mobile" src="assets/images/banner/m/banner1.jpg" alt="首儲5000送5000" />
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="banner">
+                        <a href="promotion.html">
+                            <div class="banner_img">
+                                <img class="desktop" src="assets/images/banner/banner2.jpg" alt="歲末年終每日首次儲值大放送!" />
+                                <img class="mobile" src="assets/images/banner/m/banner2.jpg" alt="歲末年終每日首次儲值大放送!" />
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="marquee-box">
+            <div>
+                <div class="marquee-title"><a href="bulletin.html">公告</a></div>
+                <marquee>
+                    <a href="bulletin.html" class="new-item"><span class="ann ann1">最新</span>【重要公告】詐騙集團洗錢嫌疑</a>
+                    <a href="bulletin.html" class="new-item"><span class="ann ann1">最新</span>【重要公告】嚴禁不正當套利行為</a>
+                    <a href="bulletin.html" class="new-item"><span class="ann ann2">系統</span>【平台提領規則】</a>
+                </marquee>
+            </div>
+        </div>
+        <div>
+            <div class="gameNav-box">
+                <div class="card-nav">
+                    <a href="sport.html">
+                        <div class="card">
+                            <h1>體育賽事</h1>
+                            <p>各式各樣運動賽事</p>
+                            <img src="assets/images/sport.jpg" alt="導流站01-體育" />
+                        </div>
+                    </a>
+                    <a href="live.html">
+                        <div class="card">
+                            <h1>真人娛樂</h1>
+                            <p>頂級真人娛樂</p>
+                            <img src="assets/images/live.jpg" alt="導流站01-真人" />
+                        </div>
+                    </a>
+                    <a href="lottery.html">
+                        <div class="card">
+                            <h1>彩票遊戲</h1>
+                            <p>高額彩金人人有獎</p>
+                            <img src="assets/images/lottery.jpg" alt="導流站01-彩票" />
+                        </div>
+                    </a>
+                    <a href="slot.html">
+                        <div class="card">
+                            <h1>電子遊藝</h1>
+                            <p>遊戲擁用多種玩法</p>
+                            <img src="assets/images/slot.jpg" alt="導流站01-電子" />
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="eventnav-box">
+                <div class="max-width">
+                    <p class="event-title">最新消息</p>
+                    <div class="event">
+                        <div class="event-link">
+                            <a href="event/event1.html">
+                                <img src="assets/images/event/event1.jpg" alt="黑網是什麼?詐騙娛樂城最新總整理，分析娛樂城黑網有哪些">
+                            </a>
+                            <a href="event/event1.html">
+                                <h2>黑網是什麼?詐騙娛樂城最新總整理，分析娛樂城黑網有哪些</h2>
+                            </a>
+                            <div>玩娛樂城最怕遇到不出金，甚至是詐騙，有些黑網會以投資理財名義行騙，今天我們全部總整理出來!!玩娛樂城不管是優惠多寡還是好不好贏都不是重點！重點是要會出金!!</div>
+                            <a href="event/event1.html">
+                                <p>
+                                    <span>閱讀更多</span><svg class="ico">
+                                        <use xlink:href="#ico-narrow-right"></use>
+                                    </svg>
+                                </p>
+                            </a>
+                        </div>
+                        <div class="event-link">
+                            <a href="event/event2.html">
+                                <img src="assets/images/event/event2.jpg" alt="娛樂城推薦大公開！勝率最高的7大娛樂城！">
+                            </a>
+                            <a href="event/event2.html">
+                                <h2>娛樂城推薦大公開！勝率最高的7大娛樂城！</h2>
+                            </a>
+                            <div>
+                                相信行家們都知道，娛樂城跟本是個坑啊！一玩就停不下來，而且常常血本無歸。我們團隊累積多年經驗，分析娛樂城優惠及娛樂城推薦，將最好贏的分享給您!我們要跟大家分享最新2020年玩娛樂城的經驗，讓大家不要再白走冤枉路。
+                            </div>
+                            <a href="event/event2.html">
+                                <p>
+                                    <span>閱讀更多</span><svg class="ico">
+                                        <use xlink:href="#ico-narrow-right"></use>
+                                    </svg>
+                                </p>
+                            </a>
+                        </div>
+                        <div class="event-link">
+                            <a href="event/event3.html">
+                                <img src="assets/images/event/event3.jpg" alt="娛樂城優惠領取，五大娛樂城優惠，2020年最新優惠資訊">
+                            </a>
+                            <a href="event/event3.html">
+                                <h2>娛樂城優惠領取，五大娛樂城優惠，2020年最新優惠資訊</h2>
+                            </a>
+                            <div>
+                                如果有玩過娛樂城的人一定知道一件事情，就是娛樂城超多間，優惠也很多種類，但是卻不知道怎麼選擇？選擇一間對的娛樂城會讓你發大財，選擇錯的娛樂城只會讓你覺得人生好難。我們整理大家都推薦的優惠給您，讓你知道什麼是發財的感覺，基本上跟著我們前進，您離致富的終點就前進一大步。
+                            </div>
+                            <a href="event/event3.html">
+                                <p>
+                                    <span>閱讀更多</span><svg class="ico">
+                                        <use xlink:href="#ico-narrow-right"></use>
+                                    </svg>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="go-event">
+                        <a href="event.html">
+                            <img src="assets/images/btn-blue.png" alt="更多消息">
+                            <p>更多消息</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="introduction-box">
+                <div class="max-width flex-sb-c">
+                    <div class="container">
+                        <img src="assets/images/girl450x530.png" alt="美女圖">
+                    </div>
+                    <div class="content">
+                        <div class="content-list">
+                            <svg class="ico">
+                                <use xlink:href="#ico-badge-check"></use>
+                            </svg>
+                            <div class="text">
+                                <h2>最優質的線上娛樂城</h2>
+                                <p>具備「快速提款、多樣化遊戲、儲值方便」等基本服務，專注讓玩家得到最好的體驗！</p>
+                            </div>
+                        </div>
+                        <div class="content-list">
+                            <svg class="ico">
+                                <use xlink:href="#ico-badge-check"></use>
+                            </svg>
+                            <div class="text">
+                                <h2>儲值/取款好便利</h2>
+                                <p>提供多種儲值功能，4大便利超商(7-11、全家、萊爾富、OK)皆可以進行儲值繳費動作，亦提供「ATM轉帳」讓您輕鬆出/取款。</p>
+                            </div>
+                        </div>
+                        <div class="content-list">
+                            <svg class="ico">
+                                <use xlink:href="#ico-badge-check"></use>
+                            </svg>
+                            <div class="text">
+                                <h2>優惠活動</h2>
+                                <p>除了提供不同種類遊戲滿足不一樣的玩家外，更是針對每種遊戲打造不同內容的優惠活動與玩家一齊同樂，除了獎金豐厚的「免費體驗金、首儲優惠」外，更有屬於百家樂、體育、老虎機等不同的活動獎勵。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="content-list">
+                            <svg class="ico">
+                                <use xlink:href="#ico-badge-check"></use>
+                            </svg>
+                            <div class="text">
+                                <h2>安心首選</h2>
+                                <p>您的每一個交易歷程，娛樂城為你做好資安把關，我們都會提供最貼心的支援。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                    <symbol id="ico-badge-check" viewBox="0 0 24 24" fill="none">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z">
+                        </path>
+                    </symbol>
+                </svg>
+            </div>
+        </div>
+        <footer>
+            <div class="about-box">
+                <div class="max-width">
+                    <div class="about">
+                        <div>
+                            <p>遊戲大廳</p>
+                            <ul>
+                                <li class="about-item"><a href="sport.html">體育賽事</a></li>
+                                <li class="about-item"><a href="live.html">真人娛樂</a></li>
+                                <li class="about-item"><a href="lottery.html">彩票遊戲</a></li>
+                                <li class="about-item"><a href="slot.html">電子遊藝</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="about">
+                        <div>
+                            <p>消息中心</p>
+                            <ul>
+                                <li class="about-item"><a href="event.html">最新消息</a></li>
+                                <li class="about-item"><a href="promotion.html">優惠活動</a></li>
+                                <li class="about-item"><a href="bulletin.html">公告</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="about">
+                        <div>
+                            <p>關於我們</p>
+                            <ul>
+                                <li class="about-item"><a href="about.html">幫助中心</a></li>
+                                <li class="about-item"><a href="banking.html">存提款說明</a></li>
+                                <li class="about-item"><a href="affiliate.html">合營計劃</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="footer-box">
+                © {{Year}}
+                <a href="index.html">導流站01</a> All Rights Reserved TAI 版權所有
+            </div>
+        </footer>
+        <div class="back-top" style="display: none;">
+            <svg class="ico">
+                <use xlink:href="#ico-arrow-circle-up"></use>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none;" fill="none">
+                <symbol id="ico-arrow-circle-up" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M9 11l3-3m0 0l3 3m-3-3v8m0-13a9 9 0 110 18 9 9 0 010-18z"></path>
+                </symbol>
+            </svg>
+        </div>
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+                <symbol id="ico-nav" viewBox="0 0 512 512">
+                    <path d="m0 43l512 0 0 42-512 0z m0 384l512 0 0 42-512 0z m0-192l512 0 0 42-512 0z" />
+                </symbol>
+                <symbol id="ico-close" viewBox="0 0 512 512">
+                    <path
+                        d="m452 90l-30-30-166 166-166-166-30 30 166 166-166 166 30 30 166-166 166 166 30-30-166-166z" />
+                </symbol>
+                <symbol id="ico-right" viewBox="0 0 24 24" fill="none">
+                    <path d="M9 5l7 7-7 7"></path>
+                </symbol>
+                <symbol id="ico-left" viewBox="0 0 24 24" fill="none">
+                    <path d="M15 19l-7-7 7-7"></path>
+                </symbol>
+                <symbol id="ico-narrow-right" viewBox="0 0 24 24" fill="none">
+                    <path stroke-linecap="round" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                </symbol>
+            </svg>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.0/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.min.js"></script>
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/banner.js"></script>
+</body>
+
+</html>

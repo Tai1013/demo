@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>導流站01 - 幫助中心</title>
+    <meta name="keywords" content="導流站01" />
+    <meta name="description" content="導流站01" />
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="assets/css/main.min.css">
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <div class="header-box">
+                <div class="max-width flex-sb-c">
+                    <a class="header-logo" href="index.html">
+                        <img class="logo" src="assets/images/logo.png" alt="導流站01" />
+                    </a>
+                    <div>
+                        <div class="mobile-nav">
+                            <span class="nav-open" @click="openNav()">
+                                <svg class="ico">
+                                    <use xlink:href="#ico-nav"></use>
+                                </svg>
+                            </span>
+                            <span class="nav-close" @click="closeNav()">
+                                <svg class="ico">
+                                    <use xlink:href="#ico-close"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <ul class="navbar-nav">
+                            <li><a id="index" class="nav-link" href="index.html" title="首頁">首頁</a></li>
+                            <li><a id="sport" class="nav-link" href="sport.html" title="體育賽事">體育賽事</a></li>
+                            <li><a id="live" class="nav-link" href="live.html" title="真人娛樂">真人娛樂</a></li>
+                            <li><a id="lottery" class="nav-link" href="lottery.html" title="彩票遊戲">彩票遊戲</a></li>
+                            <li><a id="slot" class="nav-link" href="slot.html" title="電子遊藝">電子遊藝</a></li>
+                            <li><a id="event" class="nav-link" href="event.html" title="優惠活動">最新消息</a></li>
+                            <li><a id="promotion" class="nav-link" href="promotion.html" title="優惠活動">優惠活動</a></li>
+                            <li><a class="nav-link" href="index.html" title="註冊">註冊</a></li>
+                            <li><a class="nav-link" href="index.html" title="登入">登入</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="marquee-box">
+            <div>
+                <div class="marquee-title"><a href="bulletin.html">公告</a></div>
+                <marquee>
+                    <a href="bulletin.html" class="new-item"><span class="ann ann1">最新</span>【重要公告】詐騙集團洗錢嫌疑</a>
+                    <a href="bulletin.html" class="new-item"><span class="ann ann1">最新</span>【重要公告】嚴禁不正當套利行為</a>
+                    <a href="bulletin.html" class="new-item"><span class="ann ann2">系統</span>【平台提領規則】</a>
+                </marquee>
+            </div>
+        </div>
+        <div class="common-outbox">
+            <div class="aboutWebBox row">
+                <div class="about-left">
+                    <ul id="aboutNav" class="about-nav">
+                        <li class="nav-item" @click="aboutClick('aboutUs')"><a href="javascript:;">關於我們</a></li>
+                        <li class="nav-item" @click="aboutClick('cashier')"><a href="javascript:;">存款及提款問題</a></li>
+                        <li class="nav-item" @click="aboutClick('question')"><a href="javascript:;">常見問題</a></li>
+                        <li class="nav-item" @click="aboutClick('gameexp')"><a href="javascript:;">遊戲玩法</a></li>
+                        <li class="nav-item" @click="aboutClick('contact')"><a href="javascript:;">聯繫我們</a></li>
+                        <li class="nav-item" @click="aboutClick('terms')"><a href="javascript:;">規則與條款</a></li>
+                        <li class="nav-item" @click="aboutClick('privacy')"><a href="javascript:;">隱私權政策</a></li>
+                        <li class="nav-item" @click="aboutClick('rational')"><a href="javascript:;">理性博彩</a></li>
+                        <li class="nav-item" @click="aboutClick('disclaimer')"><a href="javascript:;">免責聲明</a></li>
+                        <li class="nav-item" @click="aboutClick('law')"><a href="javascript:;">法律鏈接</a></li>
+                    </ul>
+                </div>
+                <div class="about-right">
+                    <div class="about-content">
+                        <div id="aboutUs">
+                            <h2>關於我們</h2>
+                            <p>娛樂城正式註冊的網上博彩公司。成立至今，我們不但為客戶提供各種體育博彩以及多元化網上娛樂，更承諾配備最優質的投注方法，並輔以最先進的網路技術支援，獻上最佳的客戶服務和最優惠的支付方案。我們緻力於為廣大客戶提供豐富精彩的博彩活動，並極力以最優質的收費方式及豐富獎賞作回饋。
+                            </p>
+                            <p>娛樂城擁有並經營以下網站： <a href="index.html">導流站01</a>
+                                。所屬産品和服務獲得菲律賓政府PAGCOR頒發博彩牌照且受其監管。本公司的經營理念是通過嚮顧客提供最佳的體育博彩及多元化網上娛樂，以進一步拓展我們的業務。</p>
+                            <h3>1.誠信</h3>
+                            <p>作為國際專業的網上博彩遊戲客戶端運營企業，我們憑藉集合世界級的博彩資訊專家、豐富經驗的服務團隊、市場營銷專家、先進的軟硬件開發人員建立出娛樂城全面而完善的組織體係。我們承諾，為每一位客戶提供最及時、最安全、最準確的專業博彩數據，以及全方位的國際化服務。同時，娛樂城全部遊戲設計均採用世界最領先的軟件。我們更聘請了多位資深計算機專家給公司設計和提供軟硬件設施維護服務，以提供最佳的技術支援，確保客戶能於無時無刻享受到最優質的娛樂服務。
+                            </p>
+                            <h3>2.優質服務承諾</h3>
+                            <p>自成立至今，娛樂城緻力提供多元化的體育博彩及網上娛樂，讓客戶能每天24小時體驗到最精彩刺激的消閒享受，更藉以豐富獎賞，以回饋大衆對我們的支持及熱烈參與。</p>
+                            <p>我們恪守「顧客至上」的宗旨，以力求創新，不斷進步的精神，開拓多元化的娛樂業務。為此，我們聘用龐大的服務團隊，憑藉市場推廣、軟件開發、客戶服務、技術支援等優秀人員的不懈努力，為客戶提供專業的娛樂服務。我們承諾，置身於娛樂城遊戲平臺的客戶，不論參與的是體育娛樂，還是其他網上遊戲，也能享有極具價值的博彩回報。同時，每名客戶的資訊保密性對我們來說是最重要的。我們承諾，將繼續不遺餘力地堅持嚴格實行保密和隱私製度。
+                            </p>
+                            <h3>3.嚴格維護保密及安全性</h3>
+                            <p>根據規定，每位娛樂城用戶只能擁有一個相對應的帳號。為維護系統的完整性及公平原則，我們將會進行不定期的安全檢查。客戶的安全和遊戲的公正性乃娛樂城最重要的服務信念與宗旨。我們採用的是全球最先進的遊戲軟件設備，保證了軟件本身的公正性。同時，本公司更用上最先進的加密措施來保證遊戲的安全，並作24小時的後臺檢測和監控，確保我們的客戶可以在一個最保密、最安全的網路遊戲空間盡情玩樂。
+                            </p>
+                            <h3>4.公平遊戲</h3>
+                            <p>娛樂城緻力為玩家提供最公正的環境，在一個結合體育博彩及網路直播的娛樂平臺上盡情耍樂。娛樂城線上娛樂平臺乃現時亞洲市場最具權威及最先進的科技系統所提供。此外，所有參與現場遊戲的荷官均經過嚴格訓練及挑選，每局牌局均有主管負責監察，以確保遊戲的真實度。
+                            </p>
+                            <h3>5.付款</h3>
+                            <p>我們提供各種安全簡便的存款及提款選擇給客戶。我們一直主張客戶「瞭解我們的用戶(KYC)」和反洗錢(AML)的原則，並與第三方的財務管理當局合作，用以確保在最大程度上遵從相關的法律及法規。娛樂城希望所有的客戶能夠在一個安全愉快的環境中，享受本公司精心設計的産品和服務，並能夠從中獲利。我們歡迎客戶對我們提出任何意見。如有需要，請通過線上客服與我們聯繫。
+                            </p>
+                            <h3>6.誠信</h3>
+                            <p>娛樂城承諾提供「負責任博彩」，並確保每位客戶能與我們一起享受到博彩的樂趣。但是我們也瞭解到有小部分的人有時候未必能控製自己的投注行為，如遇相關問題，娛樂城會積極鼓勵這些用戶及時與我們聯絡，以便盡提供相關幫助。
+                            </p>
+                        </div>
+                        <div id="cashier">
+                            <h2>存款及提款問題</h2>
+                            <h3>1.我該如何存款？</h3>
+                            <p>非常簡單，您只需登入會員中心，在“存款平臺”頁面裏選擇適合您的存款方式，然後將所需資料填妥，按照提示一步步進行即可。有任何疑問可以參考幫助中心的“如何存款”</p>
+                            <h3>2.存款有收取什麼費用嗎？</h3>
+                            <p>完全免費，本公司將不收取任何費用。</p>
+                            <h3>3.最低存款額是多少？</h3>
+                            <p>最低存款額為15元美金 / 100港幣 / 100人民幣 或任何相等幣值。</p>
+                            <h3>4.我輸入銀行帳號、密碼等，但總是不能成功，為什麼？</h3>
+                            <p>可能是因為您沒有申請開通網上銀行，您可以登入銀行網頁，點擊“網上個人自助註冊”進行操作；也可直接前往櫃臺辦理。也有可能是其它原因造成，您可以緻電閣下銀行卡上註明的銀行全國統一客服電話詢問。
+                            </p>
+                            <h3>5.為什麼我進行在線充值後，真人遊戲帳號還沒有到款？</h3>
+                            <p>充值後，您的資金會首先充值到您的娛樂城帳號，請您充值後，登入會員中心，選擇“帳內轉帳”，將資金轉帳至真人娛樂城帳號即可。</p>
+                            <h3>6.我的銀行資料會否被泄露？</h3>
+                            <p>絕對不會，網上支付，安全是銀行的首要考慮因素。銀行採用128位SSL加密技術和嚴格的安全管理體係，確保客戶安全得到最完善的保障。 客戶的所有交易活動都是在銀行平臺進行。</p>
+                            <h3>7.關於提款的規則</h3>
+                            <ol>
+                                <li>請您登入會員中心，在“提款”頁面裏選擇適合您的提款方式，然後把提款錶格填妥即可。</li>
+                                <li>娛樂城為所有會員提供7X24小時無休提款服務。</li>
+                                <li>存款後必須經過全額投注，否則無法申請提款，請用戶按需求進行存款。</li>
+                                <li>我們提供7x24小時全天候提款服務，其他銀行的提款在成功申請後的24小時內到帳，並免收一切手續費用。</li>
+                                <li>所有的派單做了無來源痕跡處理，請放心使用。</li>
+                            </ol>
+                            <h3>8.提款需要收取手續費嗎？</h3>
+                            <p>完全免費，本公司將承擔相關費用。</p>
+                            <h3>9.如何取消提款？</h3>
+                            <p>您可以在您的提款未審核之前，提出撤銷申請。一般情況下10分鍾左右即會返回到您的總帳號。如在半小時內未到帳，則請立即聯繫在線客服，我們將很樂意為您效勞。</p>
+                        </div>
+                        <div id="question">
+                            <h2>常見問題</h2>
+                            <h3>我的帳號</h3>
+                            <p>1.怎樣修改我的用戶名或者密碼？</p>
+                            <div class="text-3">您不能更改您的用戶名。不過您可以在登入之後，在您的會員中心更改密碼。</div>
+                            <div class="text-3">步驟 1</div>
+                            <div class="text-3">請您在登入會員中心後點擊會員信息</div>
+                            <div class="text-3">步驟 2</div>
+                            <div class="text-3">請點擊“修改密碼”並在相應的位置填上你新的密碼</div>
+                            <p>2.我忘了用戶名或密碼該怎麼辦？</p>
+                            <div class="text-3">如果您忘記了您的用戶名，那麼您需要聯繫我們的客戶服務部門，然後我們可能會就有關你帳號的信息與您做一個安 全檢驗。</div>
+                            <div class="text-3">如果您忘記了您的密碼，您只需要點擊“忘記密碼
+                                ”這一欄來重設您的密碼。您將需要鍵入您的帳號、手機號碼及驗證碼。一旦您通過了驗證，您即可更改你的密碼。</div>
+                            <p>3.我怎麼編輯我的個人信息呢？</p>
+                            <div class="text-3">在您登入帳號後，您可以在“會員信息”網頁編輯您的個人信息。</div>
+                            <p>4.忘記安全問題怎麼辦？</p>
+                            <div class="text-3">如果您忘記了您的安全問題，那麼您需要直接聯繫我們24小時在線客服，然後我們可能會就有關你帳號的信息與您做一個安全檢驗。</div>
+                            <p>5.當我使用我的密碼登入時出現錯誤？</p>
+                            <div class="text-3">
+                                請檢查您是否正確輸入了密碼。密碼至少為6位的阿拉伯數字和英文字母，同時密碼是區分"大小寫"的。如果您仍然不能解決問題，請直接聯繫我們24小時在線客服。</div>
+                            <h3>轉帳</h3>
+                            <p>輸了帳號，密碼，驗證碼進行登入，然後選擇轉帳 或 會員中心的帳內轉帳</p>
+                            <div class="text-3">如果玩家要進行該項遊戲的話，首先一步就要進行帳內轉帳操作，把沖值了的本金通過帳內轉帳轉入到該遊戲的遊戲餘額裏面。</div>
+                            <h3>(一)一般常見問題</h3>
+                            <p>1.誰是娛樂城公司？</p>
+                            <div class="text-3">請參閱主頁"關於我們"。</div>
+                            <p>2.在貴公司投注是否安全？</p>
+                            <div class="text-3">本公司網頁絕對安全。我們決不泄漏客戶的個人資料給任何商業機構。
+                                此外，我們亦要求有交易往來的銀行，信用卡中轉代理等嚴格保密客戶的資料。所有的存款將視為貿易戶口，並不會交給其它的人士進行。</div>
+                            <p>3.網上博彩是否合法？</p>
+                            <div class="text-3">
+                                有的國家或地區當地法律禁止博彩，在這種情況下，請您務必遵守當地法律，如有任何疑問，請尋求當地法律部門的意見。本公司不能亦不會接受任何人士違犯當地法律所引緻之任何責任。
+                            </div>
+                            <p>4.我是否要交博彩稅？</p>
+                            <div class="text-3">在娛樂城進行投注完全免稅。</div>
+                            <p>5.在娛樂城進行投注是否有年齡限製？</p>
+                            <div class="text-3">是的，投注合法年齡必須年滿18歲。</div>
+                            <p>6.開戶是否要填寫真實姓名？</p>
+                            <div class="text-3">是的，基於安全理由，提款時財務部會按照註冊姓名進行審核，銀行姓名必須與註冊姓名相同方可提款，所以請您在開戶時必須填寫真實姓名。</div>
+                            <p>7.QQ與電子信箱是否必須填寫？</p>
+                            <div class="text-3">您可以選擇性填寫以上資料，我們強烈建議閣下填寫完整且正確的個人資料作為我們日後對會員進行發放優惠的聯繫</div>
+                            <h3>(二)存款常見問題</h3>
+                            <p>1.我該如何存款？</p>
+                            <div class="text-3">非常簡單，您只需在“我要存款”頁面裏選擇適合您的存款方式，然後將所需資料填妥，按照提示一步步進行即可。</div>
+                            <p>2.存款要收取什麼費用嗎？</p>
+                            <div class="text-3">完全免費，本公司將不收取任何費用。</div>
+                            <p>3.最低存款額是多少？</p>
+                            <div class="text-3">最低存款額依據金流規定。</div>
+                            <p>4.我輸入銀行帳號、密碼等，但總是不能成功，為什麼？</p>
+                            <div class="text-3">
+                                可能是因為您沒有申請開通網上銀行，您可以登入銀行網頁，點擊“網上個人自助註冊”進行操作；也可直接前往櫃臺辦理。也有可能是其它原因造成，您可以致電閣下銀行卡上註明的銀行全國統一客服電話詢問。
+                            </div>
+                            <p>5.如何開通網上銀行支付？</p>
+                            <div class="text-3">開通網上銀行支付大概有兩種方式；</div>
+                            <div class="text-3">方法一：網上申請</div>
+                            <div class="text-3">1）登入銀行網頁，點擊“網上個人自助註冊”；</div>
+                            <div class="text-3">2）仔細閱讀《網上自助註冊須知》後點擊“確認”；</div>
+                            <div class="text-3">3）在先簽署《銀行網上自助註冊個人客戶服務協議》；</div>
+                            <div class="text-3">4）按提示輸入個人信息，自定義網上支付密碼，點擊“提交”；</div>
+                            <div class="text-3">5）用戶自助註冊確認；</div>
+                            <div class="text-3">6）客戶自助註冊成功。</div>
+                            <div class="text-3">方法二：櫃臺申請</div>
+                            <div class="text-3">1）前往指定銀行的任何一個儲蓄所，提交網上銀行業務申請單；</div>
+                            <div class="text-3">2）申請24小時後開通服務。</div>
+                            <p>6.我的銀行資料會否被泄露？</p>
+                            <div class="text-3">絕對不會，網上支付，安全是銀行的首要考慮因素。支付公司與銀行只是支付合作關係。
+                                銀行採用128位SSL加密技術和嚴格的安全管理體係，確保客戶安全得到最完善的保障。 客戶的所有交易活動都是在銀行極其嚴密的情況下進行。</div>
+                            <p>7.用哪一間銀行存錢到遊戲帳上比較方便？</p>
+                            <div class="text-3">視乎閣下個人的方便。</div>
+                            <p>8.輸入密碼一欄顯示的是一個小叉，輸不進去，該怎麼辦呢？</p>
+                            <div class="text-3">如果在申請或支付過程中出現小叉或者不能正常顯示的情況，請按下述方式處理：</div>
+                            <div class="text-3">1）查看IE工具中的“Internet選項”，在常規中刪除Cookies,暫存檔案，在安全中選擇自定義級別，把“ActiveX控製項和插件”中的
+                                “下載已簽名的 ActiveX 控製項” 和 “運行 ActiveX 控製項和插件”設置成-啓用， 確定生效。重新下訂單在銀行付款頁面會提示您安裝插件，請安裝即可支付。
+                            </div>
+                            <div class="text-3">
+                                2）如果上述操作均未解決問題，請把Internet區域的安全級別設置成“默認級別”，同時請確認不要使用“3721上網助手，GOOGLE工具欄”等控製項遮罩工具
+                                阻止控製項安裝，如已安裝類似工具建議您卸載。</div>
+                            <p>9.為什麼使用網上支付時網銀提示密碼錯誤？</p>
+                            <div class="text-3">我們相信這是因為您還未開通網上銀行的關係。在使用網上支付前，必須先開通個人網上銀行；如果您已經確認開通網上銀行
+                                請您仔細回憶密碼是否錯誤。使用網上支付時，輸入的密碼並非ATM取款密碼，而是網上銀行的專用支付密碼。如果您是在銀行營業網點申請網上銀行，
+                                則必須在申請24小時後，才可以進行網上支付。</div>
+                            <h3>(三)提款常見問題</h3>
+                            <p>1.我該如何提款？</p>
+                            <div class="text-3">非常簡單，您只需在“申請提款”頁面裏選擇適合您的提款方式，然後把提款錶格填妥即可。</div>
+                            <p>2.提款需要多久？</p>
+                            <div class="text-3">7/24全年無休提款服務,客戶提款申請,將會在審核無誤後2小時內辦理。</div>
+                            <p>3.提款需要收取手續費嗎？</p>
+                            <div class="text-3">完全免費，本公司將不收取任何費用。</div>
+                            <p>4.提款有上/下限嗎？</p>
+                            <div class="text-3">提款上限最高為19萬人民幣，最低提款額為10英鎊 / 15元美金 / 100港幣 / 100人民幣或任何相等幣值</div>
+                            <h3>(四)技術常見問題</h3>
+                            <p>1.進行遊戲對系統配置有要求麼？</p>
+                            <div class="text-3">我們設計的網頁將會提供新一代瀏覽器服務，提供更好的特點，讓您能夠享有更好的投注樂趣。我們希望您能使用Internet Explorer
+                                6.0或者是以上的瀏覽器版本。</div>
+                            <p>2.為什麼系統會將我登出？</p>
+                            <div class="text-3">
+                                這是網頁的保安程式之一，當您在一定的時間內沒有使用有關的網頁，那麼有關的網頁將不再活躍，並且無法瀏覽最新的頁面，在此您必需重新登入；若您重新登入後情況仍然一樣請立即聯繫我們。
+                            </div>
+                            <h3>(五)體育投注險球的定義</h3>
+                            <p>自由球(攻方在守方禁區附近的自由球)</p>
+                            <p>角球 /擲入球(攻方靠近守方禁區的擲入球)</p>
+                            <p>A隊嚮B隊禁區附近進攻(或是B隊在A隊的禁區附近進攻)</p>
+                            <p>投注提交時如果遇到危險球的情況，危險期一旦通過，並且期間沒有任何顯著會影響賽事狀態的情況，注單就會被確認,否則將會取消注單。</p>
+                            <p>如果危險期內遭到進球或其他影響賽事狀況的情況，比如: 紅卡，所有確認注單將會被取消。</p>
+                            <p>在滾球投注中，本公司需強調以下條款，確保投注是按照正確的時間、賠率和在正確的情況下進行:</p>
+                            <p>1）比賽賽果和入球時間以本公司網站公佈的為準，我們不參考任何其它官方網站，體育網站，或"即時比分"等網站公佈的賽果或入球時間。</p>
+                            <p>2）如果有合理的理由懷疑投注是在比賽時某個事件發生後才提交的，本公司將保留取消此注單且不需提供任何理由和證明的權利。</p>
+                            <p>如果出現網站無法更新比分、賠率或盤口的情況，本公司保留權利取消所有未確認且處理中的注單。</p>
+                        </div>
+                        <div id="gameexp">
+                            <h2>遊戲玩法</h2>
+                            <h3>真人百家樂</h3>
+                            <p>本遊戲採用8副牌來進行，遊戲牌數合計416張，9點或以下的牌按面值點數，A牌是1點，10點及公仔牌則是0點計算
+                                閒丶莊家各先派兩張牌，以閒家先發，如第一輪末分出勝負需再按牌例發第二輪的牌，最多每方３張牌，誰最接近9點即為勝方，而相同點數即和局。</p>
+                            <p>百家樂博牌規例</p>
+                            <table width="95%" cellspacing="0" cellpadding="0" class="table1">
+                                <tbody>
+                                    <tr class="tr1">
+                                        <th height="50" align="center">閒兩牌合計點數</th>
+                                        <th align="center">(閒家)</th>
+                                        <th align="center">莊兩牌合計點數</th>
+                                        <th align="center">(莊家)</th>
+                                    </tr>
+                                    <tr>
+                                        <td height="30" align="center">0</td>
+                                        <td align="center">必須博牌</td>
+                                        <td align="center">0</td>
+                                        <td>&nbsp;必須博牌</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30" align="center">1</td>
+                                        <td align="center">必須博牌</td>
+                                        <td align="center">1</td>
+                                        <td>&nbsp;必須博牌</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30" align="center">2</td>
+                                        <td align="center">必須博牌</td>
+                                        <td align="center">2</td>
+                                        <td>&nbsp;必須博牌</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30" align="center">3</td>
+                                        <td align="center">必須博牌</td>
+                                        <td align="center">3</td>
+                                        <td>&nbsp;若閒家博得第三張牌是8點, 毋須博牌</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30" align="center">4</td>
+                                        <td align="center">必須博牌</td>
+                                        <td align="center">4</td>
+                                        <td>&nbsp;若閒家博得第三張牌是*1,8,9 或10點, 莊家毋須博牌</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30" align="center">5</td>
+                                        <td align="center">必須博牌</td>
+                                        <td align="center">5</td>
+                                        <td>&nbsp;若閒家博得第三張牌是*1,2,3,8,9 或10點, 莊家毋須博牌</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30" align="center">6</td>
+                                        <td align="center">不得博牌</td>
+                                        <td align="center">6</td>
+                                        <td>&nbsp;若閒家博得第三張牌是*6 或 7點, 莊家必須博牌</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30" align="center">7</td>
+                                        <td align="center">不得博牌</td>
+                                        <td align="center">7</td>
+                                        <td>&nbsp;不得博牌</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30" align="center">8</td>
+                                        <td align="center">例牌，即定勝負</td>
+                                        <td align="center">8</td>
+                                        <td>&nbsp;例牌，即定勝負</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30" align="center">9</td>
+                                        <td align="center">例牌，即定勝負</td>
+                                        <td align="center">9</td>
+                                        <td>&nbsp;例牌，即定勝負</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <ul>
+                                <li>莊閒任何一方兩牌合計8丶9點為例牌,對方不須博牌，即定勝負。</li>
+                                <li>莊閒兩方各得6丶7點，即和局。</li>
+                                <li>選擇押莊贏 1賠0.95 抽水5%</li>
+                                <li>選擇押閒贏 1賠1 免抽水</li>
+                                <li>選擇押和局 1賠8 免抽水</li>
+                                <li>選擇押莊對子 1 賠 11 免抽水</li>
+                                <li>選擇押閒對子 1 賠 11 免抽水</li>
+                            </ul>
+                            <h3>超級百家樂</h3>
+                            <p>超級百家樂投注方式與傳統百家樂無異, 對子投注的結算方式亦與對子百家樂一樣。不同的是超級百家樂增加了六項特別投注:</p>
+                            <table width="95%" cellspacing="0" cellpadding="0" class="table1">
+                                <tbody>
+                                    <tr class="tr1">
+                                        <th height="50" align="center">投注種類</th>
+                                        <th align="center">說明</th>
+                                        <th align="center">賠率(不連本金)</th>
+                                    </tr>
+                                    <tr>
+                                        <td height="30" align="center">大</td>
+                                        <td>&nbsp;總數派5或6張牌</td>
+                                        <td align="center">1：0.54</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30" align="center">小</td>
+                                        <td>&nbsp;總數派4張牌. (不用搏牌)</td>
+                                        <td align="center">1：1.50</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30" align="center">莊單</td>
+                                        <td>&nbsp;莊最後點數為單. (1,3,5,7,9)</td>
+                                        <td align="center">1：0.94</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30" align="center">莊雙</td>
+                                        <td>&nbsp;莊最後點數為雙. (0,2,4,6,8)</td>
+                                        <td align="center">1：0.94</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30" align="center">閒單</td>
+                                        <td>&nbsp;閒最後點數為單. (1,3,5,7,9)</td>
+                                        <td align="center">1：0.96</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30" align="center">閒雙</td>
+                                        <td>&nbsp;閒最後點數為雙. (0,2,4,6,8)</td>
+                                        <td align="center">1：0.90</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <h3>骰寶</h3>
+                            <p>1. 骰寶遊戲採用三粒骰子, 客戶可在投注時間內下注投注項目</p>
+                            <p>2. 投注時間結束後, 三粒骰子在自動振動骰盅內進行滾動. 當振動時間完畢後, 靜止的三粒骰子朝上一方的點數便是該局的結果</p>
+                            <p>3. 因斜骰或疊骰...等因素令結果不能清析判定. 監場人員有權把該次結果設為無效. 該局投注會按重新搖骰後的清析結果計算</p>
+                            <p>4. 當遊戲結果出現圍骰, 投注（大／小 ）或（單／雙）項目均作為輸計算</p>
+                            <table width="95%" cellspacing="0" cellpadding="0" class="table1">
+                                <tbody>
+                                    <tr class="tr1">
+                                        <th height="50" align="center">投注種類</th>
+                                        <th align="center">說明</th>
+                                        <th align="center">賠率(不連本金)</th>
+                                    </tr>
+                                    <tr>
+                                        <td height="30" colspan="3" align="center">點數總和</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30" align="center">大</td>
+                                        <td>&nbsp;總點數為11至17</td>
+                                        <td align="center">1:1</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30" align="center">小</td>
+                                        <td>&nbsp;總點數為4至10</td>
+                                        <td align="center">1:1</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30" align="center">單</td>
+                                        <td>&nbsp;總點數為5, 7, 9, 11, 13, 15, 17</td>
+                                        <td align="center">1:1</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30" align="center">雙</td>
+                                        <td>&nbsp;總點數為4, 6, 8, 10, 12, 14, 16</td>
+                                        <td align="center">1:1</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30" align="center">4或17點</td>
+                                        <td>&nbsp;總和為4或17點</td>
+                                        <td align="center">1:50</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30" align="center">5或16點</td>
+                                        <td>&nbsp;總和為5或16點</td>
+                                        <td align="center">1:18</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30" align="center">6或15點</td>
+                                        <td>&nbsp;總和為6或15點</td>
+                                        <td align="center">1:14</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30" align="center">7或14點</td>
+                                        <td>&nbsp;總和為7或14點</td>
+                                        <td align="center">1:12</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30" align="center">8或13點</td>
+                                        <td>&nbsp;總和為8或13點</td>
+                                        <td align="center">1:8</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30" align="center">9, 10, 11或12點</td>
+                                        <td>&nbsp;總和為9, 10, 11或12點</td>
+                                        <td align="center">1:6</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30" colspan="3" align="center">組合</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30" align="center">圍骰</td>
+                                        <td>&nbsp;投注出現指定的三顆相同骰子</td>
+                                        <td align="center">1:150</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30" align="center">全圍</td>
+                                        <td>&nbsp;投注出現任何的三顆相同骰子</td>
+                                        <td align="center">1:24</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30" align="center">兩顆骰組合(對子)</td>
+                                        <td>&nbsp;投注的兩個點數(雙骰)必須在結果內出現</td>
+                                        <td align="center">1:8</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30" align="center">兩顆骰組合</td>
+                                        <td>&nbsp;投注的兩個點數必須在結果內出現</td>
+                                        <td align="center">1:5</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30" align="center">四中三</td>
+                                        <td>&nbsp;投注四個點數必須在結果內出現其中三個</td>
+                                        <td align="center">1:7</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="3" align="center">單骰點數</td>
+                                        <td height="30">&nbsp;投注單點出現一次</td>
+                                        <td align="center">1:1</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30">&nbsp;投注單點出現兩次</td>
+                                        <td align="center">1:2</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30">&nbsp;投注單點出現三次</td>
+                                        <td align="center">1:3</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <h3>亞洲輪盤</h3>
+                            <p>1.本遊戲是採用歐式輪盤，歐式輪盤上共有37個小方格（0至36）</p>
+                            <p>2.輪盤會順時針轉動，在投注時間結束後，小球會嚮逆時針方 嚮彈出並於輪盤上滾動，最後會停在其中一個小方格內</p>
+                            <p>3.遊戲目的是預測小球會停留在那一個顔色，號碼或投注號碼組合上</p>
+                            <p>押注方式：</p>
+                            <p>在賭桌上有個下注的錶格是以每豎排三個數字共有12排1~36依序排列，數字的顔色即和輪盤相同。輪盤壓注方式有：直接押注號碼丶兩碼押注丶豎排三碼押注丶方形四碼押注丶二豎排六碼押注丶十二碼押注丶直線押注丶紅色/黑色押注丶奇數/偶數押注和大/小範圍押注等。關於押注的方式並沒
+                                有硬性規定，所以您可以自由選擇多種押注。在電腦屏幕的右上方我們隨時 會將上一局遊戲的號碼秀出來，通常若有號碼久久都末出現，那接下來要出
+                                的概率將會很大。(下列例子賠率不連本金計算)
+                                自動加注功能：在輪盤遊戲中,不同的投注項目也有其獨立的投注下限.(詳情請查詢"單項限紅").為方便客戶投注,低於單項投注下限的投注金額將會自動增加,從而達到該單項投注項目的下限標準.
+                                例:在(上限:20000／下限:50)的輪盤遊戲中,"單／雙"項目的投注下限是$500,當客戶押$100(低於$500)在"單／雙"項目的時候,由於投注金額低於"單／雙"項目的投注下限,所以遊戲系統便會自動將投注金額增加到$500.
+                            </p>
+                            <table width="95%" cellspacing="0" cellpadding="0" class="table1">
+                                <tbody>
+                                    <tr class="tr1">
+                                        <th height="50">投注種類</th>
+                                        <th align="center">賠率(不連本金)</th>
+                                    </tr>
+                                    <tr>
+                                        <td height="30">&nbsp;直接押注號碼（孤丁）</td>
+                                        <td align="center">1:35</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30">&nbsp;兩碼押注（兩門騎線）</td>
+                                        <td align="center">1:17</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30">&nbsp;豎排三碼押注（三門一列）</td>
+                                        <td align="center">1:8</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30">&nbsp;方形四碼押注（四門騎線）</td>
+                                        <td align="center">1:5</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30">&nbsp;二豎排六碼押注</td>
+                                        <td align="center">1:2</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30">&nbsp;12碼押注</td>
+                                        <td align="center">1:35</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30">&nbsp;押注0</td>
+                                        <td align="center">1:2</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30">&nbsp;直線押注</td>
+                                        <td align="center">1:12</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30">&nbsp;一門 / 二門 / 三門 / 四門押注</td>
+                                        <td rowspan="3" align="center">1:3</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30">&nbsp;小單 / 小雙 / 大單 / 大雙押注</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30">&nbsp;大紅 / 小紅 / 大黑 / 小黑押注</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30">&nbsp;紅色或黑色押注</td>
+                                        <td rowspan="3" align="center">1:1</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30">&nbsp;大小範圍押注</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30">&nbsp;奇數偶數押注</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <h3>瘋狂21點</h3>
+                            <p>遊戲目標</p>
+                            <div class="text-3">
+                                瘋狂21點與傳統的21點玩法相似，玩家想要贏得牌局，手上的牌點數必須比莊家的牌點數大，盡量接近21點但不可超過21點。遊戲不需理會其他玩家的牌點數，玩家只與莊家的牌點數作對抗，所有玩家的牌均是牌面嚮上的。
+                                本遊戲一副牌共有8副牌合共416張牌，瘋狂21點玩法簡單，只需按上述的遊戲目標，跟據遊戲指示玩家作出決定便成了。</div>
+                            <p>詞匯解釋</p>
+                            <div class="text-3">Blackjack：簡稱BJ，一張A牌及一張10點的牌所組成的21點，初始注金按1賠1.5派彩。</div>
+                            <div class="text-3">21點：多於兩張牌所組成的21點。</div>
+                            <div class="text-3">爆牌：手上所有牌點數加起來超過21點稱為爆牌。玩家會即時輸掉所有初始及加注的金額。</div>
+                            <div class="text-3">7龍：玩家一局手上有7張但非爆牌的牌局，如莊家非BJ不論玩家手上的牌點數是否大於莊家，初始注金按1賠1派彩。</div>
+                            <div class="text-3">和局：玩家與莊家同時獲得BJ或玩家與莊家同時非BJ但點數相同時，該局視為和局，初始注金及加注金退回。</div>
+                            <div class="text-3">硬牌：該手牌沒有A牌, 或A牌只能按1點計算</div>
+                            <div class="text-3">軟牌：該手牌A牌可按1點或11點計算</div>
+                            <p>紙牌點數</p>
+                            <div class="text-3">2至10點按牌面值計算。</div>
+                            <div class="text-3">J, Q, K按10點計算。</div>
+                            <div class="text-3">A作1或11點計算，若加上11點後成為爆牌，則按1點計算。</div>
+                            <p>玩家選擇項目</p>
+                            <div class="text-3">初始下注：每局發牌前的投注項目，玩家必須對該牌局，根據玩家的喜好及賭桌可接受的投注上下限內，作出相應的投注金額。</div>
+                            <div class="text-3">對子：每局發牌前的投注項目，玩家首兩張牌是對子可按1賠11派彩，10, J, Q及K視為不同牌。</div>
+                            <div class="text-3">要牌：玩家選擇要下一張牌。</div>
+                            <div class="text-3">不要牌：玩家選擇不再要牌，以當時的手牌點數與莊家對抗。</div>
+                            <div class="text-3">保險：莊家首張牌面是A時，用初始注金的一半投注保險，莊家是BJ時，保險注金一賠二。</div>
+                            <div class="text-3">投降：投降該手牌輸一半初始注金，另一半退回玩家。</div>
+                            <div class="text-3">加注：發了首兩張牌後可以把初始注金增加一倍作投注，但只能要一張牌，所有注金一賠一。</div>
+                            <div class="text-3">1賠1：如玩家該局牌是BJ而莊家的牌面是A的話，可以選擇注金即時以1倍派彩，即放棄手牌BJ獲得1.5倍派彩的權利。</div>
+                            <p>莊家要牌規則</p>
+                            <div class="text-3">
+                                任何情況下莊家不可自行選擇是否要牌，只能根據21點牌例而強製性是否要牌，瘋狂21點採用莊家牌點數等於或小於16點必須要牌，牌點數等於或大於17點(包括軟17點或硬17點)均不得博牌。
+                            </div>
+                            <p>遊戲規則簡介</p>
+                            <div class="text-3">玩家除了對一般的牌局下注之外，還可以投注【對子】。</div>
+                            <div class="text-3">玩家會派發兩張牌面嚮上的牌，莊家會派發一張牌面嚮上的牌:</div>
+                            <div class="text-3">
+                                玩家在獲得初始牌之後，可以透過要牌選擇決定自己牌局，此時發出的所有牌會放在真實賭桌的公牌區內。所有要牌的玩家將共享同一張公共牌，組成自己的一手牌與莊家對抗。不用等待其他玩家的選擇。直接選擇是否要下一張牌。選擇停牌後的下一張牌會發給莊家，莊家必須按牌例是否繼續博牌直至牌局完結。
+                            </div>
+                            <p>公牌使用</p>
+                            <div class="text-3">
+                                玩家是獨立與莊家的手牌對抗，當荷官派了第一輪牌後，即莊家一張牌，五位玩家各兩張牌後，之後所派的全是公牌，公牌的使用規則是當玩家選擇不要牌後，公牌會按序派給莊家，莊家按牌例要牌或不要牌直至每位玩家最後分出該局結果為止。
+                            </div>
+                            <h3>超級21點</h3>
+                            <p>遊戲目標</p>
+                            <div class="text-3">
+                                超級21點的遊戲目標，玩家想要贏得牌局，手上的牌點數必須比莊家的牌點數大，盡量接近21點但不可超過21點。遊戲不需理會其他玩家的牌點數，玩家只與莊家的牌點數作對抗，所有玩家的牌均是牌面嚮上的。
+                            </div>
+                            <div class="text-3">本遊戲一副牌共有8副牌合共416張牌，超級21點玩法簡單，只需按上述的遊戲目標，跟據遊戲指示玩家作出決定便成了。</div>
+                            <p>詞匯解釋</p>
+                            <div class="text-3">Blackjack 簡稱BJ，一張A牌及一張10點的牌所組成的21點，初始注金按1賠1.5派彩。</div>
+                            <div class="text-3">21點 多於兩張牌所組成的21點。</div>
+                            <div class="text-3">爆牌 手上所有牌點數加起來超過21點稱為爆牌。玩家會即時輸掉所有初始及加注的金額。</div>
+                            <div class="text-3">和局 玩家與莊家同時獲得BJ或玩家與莊家同時非BJ但點數相同時，該局視為和局，初始注金及加注金退回。</div>
+                            <div class="text-3">硬牌 該手牌沒有A牌, 或A牌只能按1點計算。</div>
+                            <div class="text-3">軟牌 該手牌A牌可按1點或11點計算。</div>
+                            <p>紙牌點數</p>
+                            <div class="text-3">2至10點按牌面值計算。</div>
+                            <div class="text-3">J, Q, K按10點計算。</div>
+                            <div class="text-3">A作1或11點計算，若加上11點後成為爆牌，則按1點計算。</div>
+                            <p>玩家選擇項目</p>
+                            <div class="text-3">初始下注 每局發牌前的投注項目，玩家必須對該牌局，根據玩家的喜好及賭桌可接受的投注上下限內，作出相應的投注金額。</div>
+                            <div class="text-3">對子 每局發牌前的投注項目，玩家首兩張牌是對子可按1賠11派彩，10, J, Q及K視為不同牌。</div>
+                            <div class="text-3">要牌 玩家選擇要下一張牌。</div>
+                            <div class="text-3">不要牌 玩家選擇不再要牌，以當時的手牌點數與莊家對抗。</div>
+                            <div class="text-3">保險 莊家首張牌面是A時，用初始注金的一半投注保險，莊家是BJ時，保險注金一賠二。</div>
+                            <div class="text-3">分牌 玩家初始兩張牌面值相同可進行分牌，兩張牌將分開為兩手牌，分牌的投注金相等於初始下注金額。</div>
+                            <div class="text-3">本遊戲同一局每手牌不接受再分牌。如玩家分牌後任何一手牌獲得10點+A牌組合的手牌, 並不以Blackjack計算,
+                                只按普通21點1:1賠付玩家。</div>
+                            <div class="text-3">加注 發了首兩張牌後可以把初始注金增加一倍作投注，但只能要一張牌，所有注金一賠一。</div>
+                            <p>莊家要牌規則</p>
+                            <div class="text-3">
+                                任何情況下莊家不可自行選擇是否要牌，只能根據21點牌例而強製性是否要牌，超級21點採用莊家牌點數等於或小於16點必須要牌，牌點數等於或大於17點(包括軟17點或硬17點)
+                                均不得博牌。</div>
+                            <p>遊戲規則簡介</p>
+                            <div class="text-3">玩家除了對一般的牌局下注之外，還可以投注【對子】。</div>
+                            <div class="text-3">玩家會派發兩張牌面嚮上的牌，莊家會派發一張牌面嚮上的牌和一張牌面嚮下的牌。</div>
+                            <div class="text-3">玩家在獲得初始牌之後，可以透過要牌選擇決定自己牌局。</div>
+                            <div class="text-3">玩家需要順著座位由小至大, 由右至左, 依照次序通過要牌的選擇來決定自己牌局。直至該局最後玩家叫牌完成或停止要牌後, 莊家會翻開牌面嚮下的牌,
+                                然後莊家必須按牌例是否繼續博牌直至牌局完結。 在座玩家及場外玩家 。</div>
+                            <div class="text-3">本玩家進入遊戲可按提示點擊“入座”成為在坐玩家，在座玩家可在遊戲中作出選擇及決定。</div>
+                            <div class="text-3">不論遊戲賭桌有空位還是滿座，玩家仍可進入遊戲作為“場外玩家” ，場外玩家不能對牌局作出決定，只能依照在座玩家的決定進行遊戲。</div>
+                        </div>
+                        <div id="contact">
+                            <h2>聯繫我們</h2>
+                            <p>我們的客服專員會用英語、中文回答您的有關付款或者其它問題。</p>
+                            <p>線上客服：<a href="index.html">線上客服</a></p>
+                        </div>
+                        <div id="terms">
+                            <h2>規則與條款</h2>
+                            <h3>該頁面內容闡明了客戶訪問和使用娛樂城網站服務的權限。</h3>
+                            <p>請您在接受我們服務前仔細並完整閱讀該協議。請注意該協議在您與娛樂城之間形成一個具有法律約束力的協議。</p>
+                            <p>除了該協議裏的規則與條款外，還請查看我們的隱私權保護規則，其它相關博彩和網站定期更新的促銷規則條款，或者我們定期告知您的其它政策條款等等。</p>
+                            <p>當您在註冊帳號時點擊下面的“提交”以及使用下面指定的軟件時，就錶明您同意該協議內列明的規則條款，隱私權保護規則，及其它相關博彩和網站定期更新的促銷規則條款等。並且承諾一旦違背此協議將會對您産生如下後果（會員資格被剝奪、帳號凍結、資金沒收或其它相關的法律訴訟）。詳細信息已在下面列明；
+                            </p>
+                            <p>娛樂城網站所有權歸屬娛樂城有限公司，網站所提供的所有産品和服務皆由菲律賓政府博彩會員（PAGCO）所授權和監管，其訪問及使用權限須遵循下面的條款；</p>
+                            <p>1. 一旦使用娛樂城提供的服務，代錶您認同本公司相關的條款與規則，將立即産生相應的法律效力。如果您不認同本公司相關的條款與規則，請勿訪問，和使用我們的網站及軟件。</p>
+                            <p>2.
+                                娛樂城將會定期更新相關的規則條款，因此請您定期留意查看。規則條款更新後，您仍繼續使用我們網站服務代錶您認同此條款。如果您不認同條款的更新，請停用我們的網站服務。如果該條款與其它局部特殊條款産生分歧，將適用後者。
+                            </p>
+                            <p>3.
+                                您同意在享用娛樂城網站服務時遵紀守法，不侵犯他人權限，或不幹擾或影響他人的娛樂體驗。我們不允許任何形式的騷擾，傳播淫穢/帶攻擊性內容，幹擾娛樂日常溝通流程，或對他人造成不良影響的行為。
+                            </p>
+                            <h3>術語定義</h3>
+                            <ul>
+                                <li>“遊戲”指網站上提供的網上娛樂系統。</li>
+                                <li>"有效流水"
+                                    指投注中産生輸贏部分,體育投注中,輸贏額度,例如1,體育投注2000元,賠率為1.10,贏200,此單有效流水為200;例如2,體育投注2000元,賠率為1.10,輸2000,此單有效流水為200。
+                                </li>
+                                <li>“博彩”包括"體育"、"娛樂場"、"撲克"以及所有其它相關的服務和在線娛樂活動。</li>
+                                <li>“設備”指所有應用設備，包括所有應用於進入網上服務的個人電腦、筆記本、手機、個人電子設備、PDA電話等等。</li>
+                                <li>“信息”指網站提供的信息，包括賽果，統計數字，體育數據，賠率等等。</li>
+                                <li>“軟件”指所有電腦程序，數據文件或其他任何要求安裝在您的設備，便於進入網上服務需安裝在電腦上的物件。</li>
+                                <li>“服務”指軟件和遊戲。</li>
+                            </ul>
+                            <p>我們的規則條款列明娛樂城認可客戶使用娛樂城網站軟件，使用設備獲取網站上信息，參與在線遊戲的個人權利（不可轉讓也並非專屬）。</p>
+                            <p>您認同您訪問的我們網站軟件産權屬娛樂城和/或我們執照頒發人，此軟件僅限於您的個人用途，而您對此不享有任何權利。</p>
+                            <p>另請注意：我們網站軟件不適用於以下人群：</p>
+                            <ul>
+                                <li>年齡在18周歲以下。</li>
+                                <li>在所屬司法中，低於其合法年齡。</li>
+                                <li>當地司法規定，訪問我們網站屬不合法行為。娛樂城無法辨認客戶行為在當地司法是否屬合法，客戶本人有責任自行甄別。</li>
+                            </ul>
+                            <p>娛樂城對所提供信息是否正確、完整、更新不承擔責任（比如，網站所提供的賽果）。本公司對走地投注中的實時賽果、統計數據及中場賽果的準確度不承擔責任。</p>
+                            <p>為防止不符合法定年齡的人群使用我們的服務，娛樂城保留隨時要求客戶提供年齡憑證的權利。如果您未達上我們的年齡標準或我們懷疑您低於我們的年齡標準，我們有權利長期/短期暫停/取消您帳號，製止您參與我們的服務。
+                            </p>
+                            <p>軟件的編碼，組織結構屬我司版權，商業機密，知識産權及其它權利。您不得：</p>
+                            <ul>
+                                <li>複製，發行，出版，反嚮工程，反嚮編譯，反匯編，修改，或翻譯該軟件或試圖獲取原始碼製作派生文件，或對軟件進行銷售，派發，頒發從屬證書，轉讓，分發或出租</li>
+                                <li>通過互聯網或其它方式將軟件提供給第三方</li>
+                                <li>未徵得娛樂城書面許可，通過電子傳輸或其它方式將軟件出口給任何國家。</li>
+                                <li>軟件使用方式違法或違規</li>
+                            </ul>
+                            <p>（以上任一條都屬“非法使用”）</p>
+                            <p>如因任何非法使用而導緻的損失，費用或相關的傭金費用都由行為人自行承擔。如您知曉任何人非法使用我們軟件獲取傭金，請及時上報給我公司，並請協助我司就您提供的相關信息而展開的調查。
+                            </p>
+                            <p>娛樂城網站定期使用的標符“Hongy888.BET”，和其它商標，服務標誌和/或商用名字歸屬於娛樂城或其組織成員和/或其執照頒發者，因此商標的所有權歸屬於娛樂組織。另外，娛樂城網站上的其它內容，包括，軟件，圖像，圖片，圖錶，照片，動畫，視頻，音樂，聲像文本等等都歸屬於娛樂城或其成員和/或執照頒發者，這些物件信息都屬公司版權等知識産權，受法律保護不得侵犯。您必須認同您可以使用我們的網站和服務，而並非代錶對此任何部分擁有權利，在任何情況下，未經娛樂城書面許可或娛樂城知識産權相關保護法例的認可，您不得使用或侵犯我們網站上的內容。
+                            </p>
+                            <h3>修訂和修改</h3>
+                            <p>客戶完全理解並接受娛樂城對此協議進行的任何修改。娛樂城可能在任何時候對此協議進行修改並會公佈在會員進入的相關網頁上。如果本司對此協議進行較大的修改，我們會通過合適的方式通知您（比如在網站顯眼位置發佈修改信息，並會把修改內容貼上去）。您有責任經常檢查相關條款與政策以確認您接受其內容，如果您繼續使用本網站將被視為您接受相關條款與政策的修改。
+                            </p>
+                            <p>所有在協議條款修改前的投注將適用於修改前的協議條款。所有在協議條款修改後的投注將適用新的協議條款。如果您不能接受相關修改，您只可通過終止協議來解決。</p>
+                            <h3>一般條款的應用—您的聲明和保證</h3>
+                            <p>關於條款的應用是指您承諾不會因非法目的進入或使用我們網站的服務，軟件和信息，您也需確保您的行為不會違反您當地的法律或不會違反您與娛樂城間的協議。特別是（協議裏所有其它附加聲明和保證）您需確保您將履行以下協議。
+                            </p>
+                            <ul>
+                                <li>您不是法律限製行為能力的個體;</li>
+                                <li>您的法定行為只能代錶您個人，而不能代錶其他人或其他公司;</li>
+                                <li>您認同您參與我們的服務純屬自願，須自行承擔風險；</li>
+                                <li>您並非嗜賭成性的人;</li>
+                                <li>您已年滿18歲，您的行為在您當地法律上是屬合法的;</li>
+                                <li>您認同在使用我們服務時須提供給我們某些個人信息進行確認（包括關於支付方式的具體信息）。我們將遵循我們的隱私政策對您提供的信息進行管理和控製。</li>
+                                <li>您須自行承擔由博彩贏利産生的相關稅收。</li>
+                                <li>您使用我們網站只能出於個人用途。您只可出於個人娛樂而進行博彩投注。</li>
+                                <li>您認同並能承擔因使用此服務而導緻的虧損風險，娛樂城對其損失不承擔任何風險;</li>
+                                <li>您的存款不是來自非法或犯罪的活動;</li>
+                                <li>您不得通過使用娛樂城帳號從事非法活動，或允許他人使用您的帳號從事任何違背您當地和我們法律的活動;</li>
+                                <li>您承諾妥善保管好您的帳號和密碼不允許其他人使用。如果您丟失或忘記您的帳號或密碼，您須及時聯繫我們客服部門，我們將發送給您新的安全資料；</li>
+                                <li>您有責任確保自己的帳號及登入資料的保密性，以使用者名稱及密碼進行的任何網上博彩將被視為有效;</li>
+                                <li>您在使用我們的服務，網站，設備，軟件或相關信息時，您不得以任何方式妨礙其他會員享用我們提供的服務;</li>
+                                <li>您不得以任何方式竊取其他會員的任何相關信息;</li>
+                                <li>您不得上載或發佈任何帶有病毒的程序、文件或數據，影響我們網站設備、軟件、服務等運作性能;</li>
+                                <li>您不可試圖以任何形式修改，反嚮編譯，反嚮工程或反匯編我們的軟件。</li>
+                                <li>您不得使用任何設備，自動設備，軟件，程序或其它方法（類似於前述的）妨礙或試圖幹預我們網站提供的服務，設備，軟件，網址，信息或任何交易的正常運作;</li>
+                                <li>您不得在我們網站或設備上或對其他用戶發佈任何關於騷擾、侮辱、誹謗、威脅、淫穢、及煽動種族不滿的相關非法信息，或者任何構成或慫恿犯罪行為，或引起民事責任事件等等相關違法信息;
+                                </li>
+                                <li>您不得主動發起或參與針對娛樂城展開的調查，競猜，或大量發佈連鎖信件/垃圾信箱，兜售信箱等活動;</li>
+                                <li>您不可以同時擁有多個帳號，如發現客戶擁有多個戶口，公司有權取消其戶口以及投注 ,本公司保留權利取消或關閉您的帳號。本公司有權限製客戶只保留其中一個戶口;</li>
+                            </ul>
+                            <p>您認同以上總條款的適用，並認同如果客戶行為帶有任何嫌疑或違規現象，娛樂城有權未經事先通知或解釋上報給相關同盟協會或當地官方。</p>
+                            <h3>帳號註冊</h3>
+                            <p>欲註冊娛樂城帳號成為我們會員，您須填寫完整的網站上相關開戶申請錶格。</p>
+                            <p>您認同在使用我們服務時須提供給我們某些個人信息進行確認（包括關於支付方式的具體信息）。我們將遵循我們的隱私政策對您提供的信息進行管理和控製。</p>
+                            <p>您須確保您提供真實、完整、最新的信息。您的帳號姓名必須真實合法且和身份證上一緻，您也須確保帳號姓名與信用證上的姓名或其它用於存提款的帳號姓名一緻。如果您的個人資料有所變化，您須立即通知我們。為了確認客戶的姓名和地址，娛樂城有權通過信函或信箱等方式聯繫客戶。
+                            </p>
+                            <p>本公司有權未經同意拒絕客戶的註冊，並有權不予以解釋。如發現客戶帳號註冊信息出現不正確，誤導或不完整的情況，本司有權關閉此帳號，返還該帳號存款資金，並且所有投注一律取消。</p>
+                            <h3>交易結算</h3>
+                            <p>使用信用卡或借記卡的客戶，銀行卡姓名必須與客戶註冊時的姓名一緻。如果銀行卡姓名與客戶註冊時的姓名不一緻，娛樂城在交易結算方面保留權力。</p>
+                            <p>客戶如果對娛樂城或其任何會員出現負債的情況，客戶必須承擔償還債務的責任。在支付方面，如果客戶有欺詐行為，包括使用盜竊的信用卡，或其它欺詐行為（如追回或顛覆支付款項或洗錢行為）的嫌疑，娛樂城有權立即凍結和/或關閉客戶的帳號，沒收其帳號餘額，並把其資料（註明其身份）公佈到任何有權接觸此信息的在線娛樂網站、銀行、信用卡公司、和相關機構和個人。任何由此産生的費用娛樂城將全力從此客戶處追討。
+                            </p>
+                            <p>不論任何賽事，遊戲，每日每位顧客可得最高獎金金額是RMB五十萬元，或其他貨幣相等金額，不包本金.</p>
+                            <p>所有純贏利是不包括本金的。如果不同種類的盤口混在一起，將會適用最低最高贏利限額標準。</p>
+                            <p>如果匯入客戶帳號的資金有誤，客戶有責任立即通知本公司。任何情況下本司未知曉的錯發的彩金將視為無效彩金並須返還給娛樂城。</p>
+                            <h3>帳號提款</h3>
+                            <p>當客戶從娛樂城獲得機會贏取獎金，任何獎金都須符合本協議及我們提供的相關附加條款，才可享用此獎金。</p>
+                            <p>客戶從帳號提取獎金金額前須遵從相關條款的規定與限製，否則將不給予辦理。</p>
+                            <p>客戶提款幣種須與存款幣種保持一緻。</p>
+                            <p>娛樂城有權在任何時候撤回或修改獎金或優惠活動和/或相關具體條款與規則，並且不承擔嚮客戶或第三方解釋說明的責任。</p>
+                            <h3>獎金</h3>
+                            <p>當客戶從娛樂城獲得機會贏取獎金，任何獎金都須符合本協議及我們提供的相關附加條款，才可享用此獎金。</p>
+                            <p>客戶從帳號提取獎金金額前須遵從相關條款的規定與限製，否則將不給予辦理。</p>
+                            <p>娛樂城保留在任何時候撤回或修改獎金或優惠活動和/或相關具體條款與規則，並且不承擔嚮客戶或第三方解釋說明的責任 </p>
+                            <h3>免責條款</h3>
+                            <p>享用本公司提供的服務是客戶本人的意願，其風險應由客戶本人承擔。參與我們服務的同時就說明客戶認同本公司所提供的服務是正常、合理、公正、公平的。</p>
+                            <p>某些法律規則並未明文規定在線和非在線博彩是否合法，而有些法律規則已有明確規定。如果按照客戶當地法律博彩屬不合法行為，本公司不提倡您參與我們的服務。在博彩被視為不合法行為的任何國家本公司不提倡其國民加入。客戶有責任確保任何時候您的博彩行為在您所屬地是屬合法行為。
+                            </p>
+                            <p>對於任何情況下由於衛星收訊不良或延誤，網路中斷，或個人使用網站服務時的失誤，疏忽，或對網站內容的誤解所産生的任何損失，娛樂城概不負責。</p>
+                            <p>由於第三方對公司網站和信息提供的服務（比如無線通訊的提供者等）而導緻的拖延、違約、或不提供服務的情況，本公司不提供擔保也不承擔責任。</p>
+                            <p>客戶訪問或使用我們網站服務、軟件、信息服務、或下載、安裝、使用我們軟件而造成的任何直接、間接或重大或普通虧損或經濟損失，不論娛樂城是否被告知其可能性，娛樂城以及相關合夥公司，合作夥伴，合夥人，職員，代理將不承擔責任。
+                            </p>
+                            <p>您需認同本協議部分或全部內容是臨時性的，網站部分信息可能還需修改和更正。所以這些信息僅供參考，在客戶與本司之間並不構成協議，合同，和擔保的依據。</p>
+                            <p>您認同所有免責條款都是在公平公正，風險及利益分佈合理的情況下成立的，它既反映了娛樂城對客戶的關顧，也體現了客戶對娛樂城的理解與支持。您進一步認同此條款的合法性和可實施性。</p>
+                            <p>如果客戶電腦配件上的賽果與我們服務器的賽果出現不一緻的情況，我們服務器所顯示的結果將為最終賽果。另外，客戶也認同對於客戶參與我們服務的遊戲規則，投注狀況娛樂城擁有最終解釋權。
+                            </p>
+                            <p>娛樂城對目前我們所提供的服務不提供任何明示或暗示的擔保，也不對其服務質量，適用性，完整性或精確性提供任何擔保和解釋。</p>
+                            <p>娛樂城盡全力為客戶提供最優質，最安全可靠的服務，然而我們並不擔保我們所提供的服務的穩定性，及時性和準確性，或不擔保錯誤及時更正或網站不受病毒或蠕蟲幹擾。</p>
+                            <p>娛樂城絕對有權臨時或永久性地立即暫停，終止，修改，刪除或添加服務內容，而無需通知客戶，對因其而産生的任何損失娛樂城概不負責。</p>
+                            <h3>帳號的終止，關閉或沒收</h3>
+                            <p>在以下情況娛樂城有權(唯一決定人)取消任何彩金，沒收任何投注帳號餘額，終止協議或因違反條款而凍結帳號</p>
+                            <ul>
+                                <li>我們核實您擁有不止一個娛樂城帳號。</li>
+                                <li>您違反本協議的任何條款規則。</li>
+                                <li>我們獲悉您在其它娛樂網站有欺詐，合謀（包括詐回注金等等），非法或不當行為的不良紀錄。</li>
+                                <li>您註冊信息不真實或蓄意誤導。</li>
+                                <li>您不提供須提交的身份資料。</li>
+                                <li>您未達到合法年齡。</li>
+                                <li>您"退款"或導緻"退款"反對我們或否認任何經由其帳號産生的注單或存款。</li>
+                            </ul>
+                            <p>如果根據根據本條款，您的帳號被凍結無法享用我們的服務，只有在您完成必要的糾正程序並經由我們審核通過後，您的帳號才可重新激活。</p>
+                            <p>娛樂城在會員帳號的發放，更新和關閉上享有絕對權力。娛樂城管理層關於會員帳號，網站服務提供方面享有最終決定權不得異議。我們有權隨時關閉客戶帳號，不論其原因。在決定執行前，我們將採取合適的方式提前通知客戶本人，除非在某種情況下此行為屬非法或無法進行此行為。
+                            </p>
+                            <h3>違反協議合約及索賠</h3>
+                            <p>如果您違反本協議或其中部分條款，娛樂城有權採取適當的對應做法，包括終止協議，立即攔截阻止您訪問我們網站和使用我們的服務，關閉您的帳號，沒收帳號資金和/或採取必要的法律訴訟手段。
+                            </p>
+                            <p>您承諾如出現以下情形，將對娛樂城及其股東，員工，職員，執照持有人，執照頒發者，合作夥伴及附屬機構作出全責賠償損失，成本，開銷，律師費用和其他收費等等，以及維護其合法權益，使免受責任牽連及負面影響。
+                            </p>
+                            <ul>
+                                <li>您違反協議或協議部分內容；</li>
+                                <li>您違反法律條例或影響第三方合法權益；以及以上負面結果是由您本人使用我們網站服務造成，或其他人使用您的帳號信息登入造成，不論您是否有授權。</li>
+                            </ul>
+                            <h3>優先權</h3>
+                            <p>遊戲規則和其他任何關於進入和使用本司網站服務的協議條款，將組成協議一個完整的部分。</p>
+                            <p>除非有明文規定，如果遊戲規則和任何關於訪問和使用本司網站服務的協議條款或協議其它部分相沖突的情況發生，請以遊戲規則為準。</p>
+                            <h3>其它條款</h3>
+                            <p>如果協議中一個條款在某法律範疇被裁定為非法，無效或不可實施，它將不會影響該條款在其它法律範疇的適用，也不影響到協議其他條款在該法律範疇的適用，或其它條款在其它法律範疇的適用。
+                            <p>協議的標題僅供參考，它不影響到任何條款的構成或解釋。</p>
+                            <p>如果因以下超出控製範圍的原因（包括天災，政府管制，戰爭，暴動，傳送中斷，系統崩潰，電信或寬帶服務中斷，電力中斷等等）娛樂城不能按照協議規定履行義務，將不能構成違反合約。</p>
+                            <p>在本協議中，娛樂城未能或延遲行使或履行任何權利，補救措施，特權，並不代錶娛樂城放棄此等權</p>
+                            <p>娛樂城有權隨時未經通知轉讓該協議合約或其部分內容。然而，客戶無權轉讓關於該協議您的權利或義務。</p>
+                            <p>該協議不能産生或贈送任何權利或其它利益給與此協議無關的第三方。</p>
+                            <p>該協議不能産生或不能被視為産生娛樂城與您之間的合作，代理，信托或合資關係。</p>
+                            <p>該協議為您與娛樂城之間關於網站服務使用協議的最新的完整版本，它將取代之前的版本。</p>
+                        </div>
+                        <div id="privacy">
+                            <h2>隱私權政策</h2>
+                            <p>我們尊重您的私隱權並保證您數據的安全，這是我們的頭等重任。</p>
+                            <p>絕對不會泄露您的個人資料給第三方，除非收到法庭傳單或應可行法律的要求及判決。我們有權通過網站嚮有關付款平臺服務提供商以及金融保險機構提供必要的個人信息以完成付款要求。</p>
+                            <p>所有用戶提供的個人信息，其傳送都將通過安全端口（ 128位 SSL 加密標準）並存放在公衆無法進入的保密環境之下。所有數據的內部出入都受到嚴格的限製及嚴密的監控。</p>
+                            <p>與我們的合作夥伴會通過信箱將您可能感興趣的促銷優惠的消息發送給您。不會透露任何能識別個人身份的資料給任何第三方，這是我們隱私權政策的宗旨。</p>
+                        </div>
+                        <div id="rational">
+                            <h2>理性博彩</h2>
+                            <p>我們為客戶在博彩自律方面提供多方面的幫助包括：</p>
+                            <ul>
+                                <li>在線存款限額</li>
+                                <li>暫時關閉帳號</li>
+                                <li>關於控製您投注的信息</li>
+                                <li>問題性博彩問卷調查</li>
+                                <li>家長控製</li>
+                                <li>滿博彩年齡</li>
+                            </ul>
+                            <p>未滿18歲的人士進行博彩屬非法行為，會在此方面絕對嚴格執行。對於選擇某種支付方式（如未滿18歲人士也可使用）的客戶，我們會進行年齡驗證。此外，我們也會隨機抽取客戶進行年齡驗證，不管他們使用何種支付方式。
+                            </p>
+                            <p>一旦發現使用該網站的客戶未滿18歲，所有贏取的彩金將會被沒收並交由相關部門處理。</p>
+                            <p>雇員培訓</p>
+                            <p>我們所有的客戶服務人員在問題性博彩這方面都經過嚴格的培訓。</p>
+                            <p>在線存款限額</p>
+                            <p>此功能可幫助客戶控製他們每24小時或每168小時(7日)的在線存款限額。您可以隨時減少此限額，若要提高限額需要提前24小時申請。我們的客戶服務小組很樂意為您提供幫助，但我們將不能更改客戶設定的限製。
+                            </p>
+                            <p>查看帳號曆史</p>
+                            <p>客戶可隨時查看帳號的存取款交易的曆史記錄。帳號餘額會在登入娛樂主頁時顯示，同時也可在會員部分查看。</p>
+                            <p>有節製博彩</p>
+                            <p>娛樂允許顧客自我禁止使用帳號，限期為6月 、1 年、2 年或5 年。</p>
+                            <p>帳號一旦關閉，客戶無論任何原因都不能重開他的帳號，直至所設定的期限到期。</p>
+                            <p>在關閉期間將盡其所能避免客戶另外開設一個新帳號。</p>
+                            <p>如果帳號狀態只是單純的‘關閉‘，該帳號可以在任何時間重開。</p>
+                            <p>如果您希望使用這項功能或欲知道更多相關信息，請聯繫我們，我們專業的客服人員將竭誠為您服務。</p>
+                            <p>關於控製您投注的信息</p>
+                            <p>在人們用他們的方式博彩的同時，博彩成了某些人的問題。以下提示也許能幫助您控製博彩問題：</p>
+                            <ol>
+                                <li>博彩只是一種娛樂，不應被視為賺錢的方法</li>
+                                <li>避免有把輸的錢贏回來的想法</li>
+                                <li>只投注您付得起的金額</li>
+                                <li>時刻記著花在博彩上的時間和金錢</li>
+                                <li>如果您暫時不想博彩了，可以選擇使用自我控製期的關閉帳號</li>
+                            </ol>
+                            <p>問題性博彩問卷調查</p>
+                            <p>如果您擔心博彩會佔據您的（或他人的）生命，以下提問可以幫您找到答案：</p>
+                            <ol>
+                                <li>您會否因為博彩而不上班或不上學？</li>
+                                <li>您博彩是否為了逃避煩悶或不愉快的生活？</li>
+                                <li>當您博彩花光錢時，您是否感到失望甚至絕望，並且希望馬上能再進行賭博？</li>
+                                <li>您會否博彩到最後一分錢彩罷休？</li>
+                                <li>您有否曾經用謊言掩飾您花在博彩上的時間和金錢？</li>
+                                <li>是否有人批評過您的博彩行為？</li>
+                                <li>您是否對您的家人，朋友或愛好失去了興趣？</li>
+                                <li>您輸了之後，是否馬上想把輸的錢贏回來？</li>
+                                <li>您博彩是不是因為爭執，沮喪或失望？</li>
+                                <li>您有沒有因為博彩而感到失落甚至輕生？</li>
+                            </ol>
+                            <p>在這些問題中您回答的‘是’越多，您就越接近具備嚴重博彩問題。</p>
+                        </div>
+                        <div id="disclaimer">
+                            <h2>免責聲明</h2>
+                            <p>對其網頁所連接至外部網站所含的內容準確性或時效性不作任何管制，且不負上任何責任。使用這個網路作投注行為可能對身處某些國家的居民或個人。不打算將此網路被應用在個人身處在投注活動為非法的國家。用戶的責任包含確定他/她身處地區的法律實施，以及確定他/她們的行動是在合法的管轄區內進行投注在我們的網路上,將不接受在管轄區所製定的法律或違反法律的責任。
+                            </p>
+                        </div>
+                        <div id="law">
+                            <h2>法律鏈接</h2>
+                            <p>娛樂邀您通過我們公司所有橫跨的頻道以享受您對博彩的體驗，大部分的人都享受他們的消遣，包含對勝利既興奮和失敗且失望的雙方面體驗。</p>
+                            <p>我們要求所有的客戶對投注的責任是在他們的財力之內，但是我們承認，在有社會責任感的服務提供者和服務用戶的保證之下此消遣式的投注不會構成賭博的負面問題。為此對娛樂而言重要的是讓用戶知道在不受控和沒節製的賭博之下可能帶來害處。
+                            </p>
+                            <h3>您需要遵守以下賭博責任指南</h3>
+                            <p>記錄您所玩的時間</p>
+                            <p>只花費您足夠支配的損失</p>
+                            <p>清楚您可自由使用的收入</p>
+                            <p>記錄您所玩的花費</p>
+                            <p>切記屏幕上的數字是真錢</p>
+                            <p>避免追逐您的損失</p>
+                            <h3>GAMCARE</h3>
+                            <p>GamCare採用一種非主觀性的方式去處理賭博.它們不希望約束任何一個有效從事賭博操作的選擇，合法和有責任感的操作機會，因此它們成為資訊提供的領導機構，忠告和實際幫助賭博對社會的影響。
+                            </p>
+                            <h3>匿名賭客</h3>
+                            <p>匿名賭客是一個由男女團體的成員去分享它們之間的經驗、力量和希望，他們也許能解決他們共同的問題，和幫助其他的人恢複對賭博的問題。</p>
+                            <h3>驗證</h3>
+                            <p>Verify Me
+                                VerifyMe是一家防止國際欺騙並提供年齡和身份證明驗證以及合並政府所發出的身份證資料庫檢驗，提供規則系統和網路基本簽署的捕獲服務。VerifyMe執行國際和國內的身份證驗證和許多國家的年齡驗證，提供服務給商業和政府機構Patriot
+                                Act的承諾、法律上的年齡驗證和指導方針。</p>
+                            <h3>交互式賭博委員會</h3>
+                            <p>交互式賭博委員會(IGC)是一家不獲盈利的組織1996年成立於美國，然後該組織於2000年的3月搬遷到加拿大的溫哥華市。這組織的建立並提供討論會給予有興趣的一群人士以使提出問題方案和共同的興趣，在全世界的交互式賭博行業以建立一個公正和負責任的交易指導方針和練習提高消費者的信心在交互式賭博的産品和服務，提供公衆在此行業的政策提倡者和資料清除中心
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="introduction-box">
+                <div class="max-width flex-sb-c">
+                    <div class="container">
+                        <img src="assets/images/girl450x530.png" alt="美女圖">
+                    </div>
+                    <div class="content">
+                        <div class="content-list">
+                            <svg class="ico">
+                                <use xlink:href="#ico-badge-check"></use>
+                            </svg>
+                            <div class="text">
+                                <h2>最優質的線上娛樂城</h2>
+                                <p>具備「快速提款、多樣化遊戲、儲值方便」等基本服務，專注讓玩家得到最好的體驗！</p>
+                            </div>
+                        </div>
+                        <div class="content-list">
+                            <svg class="ico">
+                                <use xlink:href="#ico-badge-check"></use>
+                            </svg>
+                            <div class="text">
+                                <h2>儲值/取款好便利</h2>
+                                <p>提供多種儲值功能，4大便利超商(7-11、全家、萊爾富、OK)皆可以進行儲值繳費動作，亦提供「ATM轉帳」讓您輕鬆出/取款。</p>
+                            </div>
+                        </div>
+                        <div class="content-list">
+                            <svg class="ico">
+                                <use xlink:href="#ico-badge-check"></use>
+                            </svg>
+                            <div class="text">
+                                <h2>優惠活動</h2>
+                                <p>除了提供不同種類遊戲滿足不一樣的玩家外，更是針對每種遊戲打造不同內容的優惠活動與玩家一齊同樂，除了獎金豐厚的「免費體驗金、首儲優惠」外，更有屬於百家樂、體育、老虎機等不同的活動獎勵。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="content-list">
+                            <svg class="ico">
+                                <use xlink:href="#ico-badge-check"></use>
+                            </svg>
+                            <div class="text">
+                                <h2>安心首選</h2>
+                                <p>您的每一個交易歷程，娛樂城為你做好資安把關，我們都會提供最貼心的支援。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                    <symbol id="ico-badge-check" viewBox="0 0 24 24" fill="none">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z">
+                        </path>
+                    </symbol>
+                </svg>
+            </div>
+        </div>
+        <footer>
+            <div class="about-box">
+                <div class="max-width">
+                    <div class="about">
+                        <div>
+                            <p>遊戲大廳</p>
+                            <ul>
+                                <li class="about-item"><a href="sport.html">體育賽事</a></li>
+                                <li class="about-item"><a href="live.html">真人娛樂</a></li>
+                                <li class="about-item"><a href="lottery.html">彩票遊戲</a></li>
+                                <li class="about-item"><a href="slot.html">電子遊藝</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="about">
+                        <div>
+                            <p>消息中心</p>
+                            <ul>
+                                <li class="about-item"><a href="event.html">最新消息</a></li>
+                                <li class="about-item"><a href="promotion.html">優惠活動</a></li>
+                                <li class="about-item"><a href="bulletin.html">公告</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="about">
+                        <div>
+                            <p>關於我們</p>
+                            <ul>
+                                <li class="about-item"><a href="about.html">幫助中心</a></li>
+                                <li class="about-item"><a href="banking.html">存提款說明</a></li>
+                                <li class="about-item"><a href="affiliate.html">合營計劃</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="footer-box">
+                © {{Year}}
+                <a href="index.html">導流站01</a> All Rights Reserved TAI 版權所有
+            </div>
+        </footer>
+        <div class="back-top" style="display: none;">
+            <svg class="ico">
+                <use xlink:href="#ico-arrow-circle-up"></use>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none;" fill="none">
+                <symbol id="ico-arrow-circle-up" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M9 11l3-3m0 0l3 3m-3-3v8m0-13a9 9 0 110 18 9 9 0 010-18z"></path>
+                </symbol>
+            </svg>
+        </div>
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+                <symbol id="ico-nav" viewBox="0 0 512 512">
+                    <path d="m0 43l512 0 0 42-512 0z m0 384l512 0 0 42-512 0z m0-192l512 0 0 42-512 0z" />
+                </symbol>
+                <symbol id="ico-close" viewBox="0 0 512 512">
+                    <path
+                        d="m452 90l-30-30-166 166-166-166-30 30 166 166-166 166 30 30 166-166 166 166 30-30-166-166z" />
+                </symbol>
+                <symbol id="ico-right" viewBox="0 0 24 24" fill="none">
+                    <path d="M9 5l7 7-7 7"></path>
+                </symbol>
+                <symbol id="ico-left" viewBox="0 0 24 24" fill="none">
+                    <path d="M15 19l-7-7 7-7"></path>
+                </symbol>
+                <symbol id="ico-narrow-right" viewBox="0 0 24 24" fill="none">
+                    <path stroke-linecap="round" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                </symbol>
+            </svg>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.min.js"></script>
+    <script src="assets/js/components.js"></script>
+</body>
+
+</html>

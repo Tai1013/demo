@@ -1,0 +1,206 @@
+//存提款說明/合營計畫/幫助中心
+.aboutWebBox {
+    margin: 0 auto;
+    padding: 40px 0;
+    max-width: 1600px;
+    width: 95%;
+    &.row {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .title {
+        margin: 0;
+        color: #fff;
+        text-align: center;
+    }
+    .content {
+        color: #fff;
+        font-size: 16px;
+        line-height: 1.5em;
+        ul, ol, li {
+            margin: revert;
+            padding: revert;
+            list-style: revert;
+        }
+        table {
+            max-width: 100%;
+        }
+        img {
+            max-width: 100%;
+        }
+    }
+    .policy {
+        color: #fff;
+        ul, ol, li {
+            margin: revert;
+            padding: revert;
+            list-style: revert;
+        }
+        p {
+            font-size: 18px;
+        }
+        li {
+            line-height: 30px;
+        }
+    }
+    .forTable {
+        background: rgba(#fff, 0.3);
+        .tr1 {
+            background: rgba(153, 153, 153, 0.3);
+        }
+        td {
+            border-collapse: collapse;
+            border: 1px solid #fff;
+            line-height: 40px;
+            padding-left: 5px;
+            color: #fff;
+        }
+    }
+    .about-left {
+        margin-right: 20px;
+        width: 200px;   
+    }
+    .about-right {
+        width: calc(100% - 220px);
+    }
+    .about-nav {
+        width: 200px;
+        background: rgba(#354658, 0.8);
+        .nav-item {
+            border-bottom: 2px solid #fff;
+            >a {
+                padding: 0 15px;
+                display: block;
+                width: 100%;
+                height: 45px;
+                line-height: 45px;
+                color: #fff;
+                box-sizing: border-box;
+                &:hover {
+                    color: #13afc4;
+                }
+            }
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+    .about-content {
+        padding: 20px 30px;
+        color: #fff;
+        background: rgba(#354658, 0.8);
+        line-height: 1.5em;
+        font-size: 16px;
+        a {
+            color: #fff;
+        }
+        ul, ol, li {
+            margin: revert;
+            padding: revert;
+            list-style: revert;
+        }
+        table {
+            margin: 0 auto;
+            max-width: 100%;
+        }
+        img {
+            max-width: 100%;
+        }
+        h2 {
+            margin: 0;
+            padding: 20px 0 10px;
+            border-bottom: 2px solid #fff;
+        }
+        h3 {
+            margin-left: 0.5em;
+            color: #13afc4;
+        }
+        p {
+            margin-left: 1.8em;
+        }
+        .text-3 {
+            margin-left: 3.6em;
+            font-size: 14px;
+        }
+        .table1 {
+            margin-top: 5px;
+            background: rgba(#fff, 0.3);
+            .tr1 {
+                background: #182430;
+            }
+            td {
+                border-collapse: collapse;
+                border: 1px solid #fff;
+                line-height: 40px;
+                padding-left: 5px;
+                color: #fff;
+            }
+        }
+    }
+}
+
+#aboutNav.fixed {
+    position: fixed;
+    top: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    .aboutWebBox {
+        .about-left {
+            width: 160px;   
+        }
+        .about-right {
+            width: calc(100% - 200px);
+        }
+        .about-nav {
+            width: 160px; 
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .aboutWebBox {
+        .about-left {
+            margin-right: 0;
+            width: 100%;   
+        }
+        .about-right {
+            width: 100%;
+        }
+        .about-nav {
+            width: 100%;
+            background:#354658;
+            border-bottom: 2px solid #13afc4;
+            .nav-item {
+                display: inline-block;
+                border-bottom: none;
+                width: 24%;
+                text-align: center;
+                >a {
+                    padding: 0 5px;
+                    font-size: 14px;
+                }
+            }
+        }
+        .about-content {
+            padding: 20px;
+        }
+    }
+    #aboutNav.fixed {
+        top: 0;
+        left: 0;
+    }
+}
+@media screen and (max-width: 520px) {
+    .aboutWebBox {
+        .about-nav {
+            .nav-item {
+                width: 32%;
+            }
+        }
+        .about-content {
+            padding: 20px 10px;
+        }
+    }
+}
