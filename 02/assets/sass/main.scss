@@ -92,13 +92,12 @@ a {
         }
         .pic {
             margin: 10px 0;
+            width: 100%;
             &.center {
                 margin: 10px auto;
             }
-            max-width: 600px;
-            width: 100%;
             img {
-                width: 100%;
+                max-width: 100%;
             }
         }
         ol {
