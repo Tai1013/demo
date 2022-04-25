@@ -1,0 +1,620 @@
+.game-block {
+    margin: 40px 0;
+    .game-bg {
+        position: relative;
+        padding: 70px 30px 30px 30px;
+        width: 1000px;
+        height: 710px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        box-shadow: 0px 0px 5px rgba(62, 62, 62, 0.3);
+        overflow: hidden;
+    }
+    .g-live {
+        background: url("../images/game/live_pick_bg.jpg") top center no-repeat;
+        background-size: cover;
+        .title {
+            background: linear-gradient(180deg, rgba(115, 70, 255, 1) 60%, rgba(20, 0, 70, 0.8) 90%);
+        }
+    }
+    .g-sport {
+        background: url("../images/game/sport_pick_bg.jpg") top center no-repeat;
+        background-size: cover;
+        .title {
+            background: linear-gradient(180deg, rgba(15, 195, 160, 1) 60%, rgba(0, 80, 65, 0.8) 90%);
+        }
+    }
+    .g-lottery {
+        background: url("../images/game/lotter_pick_bg.jpg") top center no-repeat;
+        background-size: cover;
+        .title {
+            background: linear-gradient(180deg, rgba(250, 115, 0, 1) 60%, rgba(60, 30, 0, 0.8) 90%);
+        }
+    }
+    .g-slot {
+        background: url("../images/game/slot_pick_bg.jpg") top center no-repeat;
+        background-size: cover;
+        .title {
+            background: linear-gradient(180deg, rgba(75, 170, 255, 1) 60%, rgba(0, 10, 70, 0.8) 90%);
+        }
+    }
+    .title {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 230px;
+        height: 100%;
+        padding: 15px 0;
+        box-sizing: border-box;
+        clip-path: polygon(0 0, 100% 0, 40% 100%, 0% 100%);
+        p {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            margin: 0;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #fff;
+        }
+    }
+}
+.game-live .opt-worp {
+    background: url("../images/game/live_opt_bg.jpg") top right no-repeat;
+    background-size: cover;
+}
+.game-sport .opt-worp {
+    background: url("../images/game/sport_opt_bg.jpg") top right no-repeat;
+    background-size: cover;
+}
+.game-lottery .opt-worp {
+    background: url("../images/game/lotter_opt_bg.jpg") top right no-repeat;
+    background-size: cover;
+}
+.game-slot .opt-worp {
+    background: url("../images/game/slot_opt_bg.jpg") top right no-repeat;
+}
+.game-menu {
+    width: 100%;
+    height: 100%;
+    .menu-box-3-long {
+        float: left;
+        width: 33.33333333333333%;
+        height: 70%;
+        position: relative;
+        top: 15%;
+        z-index: 2;
+        b {
+            position: absolute;
+            top: 50%;
+            left: 45%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+            opacity: 0;
+            transition: 0.3s;
+            z-index: 5;
+        }
+        .opt-worp {
+            position: relative;
+            width: 90%;
+            height: 100%;
+            border-radius: 10px;
+            box-shadow: 0px 0px 8px rgba(62, 62, 62, 0.5);
+            transition: 0.3s;
+            .logoOpt {
+                position: absolute;
+                top: 10%;
+                left: 0;
+                z-index: 4;
+                text-align: center;
+                img {
+                    width: 100%;
+                }
+                p {
+                    margin: 10px 0;
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                    color: #000;
+                    text-shadow: 
+                        -1.5px -1.5px 1px #fff, 
+                        1.5px -1.5px 1px #fff, 
+                        -1.5px 1.5px 1px #fff, 
+                        1.5px 1.5px 1px #fff, 
+                        2px 2px 2px #fff;
+                }
+            }
+            .girlOpt {
+                position: absolute;
+                bottom: 0;
+                right: -5%;
+                z-index: 3;
+                width: 90%;
+                height: 100%;
+                .girlPic {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    z-index: 1;
+                    width: 100%;
+                    height: 120%;
+                    overflow: hidden;
+                    img {
+                        width: 100%;
+                    }
+                } 
+            }
+        }
+        @media screen and (min-width: 769px){
+            &:hover {
+                b {
+                    opacity: 1;
+                }
+                .opt-worp {
+                    filter: brightness(0.33);
+                }
+            }
+        }
+    }
+    .menu-box-5-long {
+        float: left;
+        width: 33.33333333333333%;
+        height: 100%;
+        position: relative;
+        z-index: 2;
+        b {
+            position: absolute;
+            top: 50%;
+            left: 45%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+            opacity: 0;
+            transition: 0.3s;
+            z-index: 5;
+        }
+        .opt-worp {
+            position: relative;
+            width: 90%;
+            height: 100%;
+            border-radius: 10px;
+            box-shadow: 0px 0px 8px rgba(62, 62, 62, 0.5);
+            transition: 0.3s;
+            .logoOpt {
+                position: absolute;
+                top: 10%;
+                left: 0;
+                z-index: 4;
+                text-align: center;
+                img {
+                    width: 100%;
+                }
+                p {
+                    margin: 10px 0;
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                    color: #000;
+                    text-shadow: 
+                        -1.5px -1.5px 1px #fff, 
+                        1.5px -1.5px 1px #fff, 
+                        -1.5px 1.5px 1px #fff, 
+                        1.5px 1.5px 1px #fff, 
+                        2px 2px 2px #fff;
+                }
+            }
+            .girlOpt {
+                position: absolute;
+                bottom: 0;
+                right: -5%;
+                z-index: 3;
+                width: 90%;
+                height: 100%;
+                .girlPic {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    z-index: 1;
+                    width: 100%;
+                    height: 105%;
+                    overflow: hidden;
+                    img {
+                        width: 100%;
+                    }
+                } 
+            }
+        }
+        @media screen and (min-width: 769px){
+            &:hover {
+                b {
+                    opacity: 1;
+                }
+                .opt-worp {
+                    filter: brightness(0.33);
+                }
+            }
+        }
+    }
+    .menu-box-3 {
+        float: left;
+        width: 33.33333333333333%;
+        height: 50%;
+        margin-bottom: 25px;
+        position: relative;
+        z-index: 2;
+        b {
+            position: absolute;
+            top: 50%;
+            left: 45%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+            opacity: 0;
+            transition: 0.3s;
+            z-index: 5;
+        }
+        .opt-worp {
+            position: relative;
+            width: 90%;
+            height: calc(100% - 25px);
+            border-radius: 10px;
+            box-shadow: 0px 0px 8px rgba(62, 62, 62, 0.5);
+            transition: 0.3s;
+            .logoOpt {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                z-index: 4;
+                min-width: 150px;
+                width: 40%;
+                text-align: center;
+                img {
+                    width: 100%;
+                }
+                p {
+                    margin: 10px 0;
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                    color: #000;
+                    text-shadow: 
+                        -1.5px -1.5px 1px #fff, 
+                        1.5px -1.5px 1px #fff, 
+                        -1.5px 1.5px 1px #fff, 
+                        1.5px 1.5px 1px #fff, 
+                        2px 2px 2px #fff;
+                }
+            }
+            .girlOpt {
+                position: absolute;
+                bottom: 0;
+                right: -5%;
+                z-index: 3;
+                width: 80%;
+                height: 100%;
+                .girlPic {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    z-index: 1;
+                    width: 100%;
+                    height: 115%;
+                    overflow: hidden;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        @media screen and (min-width: 769px){
+            &:hover {
+                b {
+                    opacity: 1;
+                }
+                .opt-worp {
+                    filter: brightness(0.33);
+                }
+            }
+        }
+    }
+    .menu-box-4 {
+        float: left;
+        width: 50%;
+        height: 50%;
+        margin-bottom: 25px;
+        position: relative;
+        z-index: 2;
+        b {
+            position: absolute;
+            top: 50%;
+            left: 45%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+            opacity: 0;
+            transition: 0.3s;
+            z-index: 5;
+        }
+        .opt-worp {
+            position: relative;
+            width: 90%;
+            height: calc(100% - 25px);
+            border-radius: 10px;
+            box-shadow: 0px 0px 8px rgba(62, 62, 62, 0.5);
+            transition: 0.3s;
+            .logoOpt {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                z-index: 4;
+                min-width: 150px;
+                width: 40%;
+                text-align: center;
+                img {
+                    width: 100%;
+                }
+                p {
+                    margin: 10px 0;
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                    color: #000;
+                    text-shadow: 
+                        -1.5px -1.5px 1px #fff, 
+                        1.5px -1.5px 1px #fff, 
+                        -1.5px 1.5px 1px #fff, 
+                        1.5px 1.5px 1px #fff, 
+                        2px 2px 2px #fff;
+                }
+            }
+            .girlOpt {
+                position: absolute;
+                bottom: 0;
+                right: -5%;
+                z-index: 3;
+                width: 80%;
+                height: 100%;
+                .girlPic {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    z-index: 1;
+                    width: 100%;
+                    height: 115%;
+                    overflow: hidden;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        @media screen and (min-width: 769px){
+            &:hover {
+                b {
+                    opacity: 1;
+                }
+                .opt-worp {
+                    filter: brightness(0.33);
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1280px){
+    .game-block {
+        .game-bg {
+            width: 800px;
+            height: 550px;
+        }
+    }
+}
+@media screen and (max-width: 1024px){
+    .game-block {
+        .game-bg {
+            max-width: 800px;
+            width: 90%;
+            height: 550px;
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .game-block {
+        margin: 20px 0;
+        .game-bg {
+            width: 95%;
+            height: auto;
+        }
+        .g-live {
+            background: url("../images/game/live_pick_bg.jpg") top right no-repeat;
+            background-size: cover;
+        }
+        .g-sport {
+            background: url("../images/game/sport_pick_bg.jpg") top right no-repeat;
+            background-size: cover;
+        }
+        .g-lottery {
+            background: url("../images/game/lotter_pick_bg.jpg") top right no-repeat;
+            background-size: cover;
+        }
+        .g-slot {
+            background: url("../images/game/slot_pick_bg.jpg") top right no-repeat;
+            background-size: cover;
+        }
+    }
+    .game-menu {
+        width: 100%;
+        height: 100%;
+        .menu-box-3-long {
+            margin-bottom: 30px;
+            padding: 0 10px;
+            width: 100%;
+            height: 160px;
+            box-sizing: border-box;
+            .opt-worp {
+                width: 100%;
+                .logoOpt {
+                    top: 50%;
+                    left: 30%;
+                    transform: translate(-50%, -50%);
+                }
+                .girlOpt {
+                    right: 15%;
+                    width: 45%;
+                    .girlPic {
+                        height: 105%;
+                    } 
+                }
+            }
+        }
+        .menu-box-5-long {
+            margin-bottom: 30px;
+            padding: 0 10px;
+            width: 100%;
+            height: 160px;
+            box-sizing: border-box;
+            .opt-worp {
+                width: 100%;
+                .logoOpt {
+                    top: 50%;
+                    left: 30%;
+                    transform: translate(-50%, -50%);
+                }
+                .girlOpt {
+                    right: 15%;
+                    width: 45%;
+                    .girlPic {
+                        height: 105%;
+                    } 
+                }
+            }
+        }
+        .menu-box-3 {
+            margin-bottom: 30px;
+            padding: 0 10px;
+            width: 50%;
+            height: 120px;
+            box-sizing: border-box;
+            .opt-worp {
+                width: 100%;
+                height: 100%;
+                .logoOpt {
+                    min-width: auto;
+                    left: 5%;
+                    p {
+                        margin: 5px 0;
+                        font-size: 1rem;
+                    }
+                }
+                .girlOpt {
+                    right: 5%;
+                    width: 50%;
+                    .girlPic {
+                        height: 105%;
+                    }
+                }
+            }
+        }
+        .menu-box-4 {
+            margin-bottom: 30px;
+            padding: 0 10px;
+            width: 50%;
+            height: 120px;
+            box-sizing: border-box;
+            .opt-worp {
+                width: 100%;
+                height: 100%;
+                .logoOpt {
+                    min-width: auto;
+                    left: 5%;
+                    p {
+                        margin: 5px 0;
+                        font-size: 1rem;
+                    }
+                }
+                .girlOpt {
+                    right: 5%;
+                    width: 50%;
+                    .girlPic {
+                        height: 105%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 480px){
+    .game-menu {
+        .menu-box-3-long {
+            .opt-worp {
+                .logoOpt {
+                    left: 25%;
+                    min-width: 100px;
+                    width: 30%;
+                    p {
+                        font-size: 0.9rem;
+                    }
+                }
+                .girlOpt {
+                    right: 10%;
+                }
+            }
+        }
+        .menu-box-5-long {
+            .opt-worp {
+                .logoOpt {
+                    left: 25%;
+                    min-width: 100px;
+                    width: 30%;
+                    p {
+                        font-size: 0.9rem;
+                    }
+                }
+                .girlOpt {
+                    right: 10%;
+                }
+            }
+        }
+        .menu-box-3 {
+            width: 100%;
+            height: 160px;
+            .opt-worp {
+                .logoOpt {
+                    left: 25%;
+                    transform: translate(-50%, -50%);
+                    min-width: 100px;
+                    width: 30%;
+                    p {
+                        font-size: 0.9rem;
+                    }
+                }
+                .girlOpt {
+                    right: 10%;
+                    width: 45%;
+                }
+            }
+        }
+        .menu-box-4 {
+            width: 100%;
+            height: 160px;
+            .opt-worp {
+                .logoOpt {
+                    left: 25%;
+                    transform: translate(-50%, -50%);
+                    min-width: 100px;
+                    width: 30%;
+                    p {
+                        font-size: 0.9rem;
+                    }
+                }
+                .girlOpt {
+                    right: 10%;
+                    width: 45%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.bulletin {
+    padding: 0 20px;
+    height: 40px;
+    background-color: #0662A2;
+    svg {
+        width: 30px;
+        height: 30px;
+    }
+    marquee {
+        width: 100%;
+        a {
+            margin: 0 20px;
+            color: #fff;
+            font-size: 1rem;
+        }
+    }
+}

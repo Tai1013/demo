@@ -1,0 +1,116 @@
+.pro-box {
+    margin: 30px auto;
+    max-width: 1280px;
+    width: 95%;
+    .pro-nav, .pro-content {
+        padding: 0 45px;
+        background: #fff;
+        box-sizing: border-box;
+        box-shadow: 0 2px 15px rgba(#000, 0.25);
+        border: 10px solid #ddd;
+        border-image: linear-gradient(0.25turn, rgb(246, 237, 207), rgb(240, 218, 177), rgb(218, 241, 249), rgb(164, 215, 225)) 30 30;
+    }
+    .pro-link {
+        margin: 45px 0;
+        border-radius: 15px;
+        box-shadow: 0 2px 15px rgba(#000, 0.25);
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
+        .title {
+            padding: 0 15px;
+            height: 45px;
+            line-height: 45px;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            font-size: 1.2rem;
+            font-weight: 600;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            color: rgb(4, 76, 126);
+            background: rgb(169, 222, 225);
+        }
+    }
+    .back-pro {
+        width: 150px;
+        color:#0662A2;
+        font-weight: 600;
+        font-size: 1.2rem;
+        transition: 0.5s;
+        svg {
+            width: 30px;
+            height: 30px;
+        }
+        @media screen and (min-width: 769px){
+            &:hover {
+                transform: translateX(-10px);
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .pro-box {
+        .pro-nav, .pro-content {
+            padding: 0 25px;
+        }
+        .pro-link {
+            margin: 30px 0;
+            .title {
+                height: 35px;
+                line-height: 35px;
+                font-size: 1rem;
+            }
+        }
+    }
+}
+@media screen and (max-width: 480px){
+    .pro-box {
+        .pro-link {
+            margin: 25px 0;
+            .title {
+                height: 30px;
+                line-height: 30px;
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+
+.pro-content {
+    img {
+        width: 100%;
+        border-radius: 15px;
+        box-shadow: 0 2px 15px rgba(#000, 0.25);
+    }
+    .pro-text {
+        margin: 25px 0;
+        line-height: 1.5em;
+        font-family: Arial, Helvetica, sans-serif;
+        h3 {
+            color:#0662A2;
+        }
+        ul{
+            margin: revert;
+            padding: revert;
+            list-style: initial;
+            >li{
+                list-style: initial;
+            }
+        }
+        ol{
+            margin: revert;
+            padding: revert;
+            list-style: decimal;
+            >li{
+                list-style: decimal;
+            }
+        }
+        .table-box {
+            width: 100%;
+            overflow-x: auto;
+        }
+    }
+}

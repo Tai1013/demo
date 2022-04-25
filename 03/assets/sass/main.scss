@@ -1,0 +1,212 @@
+@import '../sass/header';
+@import '../sass/marquee';
+@import '../sass/banner';
+@import '../sass/game_nav';
+@import '../sass/about';
+@import '../sass/how';
+@import '../sass/footer';
+@import '../sass/game';
+@import '../sass/promotion';
+@import '../sass/event';
+@import '../sass/bulletin';
+
+//返回至頂
+@import '../sass/backtop';
+
+body {
+    min-width: 360px;
+    background-color: #f4f6f9;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.max-width {
+    margin: 0 auto;
+    max-width: 1600px;
+    width: 95%;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    .flex-2 { width: 16.666667%; }
+    .flex-12 { width: 100%; }
+    @media screen and (min-width: 1025px){
+        .col-lg-10 { width: 83.333333%; }
+    }
+}
+.flex-l-c-w {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.flex-c-c {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.flex-sb-c {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pos-fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+.pos-a-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.m-tb-15 {
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+}
+.m-tb-30 {
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+}
+h2 {
+    padding: 2px 0 2px 5px;
+    color:#0662A2;
+    border-left: 5px solid#0662A2;
+}
+
+.common-box {
+    margin: 30px auto;
+    max-width: 1280px;
+    width: 95%;
+    .common-inbox {
+        padding: 25px;
+        background: #fff;
+        box-sizing: border-box;
+        box-shadow: 0 2px 15px rgba(#000, 0.25);
+        border: 10px solid #ddd;
+        border-image: linear-gradient(0.25turn, rgb(246, 237, 207), rgb(240, 218, 177), rgb(218, 241, 249), rgb(164, 215, 225)) 30 30;
+    }
+    .common-content {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .ph-hr {
+        position: initial;
+    }
+}
+@media screen and (max-width: 768px){
+    .common-box {
+        .common-inbox {
+            padding: 10px 15px;
+        }
+    }
+}
+
+.into-pro {
+    height: 120px;
+    background: url('../images/ad-bg2.jpg') center center no-repeat;
+    background-size: cover;
+    border-bottom: 5px solid #0662A2;
+    .inpro-text {
+        p {
+            margin: 0;
+        }
+        a {
+            display: block;
+            margin: 5px 0 10px 0;
+            color: #000;
+            font-size: 2rem;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    }
+}
+.into-btn {
+    display: inline-block;
+    margin: 30px 0;
+    padding: 1rem 3rem;
+    color: #e38600;
+    border: 2px solid #e38600;
+    border-radius: 3px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+@media screen and (max-width: 1024px){
+    .into-pro {
+        height: 100px;
+        .inpro-text {
+            a {
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .into-pro {
+        height: 70px;
+        .inpro-text {
+            p {
+                font-size: 0.8rem;
+            }
+            a {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+@media screen and (max-width: 480px){
+    .into-pro {
+        height: 45px;
+        .inpro-text {
+            p {
+                display: none;
+            }
+            a {
+                margin: 0;
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+
+.tag {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 6px 12px;
+    border-radius: 3px;
+    color: #fff;
+    &.t-pro {
+        background:rgb(100, 195, 214);
+    }
+    &.t-new {
+        background:#e38600;
+    }
+    &.t-recom {
+        background:#e30000;
+    }
+    &.ann1 { background:#EA2027; }
+    &.ann2 { background:#009432; }
+    &.ann3 { background:#0652DD; }
+    &.ann4 { background:#f1c40f; }
+    &.ann5 { background:#2c3e50; }
+    &.ann6 { background:#1abc9c; }
+    &.ann7 { background:#8e44ad; }
+    &.ann8 { background:#998247; }
+    &.ann9 { background:#ea20c8; }
+    &.ann10 { background:#9cfd00; }
+}

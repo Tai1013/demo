@@ -1,0 +1,99 @@
+.bulletin-content {
+    .bulletin-item {
+        margin-bottom: 20px;
+        border-radius: 15px;
+        box-shadow: 0 2px 15px rgba(#000, 0.25);
+        overflow: hidden;
+    }
+    .bulletin-ann {
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        font-size: 1rem;
+        color: #fff;
+        &.ann1 { background:#EA2027; }
+        &.ann2 { background:#009432; }
+        &.ann3 { background:#0652DD; }
+        &.ann4 { background:#f1c40f; }
+        &.ann5 { background:#2c3e50; }
+        &.ann6 { background:#1abc9c; }
+        &.ann7 { background:#8e44ad; }
+        &.ann8 { background:#998247; }
+        &.ann9 { background:#ea20c8; }
+        &.ann10 { background:#9cfd00; }
+    }
+    .bulletin-title {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        min-height: 60px;
+        line-height: 1.5em;
+        color: #000;
+        box-sizing: border-box;
+    }
+}
+
+.bulletin-inbox {
+    margin: 30px auto;
+    max-width: 1280px;
+    width: 95%;
+    .back-bulletin {
+        width: 150px;
+        color:#0662A2;
+        font-weight: 600;
+        font-size: 1.2rem;
+        transition: 0.5s;
+        svg {
+            width: 30px;
+            height: 30px;
+        }
+        @media screen and (min-width: 769px){
+            &:hover {
+                transform: translateX(-10px);
+            }
+        }
+    }
+    .content{
+        min-height: calc(100vh - 302px);
+        padding: 25px 45px;
+        background: #fff;
+        box-sizing: border-box;
+        box-shadow: 0 2px 15px rgba(#000, 0.25);
+        border: 10px solid #ddd;
+        border-image: linear-gradient(0.25turn, rgb(246, 237, 207), rgb(240, 218, 177), rgb(218, 241, 249), rgb(164, 215, 225)) 30 30;
+    }
+    .bulletin-text {
+        line-height: 1.5em;
+        ul, ol, li {
+            margin: revert;
+            padding: revert;
+            list-style: revert;
+        }
+        table {
+            max-width: 100%;
+        }
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .bulletin-inbox {
+        .content{
+            min-height: calc(100vh - 407px);
+            padding: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .bulletin-inbox {
+        .content{
+            min-height: calc(100vh - 387px);
+            padding: 10px 15px;
+        }
+    }
+}

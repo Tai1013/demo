@@ -1,0 +1,132 @@
+.about {
+    justify-content: center;
+    .about-link {
+        margin: 0 40px;
+        width: 320px;
+        .about-img {
+            width: 280px;
+            img {
+                width: 100%;
+            }
+        }
+        h3 {
+            color:#0662A2;
+        }
+    }
+}
+
+.banking-content, .affiliate-content {
+    line-height: 1.5rem;
+    ul, ol, li {
+        margin: revert;
+        padding: revert;
+        list-style: revert;
+    }
+    table {
+        max-width: 100%;
+        td {
+            border-collapse: collapse;
+            border: 1px solid #182430;
+            line-height: 40px;
+            padding-left: 5px;
+        }
+    }
+    img {
+        max-width: 100%;
+    }
+}
+.about-nav {
+    margin-bottom: 20px;
+    select {
+        padding: 0 10px;
+        width: 100%;
+        height: 40px;
+        color: #000;
+        background: #fff;
+        border: 2px solid #0662A2;
+        outline: none;
+        .nav-item {
+            cursor: pointer;
+        }
+    }
+}
+.about-content {
+    min-height: calc(100vh - 367px);
+    line-height: 1.5rem;
+    .about-item {
+        display: none;
+        &:first-child {
+            display: block;
+        }
+    }
+    a {
+        color: #fff;
+    }
+    ul, ol, li {
+        margin: revert;
+        padding: revert;
+        list-style: revert;
+    }
+    table {
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    img {
+        max-width: 100%;
+    }
+    h3 {
+        margin-left: 0.5em;
+        color: #0662A2;
+    }
+    p {
+        margin-left: 1.8em;
+    }
+    .text-3 {
+        margin-left: 3.6em;
+    }
+    .table1 {
+        margin-top: 5px;
+        .tr1 {
+            color: #fff;
+            background: #0662A2;
+        }
+        td {
+            border-collapse: collapse;
+            border: 1px solid #000;
+            line-height: 40px;
+            padding-left: 5px;
+            color: #000;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1600px){
+    .about {
+        .about-link {
+            margin: 0 12px;
+            width: 314px;
+        }
+    }
+}
+@media screen and (max-width: 1280px){
+    .about {
+        .about-link {
+            margin: 20px;
+            width: 320px;
+        }
+    }
+}
+@media screen and (max-width: 1024px){
+    .about-content {
+        min-height: calc(100vh - 453px);
+    }    
+}
+@media screen and (max-width: 768px){
+    .about {
+        .about-link {
+            margin: 12px;
+            width: 314px;
+        }
+    }
+}

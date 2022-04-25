@@ -1,0 +1,34 @@
+.game-nav {
+    .game {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        max-width: 1280px;
+        width: 90%;
+        .game-link {
+            display: block;
+            width: 25%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .game-nav {
+        .game {
+            .game-link {
+                width: 33.3%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 480px){
+    .game-nav {
+        .game {
+            .game-link {
+                width: 50%;
+            }
+        }
+    }
+}

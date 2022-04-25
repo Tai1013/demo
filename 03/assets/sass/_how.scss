@@ -1,0 +1,38 @@
+.how {
+    padding: 50px 0;
+    justify-content: center;
+    .how-link {
+        margin: 12px;
+        width: 290px;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(96, 97, 112, 0.16);
+        .how-img {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+        h3 {
+            color:#0662A2;
+            text-align: center;
+        }
+        p {
+            padding: 0 20px;
+            line-height: 1.6em;
+            font-size: 0.95rem;
+            a {
+                color: #000;
+            }
+        }
+        .how-btn {
+            margin: 20px auto;
+            padding: 10px 0;
+            display: block;
+            width: 120px;
+            text-align: center;
+            border-radius: 20px;
+            color: #fff;
+            background-color:#0662A2;
+        }
+    }
+}
