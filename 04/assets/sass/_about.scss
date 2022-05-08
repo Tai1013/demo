@@ -1,0 +1,117 @@
+.bankingBox, .affiliate {
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(#000, 0.3);
+    background: #fff;
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+    ul, ol, li {
+        margin: revert;
+        padding: revert;
+        list-style: revert;
+    }
+    table {
+        max-width: 100%;
+        .tr1 {
+            color: #fff;
+            background: #4167f8;
+        }
+        td {
+            border-collapse: collapse;
+            border: 1px solid #182430;
+            line-height: 40px;
+            padding-left: 5px;
+        }
+    }
+    img {
+        max-width: 100%;
+    }
+}
+
+.aboutBox {
+    padding: 20px;
+    min-height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(#000, 0.3);
+    background: #fff;
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+    #aboutNav {
+        padding: 0 10px;
+        width: 100%;
+        height: 40px;
+        color: #000;
+        background: #fff;
+        border: 2px solid #4167f8;
+        border-radius: 5px;
+        outline: none;
+        text-align: center;
+    }
+    #aboutContent {
+        margin-top: 20px;
+        .about-item {
+            display: none;
+            &:first-child {
+                display: block;
+            }
+        }
+        a {
+            color: #4167f8;
+        }
+        ul, ol, li {
+            margin: revert;
+            padding: revert;
+            list-style: revert;
+        }
+        table {
+            margin: 0 auto;
+            max-width: 100%;
+        }
+        img {
+            max-width: 100%;
+        }
+        h2 {
+            color: #4167f8;
+            text-align: center;
+        }
+        h3 {
+            margin-left: 0.5em;
+            color: #4167f8;
+        }
+        p {
+            margin-left: 1.8em;
+        }
+        .text-3 {
+            margin-left: 3.6em;
+        }
+        .table1 {
+            margin-top: 5px;
+            .tr1 {
+                color: #fff;
+                background: #4167f8;
+            }
+            td {
+                border-collapse: collapse;
+                border: 1px solid #000;
+                line-height: 40px;
+                padding-left: 5px;
+                color: #000;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bankingBox, .affiliate {
+        padding: 20px;
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 480px) {
+    .bankingBox, .affiliate {
+        padding: 10px;
+    }
+    .aboutBox {
+        padding: 10px;
+    }
+}

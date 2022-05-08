@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>導流站04 - 首頁</title>
+    <meta name="keywords" content="導流站04" />
+    <meta name="description" content="導流站04" />
+    <meta name="url" content="index">
+    <!-- 根據網站內容給出一個通用的年齡打分 -->
+    <meta name="rating" content="General">
+    <!-- 如果網站是作為一個 App 來使用的話，設置 App 名稱 -->
+    <meta name="application-name" content="導流站04">
+    <!-- 網站主題的短描述 -->
+    <meta name="subject" content="導流站04">
+    <!-- 控制搜索引擎爬蟲和索引的行為 -->
+    <meta name='robots' content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <!-- Google + / Schema.org -->
+    <meta itemprop="name" content="導流站04">
+    <meta itemprop="description" content="導流站04">
+    <meta itemprop="image" content="assets/images/icon_100.png">
+    <!-- 社群 -->
+    <meta property="article:tag" content="導流站04">
+    <meta property="article:tag" content="index">
+    <meta property="og:title" content="導流站04">
+    <meta property="og:url" content="index">
+    <meta property="og:description" content="導流站04">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/images/icon_100.png">
+    <meta property="og:locale" content="zh_TW">
+    <meta property="og:site_name" content="導流站04">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="index">
+    <meta name="twitter:title" content="導流站04">
+    <meta name="twitter:description" content="導流站04">
+    <meta name="twitter:image" content="assets/images/icon_100.png">
+    <meta name="copyright" content="版權所有 ©2021 保留所有權">
+    <!-- apple-touch-icon -->
+    <link rel="apple-touch-icon" sizes="100x100" href="assets/images/icon_100.png">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.css" />
+    <link rel="stylesheet" href="assets/css/main.min.css">
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <div class="header-box max-width">
+                <div class="h-logo">
+                    <a href="./"><img src="assets/images/logo.png" alt="導流站04"></a>
+                </div>
+                <div class="lr-btn">
+                    <a href="./">立即加入</a>
+                </div>
+            </div>
+        </header>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="promotion">
+                        <img class="desktop banner_img" src="assets/images/banner/banner1.jpg" alt="4月系列春末 春暖開花 三連活動" />
+                        <img class="mobile banner_img" src="assets/images/banner/m/banner_m1.jpg" alt="4月系列春末 春暖開花 三連活動" />
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="promotion">
+                        <img class="desktop banner_img" src="assets/images/banner/banner2.jpg" alt="首儲50%" />
+                        <img class="mobile banner_img" src="assets/images/banner/m/banner_m2.jpg" alt="首儲50%" />
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="promotion">
+                        <img class="desktop banner_img" src="assets/images/banner/banner3.jpg" alt="最高返金無上限" />
+                        <img class="mobile banner_img" src="assets/images/banner/m/banner_m3.jpg" alt="最高返金無上限" />
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="promotion">
+                        <img class="desktop banner_img" src="assets/images/banner/banner4.jpg" alt="每日贏錢 每日兌換出款" />
+                        <img class="mobile banner_img" src="assets/images/banner/m/banner_m4.jpg" alt="每日贏錢 每日兌換出款" />
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="marqueeBox">
+            <div class="max-width">
+                <svg class="ico">
+                    <use xlink:href="#bell"></use>
+                </svg>
+                <marquee scrollamount="5" onMouseOver="this.stop()" onMouseOut="this.start()">
+                    <a href="bulletin/bulletin1"><span class="ann ann1">【最新】</span>重要公告 詐騙集團洗錢嫌疑</a>
+                    <a href="bulletin/bulletin2"><span class="ann ann1">【最新】</span>重要公告 嚴禁不正當套利行為</a>
+                    <a href="bulletin/bulletin3"><span class="ann ann2">【系統】</span>平台提領規則</a>
+                </marquee>
+            </div>
+        </div>
+        <h2 class="top-title mobile"><span>遊戲大廳</span></h2>
+        <div class="gamebox">
+            <div class="desktop">
+                <ul id="gameNav">
+                    <li class="game-item nav-live" @click="gameNav('navLive')"><span>真人視訊</span></li>
+                    <li class="game-item nav-sport" @click="gameNav('navSport')"><span>體育賽事</span></li>
+                    <li class="game-item nav-lottery" @click="gameNav('navLottery')"><span>彩票遊戲</span></li>
+                    <li class="game-item nav-slot" @click="gameNav('navslot')"><span>電子遊戲</span></li>
+                </ul>
+                <div id="gameInto">
+                    <div id="navLive" class="game-item active">
+                        <div class="game-text">
+                            <h2>真人視訊<span>LIVE CASINO</span></h2>
+                            <p>提供多款視訊遊戲讓會員選擇，清晰的視訊畫面和人性化的介面設計，給您最身歷其境的線上博弈體驗賭場均為現場視訊，公正公開公平。</p>
+                            <a href="live">立即前往</a>
+                        </div>
+                        <div class="game-img">
+                            <img src="assets/images/game/nav/live-nav.png" alt="真人視訊">
+                        </div>
+                    </div>
+                    <div id="navSport" class="game-item">
+                        <div class="game-text">
+                            <h2>體育賽事<span>SPORTS EVENTS</span></h2>
+                            <p>提供多種體育投注平台，涵蓋世界各大聯賽包括籃球、足球、棒球，玩法多樣介面精緻，為您提提供最全面的體育賽事。</p>
+                            <a href="sport">立即前往</a>
+                        </div>
+                        <div class="game-img">
+                            <img src="assets/images/game/nav/sport-nav.png" alt="體育賽事">
+                        </div>
+                    </div>
+                    <div id="navLottery" class="game-item">
+                        <div class="game-text">
+                            <h2>彩票遊戲<span>LOTTERY GAME</span></h2>
+                            <p>提供各種高低頻彩票投注系列，所有彩票遊戲公正公開，皆參照各地官方開獎結果為依據，連線同步即時開彩。</p>
+                            <a href="lottery">立即前往</a>
+                        </div>
+                        <div class="game-img">
+                            <img src="assets/images/game/nav/lottery-nav.png" alt="彩票遊戲">
+                        </div>
+                    </div>
+                    <div id="navslot" class="game-item">
+                        <div class="game-text">
+                            <h2>電子遊戲<span>SLOT GAME</span></h2>
+                            <p>提供多種電子遊戲平台，多元的老虎機遊戲，精美的介面以及遊戲特效，我們致力於提供玩家最好的遊戲體驗。</p>
+                            <a href="slot">立即前往</a>
+                        </div>
+                        <div class="game-img">
+                            <img src="assets/images/game/nav/slot-nav.png" alt="電子遊戲">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile">
+                <div id="gameMobileNav">
+                    <div class="game-item">
+                        <a href="live">
+                            <img src="assets/images/game/nav/m/live-nav.png" alt="真人視訊">
+                            <p>真人視訊</p>
+                        </a>
+                    </div>
+                    <div class="game-item">
+                        <a href="sport">
+                            <img src="assets/images/game/nav/m/sport-nav.png" alt="體育賽事">
+                            <p>體育賽事</p>
+                        </a>
+                    </div>
+                    <div class="game-item">
+                        <a href="lottery">
+                            <img src="assets/images/game/nav/m/lottery-nav.png" alt="彩票遊戲">
+                            <p>彩票遊戲</p>
+                        </a>
+                    </div>
+                    <div class="game-item">
+                        <a href="slot">
+                            <img src="assets/images/game/nav/m/slot-nav.png" alt="電子遊戲">
+                            <p>電子遊戲</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="top-title"><span>最新消息</span></h2>
+        <div class="newsBox">
+            <div class="new-item">
+                <div class="img">
+                    <img src="assets/images/event/event0.jpg" alt="新聞1">
+                </div>
+                <p>2021最新娛樂城賺錢是詐騙還是投資??</p>
+                <a href="event/event1">了解更多</a>
+            </div>
+            <div class="new-item">
+                <div class="img">
+                    <img src="assets/images/event/event0.jpg" alt="新聞2">
+                </div>
+                <p>2021最新自設網站和善用社交媒體，對網路行銷的好處</p>
+                <a href="event/event2">了解更多</a>
+            </div>
+            <div class="new-item">
+                <div class="img">
+                    <img src="assets/images/event/event1.jpg" alt="新聞3">
+                </div>
+                <p>最推薦奇威娛樂城</p>
+                <a href="event/event3">了解更多</a>
+            </div>
+            <div class="new-item-more">
+                <a href="event">
+                    <img src="assets/images/new_banner.jpg" alt="new_banner">
+                    <p>更多消息</p>
+                </a>
+            </div>
+        </div>
+        <h2 class="top-title"><span>線上最豐富的博弈遊戲</span></h2>
+        <div class="timeBox">
+            <div class="time-item">
+                <div class="picBox">
+                    <img src="assets/images/time01.png" alt="存款平均時間">
+                    <span class="num">60</span>
+                </div>
+                <h2>信譽資金託管</h2>
+                <h4>MORE WAYS TO PROTECT</h4>
+                <p>獨立開發，128位加密技術和嚴格的安全管理體系，讓客戶資金得到最完善的保障。</p>
+            </div>
+            <div class="time-item">
+                <div class="picBox">
+                    <img src="assets/images/time02.png" alt="取款平均時間">
+                    <span class="num">90</span>
+                </div>
+                <h2>90秒極速出款</h2>
+                <h4>MORE WAYS TO WIN</h4>
+                <p>最新技術自主研發的財務處理系統，極速存、取、轉。獨家網絡優化技術，為您提供一流的遊戲體驗。</p>
+            </div>
+            <div class="time-item">
+                <div class="picBox">
+                    <img src="assets/images/time03.png" alt="合作支付平台">
+                    <span class="num">80</span>
+                </div>
+                <h2>三端數據互通</h2>
+                <h4>MORE DEVICES ACCOUNT</h4>
+                <p>支持各種終端設備，完美兼容PC、移動端。原生態App讓您隨時隨地輕鬆投注。</p>
+            </div>
+            <div class="time-item">
+                <div class="picBox">
+                    <img src="assets/images/time04.png" alt="合作遊戲平台">
+                    <span class="num">19</span>
+                </div>
+                <h2>賽事覆蓋全面</h2>
+                <h4>MORE EVENTS TO PLAY</h4>
+                <p>每天提供超過500場不同類別的精彩賽事，涵蓋世界範圍內主要體育運動，讓客戶擁有最完美的遊戲體驗。</p>
+            </div>
+        </div>
+        <footer>
+            <div id="about" class="max-width">
+                <div class="logo">
+                    <img src="assets/images/logo.png" alt="導流站04">
+                    <a href="./">立即加入</a>
+                </div>
+                <div class="content">
+                    <h3>娛樂城簡介</h3>
+                    <h4>全新樣貌全新體驗，多年老品牌優質服務，本平台擁有時下最流行的真人百家、電子遊戲外，
+                        另有體育賽事、電競投注、彩票賓果及棋牌類遊戲。不定時舉辦業界最豐富
+                        <a href="promotion">優惠活動</a>，歡迎立即加入
+                        <a href="./">導流站04娛樂城</a>體驗。
+                    </h4>
+                </div>
+                <div class="content-about">
+                    <h3>關於我們</h3>
+                    <h4>
+                        <a class="about-nav" href="about">幫助中心</a>
+                        <a class="about-nav" href="banking">存提款說明</a>
+                        <a class="about-nav" href="affiliate">合營計劃</a>
+                    </h4>
+                </div>
+            </div>
+            <div id="copyright">
+                © {{Year}} <a href="./">導流站04</a> All Rights Reserved TAI 版權所有
+            </div>
+        </footer>
+        <div class="back-top" style="display: none;">
+            <svg class="ico">
+                <use xlink:href="#ico-arrow-circle-up"></use>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none;" fill="none">
+                <symbol id="ico-arrow-circle-up" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M9 11l3-3m0 0l3 3m-3-3v8m0-13a9 9 0 110 18 9 9 0 010-18z"></path>
+                </symbol>
+                <symbol id="bell" viewBox="0 0 24 24" fill="none" stroke="#ffc107">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9">
+                    </path>
+                </symbol>
+            </svg>
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.min.js"></script>
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/carousel.js"></script>
+</body>
+
+</html>

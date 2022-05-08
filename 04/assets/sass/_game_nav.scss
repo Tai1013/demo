@@ -1,0 +1,238 @@
+.gamebox {
+    margin: 20px auto;
+    max-width: 1280px;
+    width: 80%;
+    #gameNav {
+        margin: 40px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .game-item {
+            margin: 0 10px;
+            position: relative;
+            width: 200px;
+            height: 60px;
+            font-size: 1.5rem;
+            border-radius: 5px;
+            transform: skew(-20deg);
+            cursor: pointer;
+            color: #fff;
+            >span {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) skew(20deg);
+                width: 100%;
+                text-align: center;
+            }
+            &.nav-live {
+                background: linear-gradient(35deg, #a08905, #f1e186);
+            }
+            &.nav-sport {
+                background: linear-gradient(35deg, #4167f8, #9aaaec);
+            }
+            &.nav-lottery {
+                background: linear-gradient(35deg, #E80C7A, #ffdddf);
+            }
+            &.nav-slot {
+                background: linear-gradient(35deg, #880094, #f79cff);
+            }
+
+        }
+    }
+    #gameInto {
+        .game-item {
+            display: none;
+            .game-text {
+                width: 40%;
+                h2 {
+                    margin: 0;
+                    padding-bottom: 40px;
+                    position: relative;
+                    color: $mainColor;
+                    font-weight: bold;
+                    font-size: 4rem;
+                    >span {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        font-size: 1.8rem;
+                        opacity: 0.2;
+                        letter-spacing: 0.5rem;
+                    }
+                }
+                p {
+                    margin: 30px 0;
+                    font-size: 1.2rem;
+                    line-height: 1.8em;
+                }
+                a {
+                    display: inline-block;
+                    padding: 15px 40px;
+                    border-radius: 5px;
+                    color: #fff;
+                    background: $mainColor;
+                }
+            }
+            .game-img {
+                width: 60%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+            &.active {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                .game-text {
+                    animation: gameNavLeftShow 1s ;
+                }
+                .game-img {
+                    animation: gameNavRightShow 1s ;
+                }
+            }
+            
+        }
+        #navLive {
+            background: url('../images/game/nav/live-bg.jpg') center center no-repeat;
+            background-size: contain;
+        }
+        #navSport {
+            background: url('../images/game/nav/sport-bg.jpg') center center no-repeat;
+            background-size: contain;
+        }
+        #navLottery {
+            background: url('../images/game/nav/lottery-bg.jpg') center center no-repeat;
+            background-size: contain;
+        }
+        #navslot {
+            background: url('../images/game/nav/slot-bg.jpg') center center no-repeat;
+            background-size: contain;
+        }
+
+    }
+    #gameMobileNav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        .game-item {
+            position: relative;
+            padding: 10px 20px;
+            width: 50%;
+            text-align: center;
+            box-sizing: border-box;
+            img {
+                width: 80%;
+            }
+            p {
+                margin: 15px 0;
+                color: $mainColor;
+                font-size: 1.5rem;
+                font-weight: 600;
+                &.game {
+                    position: absolute;
+                    bottom: 5px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    margin: 0;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@keyframes gameNavLeftShow {
+    from {
+        opacity: 0;
+        transform: translateX(-10%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes gameNavRightShow {
+    from {
+        opacity: 0;
+        transform: translateX(10%);
+      }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 1280px){
+    .gamebox {
+        #gameNav {
+            .game-item {
+                width: 180px;
+                height: 50px;
+                font-size: 1.2rem;
+            }
+        }
+        #gameInto {
+            .game-item {
+                .game-text {
+                    width: 50%;
+                    h2 {
+                        padding-bottom: 30px;
+                        font-size: 3rem;
+                        >span {
+                            font-size: 1.5rem;
+                            opacity: 0.2;
+                        }
+                    }
+                    p {
+                        margin: 25px 0;
+                        font-size: 1rem;
+                    }
+                }
+                .game-img {
+                    width: 50%;
+                }                
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .gamebox {
+        #gameNav {
+            .game-item {
+                width: 25%;
+                font-size: 1rem;
+            }
+        }
+        #gameInto {
+            .game-item {
+                .game-text {
+                    h2 {
+                        font-size: 2.5rem;
+                    }
+                }            
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .gamebox {
+        width: 95%;
+    }
+}
+@media screen and (max-width: 480px){
+    .gamebox {
+        #gameMobileNav {
+            .game-item {
+                padding: 20px 10px;
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}

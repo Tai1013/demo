@@ -1,0 +1,142 @@
+$mainColor:#4167f8;
+$mainColor2:#ffc107;
+
+@import '../sass/header';
+@import '../sass/banner';
+@import '../sass/marquee';
+@import '../sass/nav';
+@import '../sass/game_nav';
+@import '../sass/timeBox';
+@import '../sass/newsbox';
+@import '../sass/promotion';
+@import '../sass/event';
+@import '../sass/footer';
+@import '../sass/about';
+@import '../sass/bulletin';
+
+//返回至頂
+@import '../sass/backtop';
+
+body {
+    min-width: 360px;
+    color: #333;
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.max-width {
+    margin: 0 auto;
+    max-width: 1600px;
+    width: 95%;
+}
+
+.top-title {
+    margin: 40px 0;
+    text-align: center;
+    span {
+        position: relative;
+        display: inline-block;
+        padding: 10px 40px;
+        font-size: 2rem;
+        color: #fff;
+        background: linear-gradient(135deg, transparent 20px, $mainColor 0) top left,
+                    linear-gradient(-45deg, transparent 20px, $mainColor 0) bottom right;
+        background-size: 60% 100%;
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+        &::after {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            z-index: -1;
+            width: calc(100% + 10px);
+            height: calc(100% + 10px);
+            background: linear-gradient(135deg, transparent 22.5px, #7b95fd 0) top left,
+                    linear-gradient(-45deg, transparent 22.5px, #7b95fd 0) bottom right;
+            background-size: 60% 100%;
+            background-repeat: no-repeat;
+            box-sizing: border-box;
+        }
+    }
+}
+
+.desktop {
+    display: block;
+}
+.mobile {
+    display: none;
+}
+
+.commonBox {
+    margin: 40px auto;
+    max-width: 1200px;
+    width: 95%;
+    .common-title {
+        color: #4167f8;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .top-title {
+        span {
+            font-size: 1.6rem;
+            background: linear-gradient(135deg, transparent 18px, $mainColor 0) top left,
+                        linear-gradient(-45deg, transparent 18px, $mainColor 0) bottom right;
+            background-size: 60% 100%;
+            background-repeat: no-repeat;
+            box-sizing: border-box;
+            &::after {
+                background: linear-gradient(135deg, transparent 19.5px, #7b95fd 0) top left,
+                        linear-gradient(-45deg, transparent 19.5px, #7b95fd 0) bottom right;
+                background-size: 60% 100%;
+                background-repeat: no-repeat;
+                box-sizing: border-box;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .top-title {
+        span {
+            font-size: 1.2rem;
+            background: linear-gradient(135deg, transparent 14px, $mainColor 0) top left,
+                        linear-gradient(-45deg, transparent 14px, $mainColor 0) bottom right;
+            background-size: 60% 100%;
+            background-repeat: no-repeat;
+            box-sizing: border-box;
+            &::after {
+                background: linear-gradient(135deg, transparent 16.5px, #7b95fd 0) top left,
+                        linear-gradient(-45deg, transparent 16.5px, #7b95fd 0) bottom right;
+                background-size: 60% 100%;
+                background-repeat: no-repeat;
+                box-sizing: border-box;
+            }
+        }
+    }
+
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+}

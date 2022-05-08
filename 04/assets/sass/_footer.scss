@@ -1,0 +1,115 @@
+footer {
+    color: #fff;
+    background: #212934;
+    a {
+        color:$mainColor;
+    }
+    #about {
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 25%;
+            text-align: center;
+            img {
+                margin: 0 auto;
+                display: block;
+                max-width: 200px;
+                width: 65%;
+            }
+            a {
+                margin-top: 20px;
+                display: inline-block;
+                padding: 15px 40px;
+                border-radius: 5px;
+                color:#fff;
+                background: $mainColor;
+            }
+        }
+        .content {
+            padding: 0 20px;
+            width: calc(75% - 300px);
+            box-sizing: border-box;
+            h3 {
+                margin: 10px 0;
+                font-size: 1.4rem;
+            }
+            h4 {
+                display: inline-block;
+                max-width: 700px;
+                line-height: 1.5em;
+                .about-nav {
+                    margin-right: 10px;
+                    color:#fff;
+                }
+            }
+        }
+        .content-about {
+            padding: 0 20px;
+            width: 300px;
+            box-sizing: border-box;
+            h3 {
+                margin: 10px 0;
+                font-size: 1.4rem;
+            }
+            h4 {
+                display: inline-block;
+                max-width: 700px;
+                line-height: 1.5em;
+                .about-nav {
+                    display: inline-block;
+                    margin-right: 10px;
+                    color:#fff;
+                }
+            }
+        }
+    }
+    #copyright {
+        font-size: 0.8rem;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        background: #1d242d;
+    }
+}
+@media screen and (max-width: 1024px){
+    footer {
+        #about {
+            .content {
+                width: calc(75% - 180px);
+            }
+            .content-about {
+                width: 180px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    footer {
+        #about {
+            .logo {
+                display: none;
+            }
+            .content {
+                width: calc(100% - 180px);
+            }
+        }
+    }
+}
+@media screen and (max-width: 480px){
+    footer {
+        #about {
+            .content {
+                width: 100%;
+            }
+            .content-about {
+                width: 100%;
+            }
+        }
+    }
+}

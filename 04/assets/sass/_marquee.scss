@@ -1,0 +1,33 @@
+.marqueeBox {
+    padding: 5px 0;
+    > div {
+        display: flex;
+        align-items: center;
+    }
+    .ico {
+        margin-right: 10px;
+        width: 30px;
+        height: 30px;
+    }
+    .marquee {
+        width: calc(100% - 40px);
+    }
+    a {
+        font-size: 1.1rem;
+        color: #000;
+        margin-right: 4em;
+    }
+    .ann {
+        font-weight: 600;
+        &.ann1 { color:#EA2027; }
+        &.ann2 { color:#009432; }
+        &.ann3 { color:#0652DD; }
+        &.ann4 { color:#f1c40f; }
+        &.ann5 { color:#2c3e50; }
+        &.ann6 { color:#1abc9c; }
+        &.ann7 { color:#8e44ad; }
+        &.ann8 { color:#998247; }
+        &.ann9 { color:#ea20c8; }
+        &.ann10 { color:#9cfd00; }
+    }
+}

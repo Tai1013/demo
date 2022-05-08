@@ -1,0 +1,49 @@
+header {
+    position: relative;
+    z-index: 9;
+    box-shadow: 0 2px 8px 0 rgba(#000, 0.8);
+    .header-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+    }
+    .h-logo {
+        height: 75%;
+        img {
+            height: 100%;
+        }
+    }
+    .lr-btn {
+        a {
+            padding: 8px 15px;
+            display: block;
+            color: #fff;
+            background: $mainColor;
+            border-radius: 3px;
+            font-size: 1rem;
+        }
+    }
+    p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+}
+@media screen and (max-width: 768px) {
+    header {
+        .header-box {
+            height: 45px;
+        }
+        .lr-btn {
+            a {
+                padding: 4.5px 8px;
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
