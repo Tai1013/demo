@@ -1,0 +1,13 @@
+.marqueeBox {
+    background-color: $mainHoverColor;
+    marquee {
+        display: block;
+        padding: 10px 0;
+        a {
+            margin-right: 1.5em;
+            color: #000;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+    }
+}

@@ -1,0 +1,107 @@
+.proBox {
+    .pro-desktop {
+        display: block;
+    }
+    .pro-mobile {
+        display: none;
+    }
+    @media screen and (max-width: 560px) {
+        .pro-desktop {
+            display: none;
+        }
+        .pro-mobile {
+            display: block;
+        }
+    }
+    .pro-item {
+        margin: 40px 0;
+        padding: 20px;
+        border: 2px solid $mainHoverColor;
+    }
+    .pro-img {
+        width: 100%;
+        cursor: pointer;
+        >img {
+            width: 100%;
+        }
+        >div {
+            padding: 10px 0;
+            font-size: 1.2rem;
+            color: #212529;
+            background-color: $mainHoverColor;
+        }
+    }
+    .pro-text {
+        display: none;
+        margin-top: 10px;
+        padding: 20px;
+        background-color: #fff;
+        ol, ul, li {
+            margin: revert;
+            padding: revert;
+            list-style: revert;
+        }
+        .pro-title {
+            margin: 0;
+            padding: 10px;
+            text-align: center;
+            color: $mainColor;
+        }
+        .title {
+            color: $mainColor;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+        .text {
+            line-height: 1.5em;
+        }
+        a {
+            margin: 0 auto;
+            display: block;
+            width: 200px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #212529;
+            background-color: $mainColor;
+            border-radius: 5px;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .proBox {
+        .pro-item {
+            margin: 20px 0;
+            padding: 10px;
+        }
+        .pro-img {
+            >div {
+                padding: 8px 0;
+                font-size: 1rem;
+            }
+        }
+        .pro-text {
+            padding: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .proBox {
+        .pro-item {
+            margin: 10px 0;
+        }
+        .pro-img {
+            >div {
+                padding: 5px 0;
+                font-size: 0.9rem;
+            }
+        }
+        .pro-text {
+            padding: 10px;
+        }
+    }
+}

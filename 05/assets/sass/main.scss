@@ -1,0 +1,170 @@
+$mainColor: #f9a03f;
+$mainHoverColor: #ffc107;
+$backColor: #041624;
+
+@import "../sass/header";
+@import "../sass/banner";
+@import "../sass/marquee";
+@import "../sass/gameNav";
+@import "../sass/newsNav";
+@import "../sass/promotion";
+@import "../sass/event";
+@import "../sass/footer";
+
+//返回至頂
+@import '../sass/backtop';
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 360px;
+    background-color: $backColor;
+    @media screen and (max-width: 900px) {
+        &.aside-hide {
+            overflow: hidden;
+        }
+    }
+}
+
+a {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul {
+    box-sizing: border-box;
+}
+
+.desktop {
+    display: block;
+}
+.mobile {
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1140px;
+    width: 95%;
+}
+
+.btn {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 6px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: 0.2s;
+    &.btn-opacity {
+        opacity: 1;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    &.btn-shadow {
+        &:hover {
+            box-shadow: 2px 2px 0px #aaa;
+        }
+    }
+    &.login {
+        color: #212529;
+        background-color: #ffc107;
+    }
+    &.register {
+        color: #fff;
+        background-color: #dc3545;
+    }
+    &.to-new {
+        color: #212529;
+        background-color: #ffc107;
+    }
+    &.more-new {
+        color: #fff;
+        background-color: #dc3545;
+    }
+}
+
+.row {
+    display: flex;
+    &.justify-align-center {
+        justify-content: center;
+        align-items: center;
+    }
+    &.justify-center {
+        justify-content: center;
+    }
+    &.justify-between {
+        justify-content: space-between;
+    }
+    &.align-center {
+        align-items: center;
+        
+    }
+    &.wrap {
+        flex-wrap: wrap;
+    }
+    .col-2 {
+        flex: 16%;
+        max-width: 16.6%;
+    }
+    .col-3 {
+        flex: 25%;
+        max-width: 25%;
+    }
+    .col-4 {
+        flex: 33.3%;
+        max-width: 33.3%;
+    }
+    .col-5 {
+        flex: 41.6%;
+        max-width: 41.6%;
+    }
+    .col-6 {
+        flex: 50%;
+        max-width: 50%;
+    }
+    .col-7 {
+        flex: 75%;
+        max-width: 75%;
+    }
+    .col-8 {
+        flex: 66.6%;
+        max-width: 66.6%;
+    }
+    .col-12 {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}

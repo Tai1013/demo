@@ -1,0 +1,29 @@
+.banner_desktop {
+    display: block;
+}
+.banner_mobile {
+    display: none;
+}
+
+@media screen and (max-width: 560px) {
+    .banner_desktop {
+        display: none;
+    }
+    .banner_mobile {
+        display: block;
+    }
+}
+
+
+.swiper-container {
+    .banner_img {
+        width: 100%;
+    }
+    .swiper-pagination-bullet {
+        opacity: 1;
+        background: #fff;
+    }
+    .swiper-pagination-bullet-active {
+        background: $mainHoverColor;
+    }
+}

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>導流站05 - 優惠活動</title>
+    <meta name="keywords" content="導流站05" />
+    <meta name="description" content="導流站05" />
+    <meta name="url" content="index">
+    <!-- 根據網站內容給出一個通用的年齡打分 -->
+    <meta name="rating" content="General">
+    <!-- 如果網站是作為一個 App 來使用的話，設置 App 名稱 -->
+    <meta name="application-name" content="導流站05">
+    <!-- 網站主題的短描述 -->
+    <meta name="subject" content="導流站05">
+    <!-- 控制搜索引擎爬蟲和索引的行為 -->
+    <meta name='robots' content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <!-- Google + / Schema.org -->
+    <meta itemprop="name" content="導流站05">
+    <meta itemprop="description" content="導流站05">
+    <meta itemprop="image" content="assets/images/icon_100.png">
+    <!-- 社群 -->
+    <meta property="article:tag" content="導流站05">
+    <meta property="article:tag" content="index">
+    <meta property="og:title" content="導流站05">
+    <meta property="og:url" content="index">
+    <meta property="og:description" content="導流站05">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/images/icon_100.png">
+    <meta property="og:locale" content="zh_TW">
+    <meta property="og:site_name" content="導流站05">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="index">
+    <meta name="twitter:title" content="導流站05">
+    <meta name="twitter:description" content="導流站05">
+    <meta name="twitter:image" content="assets/images/icon_100.png">
+    <meta name="copyright" content="版權所有 ©2021 保留所有權">
+    <!-- apple-touch-icon -->
+    <link rel="apple-touch-icon" sizes="100x100" href="assets/images/icon_100.png">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="assets/css/main.min.css">
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <div class="top desktop">
+                <div class="container">
+                    <div class="btnBox">
+                        <a href="./" class="btn btn-opacity login">登入</a>
+                        <a href="./" class="btn btn-opacity register">註冊</a>
+                    </div>
+                </div>
+            </div>
+            <div class="navbox">
+                <div class="container row justify-align-center">
+                    <div class="col-4 desktop">
+                        <ul class="text-right">
+                            <li class="nav-item"><a href="live">真人娛樂</a></li>
+                            <li class="nav-item"><a href="sport">體育賽事</a></li>
+                            <li class="nav-item"><a href="lottery">彩票娛樂</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3 text-center">
+                        <div class="imgBox">
+                            <a href="./"><img src="assets/images/logo.png" alt="導流站05"></a>
+                        </div>
+                    </div>
+                    <div class="col-4 desktop">
+                        <ul class="text-left">
+                            <li class="nav-item"><a href="slot">電子遊戲</a></li>
+                            <li class="nav-item"><a href="event">最新消息</a></li>
+                            <li class="nav-item"><a href="promotion">優惠活動</a></li>
+                        </ul>
+                    </div>
+                    <div class="mobile">
+                        <svg class="ico nav-nav" @click="asideToggle()">
+                            <use xlink:href="#ico-nav"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <aside>
+            <div class="text-right">
+                <svg class="ico nav-close" @click="asideToggle()">
+                    <use xlink:href="#ico-close"></use>
+                </svg>
+                <div class="btnBox text-center">
+                    <a href="./" class="btn btn-opacity login">登入</a>
+                    <a href="./" class="btn btn-opacity register">註冊</a>
+                </div>
+                <ul class="text-left">
+                    <li class="nav-item"><a href="live">真人娛樂</a></li>
+                    <li class="nav-item"><a href="sport">體育賽事</a></li>
+                    <li class="nav-item"><a href="lottery">彩票娛樂</a></li>
+                    <li class="nav-item"><a href="slot">電子遊戲</a></li>
+                    <li class="nav-item"><a href="event">最新消息</a></li>
+                    <li class="nav-item"><a href="promotion">優惠活動</a></li>
+                </ul>
+            </div>
+        </aside>
+        <div class="marqueeBox">
+            <marquee class="container" scrollamount="5" onMouseOver="this.stop()" onMouseOut="this.start()">
+                <a href="promotion">【優惠】首儲優惠，等你來領取</a>
+                <a href="promotion">【優惠】儲值直升VIP，返水回饋送不停，業界最高返水0.6%</a>
+                <a href="promotion">【優惠】單筆5000以上，送15%</a>
+            </marquee>
+        </div>
+        <div class="proBox">
+            <div class="container">
+                <div class="pro-item">
+                    <div class="pro-img">
+                        <img class="pro-desktop" src="assets/images/banner/01.jpg" alt="promotion">
+                        <img class="pro-mobile" src="assets/images/banner/m/01.jpg" alt="promotion">
+                        <div class="text-center">查看詳細</div>
+                    </div>
+                    <div class="pro-text">
+                        <h2 class="pro-title">首儲優惠 等你來領取</h2>
+                        <p class="title">活動時間</p>
+                        <ol class="text">
+                            <li>2020/09/01 00:00:00 起至 2021/03/31 23:59:59止</li>
+                        </ol>
+                        <p class="title">申請對象</p>
+                        <ol class="text">
+                            <li>首儲會員</li>
+                            <li>會員首次儲值於24小時內並且尚未投注前向在線客服申請首存活動並提供會員帳號及首儲金額</li>
+                        </ol>
+                        <p class="title">活動規則</p>
+                        <ol class="text">
+                            <li>
+                                首存優惠活動贈送之彩金託售條件需達到有效投注18倍<br />
+                                (首次儲值之金額+贈送彩金) X18倍<br />
+                                例：儲值5000+彩金2500 = 合計 7500 x18倍 = 135000 有效投注
+                            </li>
+                            <li>首存優惠活動之彩金可進行任一遊戲場館</li>
+                            <li>首存活動禁止視訊多台下注玩法</li>
+                            <li>參加簽到優惠活動之領取彩簽到金前前，必須完善綁定之相關託售金融銀行資料，並且上傳驗證照片才可申請領取</li>
+                            <li>任何對押、對沖投注行為以及無風險投注將不列入有效投注額度，無風險投注包含：百家樂娛樂遊戲同時投注莊家、閒家；以及其他遊戲任何雙面對押玩法，(例：輪盤娛樂遊戲同時投注”大小、單雙、紅黑玩法或體育賽事同場比賽對打、任何取消投注注單賽事或是局數，將不計入有效投注額度)，違反以上之遊戲規定將取消優惠資格以及遊戲盈利，屆時退回本金。
+                            </li>
+                        </ol>
+                        <p class="title">優惠條款</p>
+                        <ol class="text">
+                            <li>為秉持公平公正原則，本娛樂平台有權對會員進行監控，若發生違背、欺騙或利用不正當手段進行非法獲利者，我們將有權凍結您帳號內點數。</li>
+                            <li>所有和局、無風險投注、或被取消之注單，將不計算為有效投注。</li>
+                            <li>若不符合本活動申請資格，無法要求任何退款行為，申請活動前請詳閱所有注意事項。</li>
+                            <li>針對違規會員，本公司有權在任何時候停止、取消優惠、索回已支付的全部優惠。如詐欺、不法等行為，保留權力凍結違規帳號的帳戶餘額及關閉會員使用權限。</li>
+                            <li>如相關帳戶經判定為濫用或不符合領取優惠資格，本公司有權要求會員提交相關證明文檔，驗證核實身份之權利。</li>
+                            <li>此優惠僅針對娛樂性質的會員，若發現用戶擁有超過一個帳戶或其他不正常的投注行為，一經風管部審核，本公司將保留或凍結您的帳戶盈餘及餘額，不得異議。</li>
+                        </ol>
+                        <a href="./">立即取得優惠</a>
+                    </div>
+                </div>
+                <div class="pro-item">
+                    <div class="pro-img">
+                        <img class="pro-desktop" src="assets/images/banner/02.jpg" alt="promotion">
+                        <img class="pro-mobile" src="assets/images/banner/m/02.jpg" alt="promotion">
+                        <div class="text-center">查看詳細</div>
+                    </div>
+                    <div class="pro-text">
+                        <h2 class="pro-title">儲值直升VIP 返水回饋送不停 業界最高返水0.6%</h2>
+                        <p class="title">活動時間</p>
+                        <ol class="text">
+                            <li>2020/10/01 00:00:00 起</li>
+                        </ol>
+                        <p class="title">申請對象</p>
+                        <ol class="text">
+                            <li>返水無需申請，系統自動派發至會員錢包內。</li>
+                        </ol>
+                        <p class="title">活動規則</p>
+                        <ol class="text">
+                            <li>投注1元起即可享有返水無上限優惠活動資格</li>
+                            <li>返水結算區間為當日00：00：00至23；59：59</li>
+                            <li>返水派發區間為次日15：00：00至18：00；00</li>
+                            <li>返水需達有效投注一倍方可申請託售</li>
+                        </ol>
+                        <p class="title">優惠條款</p>
+                        <ol class="text">
+                            <li>為秉持公平公正原則，本娛樂平台有權對會員進行監控，若發生違背、欺騙或利用不正當手段進行非法獲利者，我們將有權凍結您帳號內點數。</li>
+                            <li>所有和局、無風險投注、或被取消之注單，將不計算為有效投注。</li>
+                            <li>若不符合本活動申請資格，無法要求任何退款行為，申請活動前請詳閱所有注意事項。</li>
+                            <li>針對違規會員，本公司有權在任何時候停止、取消優惠、索回已支付的全部優惠。如詐欺、不法等行為，保留權力凍結違規帳號的帳戶餘額及關閉會員使用權限。</li>
+                            <li>如相關帳戶經判定為濫用或不符合領取優惠資格，本公司有權要求會員提交相關證明文檔，驗證核實身份之權利。</li>
+                            <li>此優惠僅針對娛樂性質的會員，若發現用戶擁有超過一個帳戶或其他不正常的投注行為，一經風管部審核，本公司將保留或凍結您的帳戶盈餘及餘額，不得異議。</li>
+                        </ol>
+                        <a href="./">立即取得優惠</a>
+                    </div>
+                </div>
+                <div class="pro-item">
+                    <div class="pro-img">
+                        <img class="pro-desktop" src="assets/images/banner/03.jpg" alt="promotion">
+                        <img class="pro-mobile" src="assets/images/banner/m/03.jpg" alt="promotion">
+                        <div class="text-center">查看詳細</div>
+                    </div>
+                    <div class="pro-text">
+                        <h2 class="pro-title">單筆5000以上送15%</h2>
+                        <p class="title">活動時間</p>
+                        <ol class="text">
+                            <li>2020/09/01 00:00:00 起至 2021/03/31 23:59:59止</li>
+                        </ol>
+                        <p class="title">申請對象</p>
+                        <ol class="text">
+                            <li>全部會員</li>
+                            <li>會員首次儲值於24小時內並且尚未投注前向在線客服申請首存活動並提供會員帳號及首儲金額</li>
+                        </ol>
+                        <p class="title">活動規則</p>
+                        <ol class="text">
+                            <li>
+                                儲值5000點以上 贈送彩金贈送15%回饋<br />
+                                儲值5000 + 回饋彩金750 = 合計5750<br />
+                                儲值10000 + 回饋彩金1500 = 合計11500
+                            </li>
+                            <li>參加簽到優惠活動之領取彩簽到金前前，必須完善綁定之相關託售金融銀行資料，並且上傳驗證照片才可申請領取</li>
+                            <li>任何對押、對沖投注行為以及無風險投注將不列入有效投注額度，無風險投注包含：百家樂娛樂遊戲同時投注莊家、閒家；以及其他遊戲任何雙面對押玩法，(例：輪盤娛樂遊戲同時投注”大小、單雙、紅黑玩法或體育賽事同場比賽對打、任何取消投注注單賽事或是局數，將不計入有效投注額度)，違反以上之遊戲規定將取消優惠資格以及遊戲盈利，屆時退回本金。
+                            </li>
+                        </ol>
+                        <p class="title">優惠條款</p>
+                        <ol class="text">
+                            <li>為秉持公平公正原則，本娛樂平台有權對會員進行監控，若發生違背、欺騙或利用不正當手段進行非法獲利者，我們將有權凍結您帳號內點數。</li>
+                            <li>所有和局、無風險投注、或被取消之注單，將不計算為有效投注。</li>
+                            <li>若不符合本活動申請資格，無法要求任何退款行為，申請活動前請詳閱所有注意事項。</li>
+                            <li>針對違規會員，本公司有權在任何時候停止、取消優惠、索回已支付的全部優惠。如詐欺、不法等行為，保留權力凍結違規帳號的帳戶餘額及關閉會員使用權限。</li>
+                            <li>如相關帳戶經判定為濫用或不符合領取優惠資格，本公司有權要求會員提交相關證明文檔，驗證核實身份之權利。</li>
+                            <li>此優惠僅針對娛樂性質的會員，若發現用戶擁有超過一個帳戶或其他不正常的投注行為，一經風管部審核，本公司將保留或凍結您的帳戶盈餘及餘額，不得異議。</li>
+                        </ol>
+                        <a href="./">立即取得優惠</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container project">
+                <div class="left">
+                    <h3><span>簡介</span></h3>
+                    <p>全新樣貌全新體驗，多年老品牌優質服務，本平台擁有時下最流行的真人百家、電子遊戲外， 另有體育賽事、電競投注、彩票賓果及棋牌類遊戲。不定時舉辦業界最豐富
+                        <a href="promotion">優惠活動</a>，歡迎立即加入
+                        <a href="./">導流站05</a>體驗。
+                    </p>
+                </div>
+                <div class="right">
+                    <h3><span>選單</span></h3>
+                    <ul>
+                        <li class="nav-item"><a href="live">真人娛樂</a></li>
+                        <li class="nav-item"><a href="sport">體育賽事</a></li>
+                        <li class="nav-item"><a href="lottery">彩票娛樂</a></li>
+                        <li class="nav-item"><a href="slot">電子遊戲</a></li>
+                        <li class="nav-item"><a href="event">最新消息</a></li>
+                        <li class="nav-item"><a href="promotion">優惠活動</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer col-12">© {{Year}} <a href="./">導流站05</a> All Rights Reserved TAI 版權所有</div>
+        </footer>
+        <div class="back-top" style="display: none;">
+            <svg class="ico">
+                <use xlink:href="#ico-arrow-circle-up"></use>
+            </svg>
+        </div>
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+                <symbol id="ico-nav" viewBox="0 0 24 24" fill="none" stroke="#fff">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </symbol>
+                <symbol id="ico-close" viewBox="0 0 24 24" fill="none" stroke="#fff">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                    </path>
+                </symbol>
+                <symbol id="ico-arrow-circle-up" viewBox="0 0 24 24" fill="none" stroke="#fff">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M9 11l3-3m0 0l3 3m-3-3v8m0-13a9 9 0 110 18 9 9 0 010-18z"></path>
+                </symbol>
+            </svg>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.min.js"></script>
+    <script src="assets/js/components.js"></script>
+</body>
+
+</html>

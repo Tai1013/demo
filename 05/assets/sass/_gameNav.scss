@@ -1,0 +1,125 @@
+.gameNav {
+    .game-item {
+        border-top: 5px solid $mainColor;
+        width: 100%;
+        &.game-live {
+            background: url(../images/game/bg/bg1.jpg) center right fixed no-repeat;
+            background-size: cover;
+        }
+        &.game-sport {
+            background: url(../images/game/bg/bg2.jpg) center right fixed no-repeat;
+            background-size: cover;
+        }
+        &.game-lottery {
+            background: url(../images/game/bg/bg3.jpg) center left fixed no-repeat;
+            background-size: cover;
+        }
+        &.game-slot {
+            background: url(../images/game/bg/bg4.jpg) center center fixed no-repeat;
+            background-size: cover;
+        }
+    }
+    h2 {
+        position: relative;
+        top: -1px;
+        margin: 0 auto;
+        padding: 15px 0;
+        width: 300px;
+        border-radius: 0 0 60px 60px;
+        color: #000;
+        background-color: $mainColor;
+        box-shadow: 0 5px 5px rgba(#000, .8);
+    }
+    .content {
+        margin: 0 auto;
+        padding: 100px 0;
+        width: 1890px;
+        @media screen and (max-width: 1920px) {
+            width: 1080px;
+        }
+        @media screen and (max-width: 1140px) {
+            width: 810px;
+        }
+        @media screen and (max-width: 840px) {
+            width: 540px;
+        }
+        @media screen and (max-width: 560px) {
+            width: 270px;
+        }
+        .game-link {
+            margin: 10px;
+            border-radius: 5px;
+            // box-shadow: 0 0 15px rgba(#000, .8);
+            overflow: hidden;
+            img {
+                width: 250px;
+                height: 267px;
+                object-fit: cover;
+                object-position: top center;
+            }
+            p {
+                margin: 0;
+                padding: 15px 0;
+                color: $mainColor;
+                background-color: $backColor;
+                font-size: 1.5rem;
+                font-weight: 600;
+            }
+        }
+
+    }
+    
+}
+
+.bannerBox {
+    width: 100%;
+    >img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        &.banner-desktop {
+            display: block;
+        }
+        &.banner-mobile {
+            display: none;
+        }
+        @media screen and (max-width: 768px) {
+            &.banner-desktop {
+                display: none;
+            }
+            &.banner-mobile {
+                display: block;
+            }
+        }
+    }
+}
+
+.gameAbout {
+    padding: 30px 0;
+    h1 {
+        color: $mainColor;
+    }
+    p {
+        margin-left: 2em;
+        display: block;
+        color: #fff;
+        font-size: 1rem;
+        line-height: 1.5em;
+    }
+    a {
+        margin: 0 auto;
+        display: block;
+        width: 200px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: #212529;
+        background-color: $mainColor;
+        border-radius: 10px;
+        &:hover {
+            background-color: $mainHoverColor;
+        }
+    }
+}
